@@ -1,0 +1,2087 @@
+I tensorflow/stream_executor/dso_loader.cc:125] successfully opened CUDA library libcublas.so.8.0 locally
+I tensorflow/stream_executor/dso_loader.cc:125] successfully opened CUDA library libcudnn.so.5 locally
+I tensorflow/stream_executor/dso_loader.cc:125] successfully opened CUDA library libcufft.so.8.0 locally
+I tensorflow/stream_executor/dso_loader.cc:125] successfully opened CUDA library libcuda.so.1 locally
+I tensorflow/stream_executor/dso_loader.cc:125] successfully opened CUDA library libcurand.so.8.0 locally
+Traceback (most recent call last):
+  File "mulgpu_test.py", line 5, in <module>
+    from models.resnet import *
+  File "/workspace/xwtech/tuxun/grid_forcast/models/resnet.py", line 89
+    def st_resnet(c_input, p_input, t_input, c_conf, p_conf, t_conf, nb_filter, nb_res_unit=1, phase_train):
+                 ^
+SyntaxError: non-default argument follows default argument
+I tensorflow/stream_executor/dso_loader.cc:125] successfully opened CUDA library libcublas.so.8.0 locally
+I tensorflow/stream_executor/dso_loader.cc:125] successfully opened CUDA library libcudnn.so.5 locally
+I tensorflow/stream_executor/dso_loader.cc:125] successfully opened CUDA library libcufft.so.8.0 locally
+I tensorflow/stream_executor/dso_loader.cc:125] successfully opened CUDA library libcuda.so.1 locally
+I tensorflow/stream_executor/dso_loader.cc:125] successfully opened CUDA library libcurand.so.8.0 locally
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:885] Found device 0 with properties: 
+name: TITAN X (Pascal)
+major: 6 minor: 1 memoryClockRate (GHz) 1.531
+pciBusID 0000:83:00.0
+Total memory: 11.90GiB
+Free memory: 11.76GiB
+W tensorflow/stream_executor/cuda/cuda_driver.cc:590] creating context when one is currently active; existing: 0x384f420
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:885] Found device 1 with properties: 
+name: TITAN X (Pascal)
+major: 6 minor: 1 memoryClockRate (GHz) 1.531
+pciBusID 0000:84:00.0
+Total memory: 11.90GiB
+Free memory: 11.76GiB
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:906] DMA: 0 1 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:916] 0:   Y Y 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:916] 1:   Y Y 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: TITAN X (Pascal), pci bus id: 0000:83:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:1) -> (device: 1, name: TITAN X (Pascal), pci bus id: 0000:84:00.0)
+0.001
+train_samples: 2656
+train_samples: 320
+2017-05-03 10:43:11, step: 0, train_loss: 0.017428, test_loss: 0.020462, time cost: 3.693703
+2017-05-03 10:43:20, step: 100, train_loss: 0.003340, test_loss: 0.003124, time cost: 8.987996
+2017-05-03 10:43:29, step: 200, train_loss: 0.002760, test_loss: 0.002493, time cost: 8.90029
+2017-05-03 10:43:38, step: 300, train_loss: 0.002401, test_loss: 0.002405, time cost: 8.784474
+2017-05-03 10:43:47, step: 400, train_loss: 0.002184, test_loss: 0.002346, time cost: 8.729239
+2017-05-03 10:43:56, step: 500, train_loss: 0.002180, test_loss: 0.002648, time cost: 8.754334
+2017-05-03 10:44:04, step: 600, train_loss: 0.002177, test_loss: 0.002314, time cost: 8.791031
+2017-05-03 10:44:13, step: 700, train_loss: 0.002122, test_loss: 0.002338, time cost: 8.801823
+2017-05-03 10:44:22, step: 800, train_loss: 0.002167, test_loss: 0.002329, time cost: 8.776395
+2017-05-03 10:44:32, step: 900, train_loss: 0.002155, test_loss: 0.002236, time cost: 9.017139
+2017-05-03 10:44:41, step: 1000, train_loss: 0.002670, test_loss: 0.002232, time cost: 8.76707
+2017-05-03 10:44:50, step: 1100, train_loss: 0.002132, test_loss: 0.002240, time cost: 8.847393
+2017-05-03 10:44:59, step: 1200, train_loss: 0.001674, test_loss: 0.002352, time cost: 8.975052999999999
+2017-05-03 10:45:08, step: 1300, train_loss: 0.001832, test_loss: 0.002275, time cost: 8.652108
+2017-05-03 10:45:16, step: 1400, train_loss: 0.001953, test_loss: 0.002195, time cost: 8.744186
+2017-05-03 10:45:25, step: 1500, train_loss: 0.001852, test_loss: 0.002242, time cost: 8.856175
+2017-05-03 10:45:34, step: 1600, train_loss: 0.002026, test_loss: 0.002207, time cost: 8.733659
+2017-05-03 10:45:43, step: 1700, train_loss: 0.001867, test_loss: 0.002238, time cost: 8.66548
+2017-05-03 10:45:52, step: 1800, train_loss: 0.002098, test_loss: 0.002378, time cost: 8.818704
+2017-05-03 10:46:01, step: 1900, train_loss: 0.001939, test_loss: 0.002302, time cost: 8.744994
+2017-05-03 10:46:10, step: 2000, train_loss: 0.001805, test_loss: 0.002188, time cost: 8.662134
+2017-05-03 10:46:19, step: 2100, train_loss: 0.002150, test_loss: 0.002245, time cost: 8.772277
+2017-05-03 10:46:28, step: 2200, train_loss: 0.002132, test_loss: 0.002233, time cost: 8.744771
+2017-05-03 10:46:36, step: 2300, train_loss: 0.002175, test_loss: 0.002209, time cost: 8.697598
+2017-05-03 10:46:45, step: 2400, train_loss: 0.002314, test_loss: 0.002175, time cost: 8.839778
+2017-05-03 10:46:55, step: 2500, train_loss: 0.002102, test_loss: 0.002137, time cost: 9.008352
+2017-05-03 10:47:03, step: 2600, train_loss: 0.002136, test_loss: 0.002193, time cost: 8.710466
+2017-05-03 10:47:12, step: 2700, train_loss: 0.002293, test_loss: 0.002261, time cost: 8.710603
+2017-05-03 10:47:21, step: 2800, train_loss: 0.002478, test_loss: 0.002253, time cost: 8.883042
+2017-05-03 10:47:30, step: 2900, train_loss: 0.001929, test_loss: 0.002224, time cost: 8.808842
+2017-05-03 10:47:39, step: 3000, train_loss: 0.002312, test_loss: 0.002281, time cost: 8.844416
+2017-05-03 10:47:48, step: 3100, train_loss: 0.001489, test_loss: 0.002219, time cost: 8.723498
+2017-05-03 10:47:57, step: 3200, train_loss: 0.001979, test_loss: 0.002178, time cost: 8.797842
+2017-05-03 10:48:06, step: 3300, train_loss: 0.001944, test_loss: 0.002140, time cost: 8.729655
+2017-05-03 10:48:15, step: 3400, train_loss: 0.001903, test_loss: 0.002121, time cost: 8.770831
+2017-05-03 10:48:24, step: 3500, train_loss: 0.002087, test_loss: 0.002126, time cost: 8.902365
+2017-05-03 10:48:33, step: 3600, train_loss: 0.001803, test_loss: 0.002156, time cost: 8.756528
+2017-05-03 10:48:42, step: 3700, train_loss: 0.001879, test_loss: 0.002159, time cost: 8.699361
+2017-05-03 10:48:50, step: 3800, train_loss: 0.001660, test_loss: 0.002102, time cost: 8.738790999999999
+2017-05-03 10:48:59, step: 3900, train_loss: 0.002032, test_loss: 0.002125, time cost: 8.834867
+2017-05-03 10:49:09, step: 4000, train_loss: 0.001722, test_loss: 0.002153, time cost: 8.902228000000001
+2017-05-03 10:49:18, step: 4100, train_loss: 0.001897, test_loss: 0.002182, time cost: 8.907953
+2017-05-03 10:49:27, step: 4200, train_loss: 0.001981, test_loss: 0.002113, time cost: 8.825738
+2017-05-03 10:49:36, step: 4300, train_loss: 0.002133, test_loss: 0.002209, time cost: 8.802134
+2017-05-03 10:49:45, step: 4400, train_loss: 0.001749, test_loss: 0.002160, time cost: 8.926209
+2017-05-03 10:49:54, step: 4500, train_loss: 0.002049, test_loss: 0.002311, time cost: 8.87712
+2017-05-03 10:50:03, step: 4600, train_loss: 0.001940, test_loss: 0.002139, time cost: 8.920412
+2017-05-03 10:50:12, step: 4700, train_loss: 0.002051, test_loss: 0.002228, time cost: 8.753967
+2017-05-03 10:50:20, step: 4800, train_loss: 0.001998, test_loss: 0.002142, time cost: 8.721658
+2017-05-03 10:50:29, step: 4900, train_loss: 0.001725, test_loss: 0.002125, time cost: 8.889594
+2017-05-03 10:50:38, step: 5000, train_loss: 0.001861, test_loss: 0.002103, time cost: 8.866332
+2017-05-03 10:50:47, step: 5100, train_loss: 0.002192, test_loss: 0.002051, time cost: 8.876843000000001
+2017-05-03 10:50:56, step: 5200, train_loss: 0.001644, test_loss: 0.002049, time cost: 8.812058
+2017-05-03 10:51:05, step: 5300, train_loss: 0.002046, test_loss: 0.002048, time cost: 8.842934
+2017-05-03 10:51:14, step: 5400, train_loss: 0.001820, test_loss: 0.002047, time cost: 8.802848000000001
+2017-05-03 10:51:23, step: 5500, train_loss: 0.001738, test_loss: 0.002051, time cost: 8.78255
+2017-05-03 10:51:32, step: 5600, train_loss: 0.001835, test_loss: 0.002050, time cost: 8.696178
+2017-05-03 10:51:41, step: 5700, train_loss: 0.001996, test_loss: 0.002050, time cost: 8.844752
+2017-05-03 10:51:50, step: 5800, train_loss: 0.001910, test_loss: 0.002052, time cost: 8.798328
+2017-05-03 10:51:59, step: 5900, train_loss: 0.001629, test_loss: 0.002055, time cost: 8.673639
+2017-05-03 10:52:08, step: 6000, train_loss: 0.002030, test_loss: 0.002061, time cost: 8.737586
+2017-05-03 10:52:17, step: 6100, train_loss: 0.001707, test_loss: 0.002059, time cost: 8.689546
+2017-05-03 10:52:25, step: 6200, train_loss: 0.001872, test_loss: 0.002051, time cost: 8.726671
+2017-05-03 10:52:34, step: 6300, train_loss: 0.001701, test_loss: 0.002048, time cost: 8.897003
+2017-05-03 10:52:43, step: 6400, train_loss: 0.002135, test_loss: 0.002065, time cost: 8.714690000000001
+2017-05-03 10:52:53, step: 6500, train_loss: 0.001888, test_loss: 0.002056, time cost: 8.911575
+2017-05-03 10:53:01, step: 6600, train_loss: 0.001633, test_loss: 0.002046, time cost: 8.764787
+2017-05-03 10:53:10, step: 6700, train_loss: 0.001887, test_loss: 0.002047, time cost: 8.768852
+2017-05-03 10:53:19, step: 6800, train_loss: 0.001557, test_loss: 0.002049, time cost: 8.735691
+2017-05-03 10:53:28, step: 6900, train_loss: 0.001742, test_loss: 0.002073, time cost: 8.707445
+2017-05-03 10:53:37, step: 7000, train_loss: 0.001791, test_loss: 0.002058, time cost: 8.704579
+2017-05-03 10:53:46, step: 7100, train_loss: 0.001819, test_loss: 0.002053, time cost: 8.94283
+2017-05-03 10:53:55, step: 7200, train_loss: 0.001860, test_loss: 0.002058, time cost: 8.827952
+2017-05-03 10:54:04, step: 7300, train_loss: 0.004321, test_loss: 0.002082, time cost: 8.634281
+2017-05-03 10:54:13, step: 7400, train_loss: 0.002022, test_loss: 0.002051, time cost: 8.945676
+2017-05-03 10:54:22, step: 7500, train_loss: 0.001841, test_loss: 0.002046, time cost: 8.704615
+2017-05-03 10:54:31, step: 7600, train_loss: 0.001340, test_loss: 0.002051, time cost: 8.808269
+2017-05-03 10:54:39, step: 7700, train_loss: 0.001731, test_loss: 0.002063, time cost: 8.805124
+2017-05-03 10:54:48, step: 7800, train_loss: 0.001866, test_loss: 0.002051, time cost: 8.696117
+2017-05-03 10:54:57, step: 7900, train_loss: 0.001633, test_loss: 0.002060, time cost: 8.737964
+2017-05-03 10:55:06, step: 8000, train_loss: 0.001711, test_loss: 0.002064, time cost: 8.781763
+2017-05-03 10:55:15, step: 8100, train_loss: 0.001899, test_loss: 0.002058, time cost: 8.653206
+2017-05-03 10:55:24, step: 8200, train_loss: 0.002161, test_loss: 0.002050, time cost: 8.755144
+2017-05-03 10:55:33, step: 8300, train_loss: 0.001808, test_loss: 0.002047, time cost: 8.856134
+2017-05-03 10:55:42, step: 8400, train_loss: 0.001629, test_loss: 0.002073, time cost: 8.810133
+2017-05-03 10:55:51, step: 8500, train_loss: 0.001890, test_loss: 0.002050, time cost: 8.689606
+2017-05-03 10:55:59, step: 8600, train_loss: 0.001585, test_loss: 0.002063, time cost: 8.635411
+2017-05-03 10:56:08, step: 8700, train_loss: 0.001992, test_loss: 0.002059, time cost: 8.919061
+2017-05-03 10:56:17, step: 8800, train_loss: 0.001813, test_loss: 0.002054, time cost: 8.783077
+2017-05-03 10:56:26, step: 8900, train_loss: 0.001891, test_loss: 0.002049, time cost: 8.889636
+2017-05-03 10:56:35, step: 9000, train_loss: 0.001530, test_loss: 0.002047, time cost: 8.91202
+2017-05-03 10:56:44, step: 9100, train_loss: 0.001776, test_loss: 0.002042, time cost: 8.765742
+2017-05-03 10:56:53, step: 9200, train_loss: 0.001688, test_loss: 0.002061, time cost: 8.858371
+2017-05-03 10:57:02, step: 9300, train_loss: 0.001684, test_loss: 0.002052, time cost: 8.721465
+2017-05-03 10:57:11, step: 9400, train_loss: 0.001646, test_loss: 0.002043, time cost: 8.590644
+2017-05-03 10:57:20, step: 9500, train_loss: 0.001704, test_loss: 0.002045, time cost: 8.694807
+2017-05-03 10:57:28, step: 9600, train_loss: 0.004227, test_loss: 0.002047, time cost: 8.64931
+2017-05-03 10:57:38, step: 9700, train_loss: 0.001710, test_loss: 0.002067, time cost: 8.911516
+2017-05-03 10:57:46, step: 9800, train_loss: 0.001706, test_loss: 0.002056, time cost: 8.624635
+2017-05-03 10:57:55, step: 9900, train_loss: 0.001782, test_loss: 0.002057, time cost: 8.745197
+2017-05-03 10:58:04, step: 10000, train_loss: 0.002038, test_loss: 0.002045, time cost: 8.706998
+2017-05-03 10:58:13, step: 10100, train_loss: 0.001740, test_loss: 0.002040, time cost: 8.687275
+2017-05-03 10:58:22, step: 10200, train_loss: 0.002088, test_loss: 0.002039, time cost: 8.836347
+2017-05-03 10:58:31, step: 10300, train_loss: 0.001710, test_loss: 0.002040, time cost: 8.797953
+2017-05-03 10:58:40, step: 10400, train_loss: 0.001975, test_loss: 0.002041, time cost: 8.695891
+2017-05-03 10:58:49, step: 10500, train_loss: 0.001805, test_loss: 0.002042, time cost: 8.793344
+2017-05-03 10:58:57, step: 10600, train_loss: 0.001609, test_loss: 0.002041, time cost: 8.755281
+2017-05-03 10:59:06, step: 10700, train_loss: 0.001853, test_loss: 0.002041, time cost: 8.781128
+2017-05-03 10:59:15, step: 10800, train_loss: 0.001675, test_loss: 0.002039, time cost: 8.721995
+2017-05-03 10:59:24, step: 10900, train_loss: 0.001585, test_loss: 0.002042, time cost: 8.675425
+2017-05-03 10:59:33, step: 11000, train_loss: 0.001836, test_loss: 0.002040, time cost: 8.60364
+2017-05-03 10:59:42, step: 11100, train_loss: 0.001985, test_loss: 0.002045, time cost: 8.816645
+2017-05-03 10:59:51, step: 11200, train_loss: 0.001667, test_loss: 0.002043, time cost: 8.66752
+2017-05-03 10:59:59, step: 11300, train_loss: 0.001743, test_loss: 0.002042, time cost: 8.756243
+2017-05-03 11:00:08, step: 11400, train_loss: 0.001692, test_loss: 0.002042, time cost: 8.764789
+2017-05-03 11:00:17, step: 11500, train_loss: 0.001972, test_loss: 0.002040, time cost: 8.707363
+2017-05-03 11:00:26, step: 11600, train_loss: 0.002136, test_loss: 0.002042, time cost: 8.734212
+2017-05-03 11:00:35, step: 11700, train_loss: 0.001876, test_loss: 0.002041, time cost: 8.648475
+2017-05-03 11:00:44, step: 11800, train_loss: 0.001892, test_loss: 0.002042, time cost: 8.809579
+2017-05-03 11:00:53, step: 11900, train_loss: 0.001755, test_loss: 0.002039, time cost: 8.686167
+2017-05-03 11:01:01, step: 12000, train_loss: 0.001675, test_loss: 0.002043, time cost: 8.709767
+2017-05-03 11:01:10, step: 12100, train_loss: 0.001674, test_loss: 0.002040, time cost: 8.654592
+2017-05-03 11:01:19, step: 12200, train_loss: 0.001679, test_loss: 0.002042, time cost: 8.837054
+2017-05-03 11:01:28, step: 12300, train_loss: 0.001830, test_loss: 0.002045, time cost: 8.709437
+2017-05-03 11:01:37, step: 12400, train_loss: 0.001697, test_loss: 0.002044, time cost: 8.653535
+2017-05-03 11:01:46, step: 12500, train_loss: 0.001570, test_loss: 0.002044, time cost: 8.675368
+2017-05-03 11:01:55, step: 12600, train_loss: 0.002074, test_loss: 0.002045, time cost: 8.829028
+2017-05-03 11:02:03, step: 12700, train_loss: 0.001508, test_loss: 0.002044, time cost: 8.629762
+2017-05-03 11:02:12, step: 12800, train_loss: 0.001692, test_loss: 0.002045, time cost: 8.698508
+2017-05-03 11:02:21, step: 12900, train_loss: 0.001585, test_loss: 0.002042, time cost: 8.875088
+2017-05-03 11:02:30, step: 13000, train_loss: 0.001647, test_loss: 0.002043, time cost: 8.670862
+2017-05-03 11:02:39, step: 13100, train_loss: 0.001620, test_loss: 0.002041, time cost: 8.662641
+2017-05-03 11:02:48, step: 13200, train_loss: 0.001578, test_loss: 0.002043, time cost: 8.679529
+2017-05-03 11:02:57, step: 13300, train_loss: 0.001692, test_loss: 0.002041, time cost: 8.834809
+2017-05-03 11:03:06, step: 13400, train_loss: 0.001683, test_loss: 0.002044, time cost: 8.745497
+2017-05-03 11:03:15, step: 13500, train_loss: 0.001526, test_loss: 0.002041, time cost: 8.768966
+2017-05-03 11:03:23, step: 13600, train_loss: 0.001641, test_loss: 0.002045, time cost: 8.696401999999999
+2017-05-03 11:03:32, step: 13700, train_loss: 0.001523, test_loss: 0.002044, time cost: 8.755986
+2017-05-03 11:03:41, step: 13800, train_loss: 0.001870, test_loss: 0.002044, time cost: 8.726652
+2017-05-03 11:03:50, step: 13900, train_loss: 0.001586, test_loss: 0.002042, time cost: 8.710257
+2017-05-03 11:03:59, step: 14000, train_loss: 0.001544, test_loss: 0.002041, time cost: 8.842304
+2017-05-03 11:04:08, step: 14100, train_loss: 0.001875, test_loss: 0.002043, time cost: 8.739146
+2017-05-03 11:04:17, step: 14200, train_loss: 0.001764, test_loss: 0.002042, time cost: 8.725951
+2017-05-03 11:04:26, step: 14300, train_loss: 0.001809, test_loss: 0.002047, time cost: 8.77792
+2017-05-03 11:04:34, step: 14400, train_loss: 0.001738, test_loss: 0.002045, time cost: 8.700836
+2017-05-03 11:04:43, step: 14500, train_loss: 0.002133, test_loss: 0.002044, time cost: 8.767737
+2017-05-03 11:04:52, step: 14600, train_loss: 0.001962, test_loss: 0.002040, time cost: 8.768809
+2017-05-03 11:05:01, step: 14700, train_loss: 0.001685, test_loss: 0.002040, time cost: 8.725258
+2017-05-03 11:05:10, step: 14800, train_loss: 0.001759, test_loss: 0.002043, time cost: 8.642268
+2017-05-03 11:05:19, step: 14900, train_loss: 0.001576, test_loss: 0.002044, time cost: 8.727779
+2017-05-03 11:05:28, step: 15000, train_loss: 0.002017, test_loss: 0.002043, time cost: 8.613169
+2017-05-03 11:05:36, step: 15100, train_loss: 0.001873, test_loss: 0.002041, time cost: 8.662561
+2017-05-03 11:05:45, step: 15200, train_loss: 0.001579, test_loss: 0.002041, time cost: 8.93514
+2017-05-03 11:05:54, step: 15300, train_loss: 0.001942, test_loss: 0.002041, time cost: 8.781245
+2017-05-03 11:06:03, step: 15400, train_loss: 0.001863, test_loss: 0.002041, time cost: 8.662641
+2017-05-03 11:06:12, step: 15500, train_loss: 0.001876, test_loss: 0.002041, time cost: 8.879938
+2017-05-03 11:06:21, step: 15600, train_loss: 0.001576, test_loss: 0.002041, time cost: 8.738790999999999
+2017-05-03 11:06:30, step: 15700, train_loss: 0.001831, test_loss: 0.002041, time cost: 8.624731
+2017-05-03 11:06:39, step: 15800, train_loss: 0.001576, test_loss: 0.002041, time cost: 8.994023
+2017-05-03 11:06:48, step: 15900, train_loss: 0.001562, test_loss: 0.002041, time cost: 8.806781
+2017-05-03 11:06:57, step: 16000, train_loss: 0.001858, test_loss: 0.002042, time cost: 8.600224
+2017-05-03 11:07:06, step: 16100, train_loss: 0.001865, test_loss: 0.002041, time cost: 8.846539
+2017-05-03 11:07:15, step: 16200, train_loss: 0.001941, test_loss: 0.002040, time cost: 8.845712
+2017-05-03 11:07:23, step: 16300, train_loss: 0.001814, test_loss: 0.002040, time cost: 8.689918
+2017-05-03 11:07:32, step: 16400, train_loss: 0.001682, test_loss: 0.002040, time cost: 8.712747
+2017-05-03 11:07:41, step: 16500, train_loss: 0.001544, test_loss: 0.002040, time cost: 8.774456
+2017-05-03 11:07:50, step: 16600, train_loss: 0.001562, test_loss: 0.002041, time cost: 8.714272
+2017-05-03 11:07:59, step: 16700, train_loss: 0.001867, test_loss: 0.002040, time cost: 8.741158
+2017-05-03 11:08:08, step: 16800, train_loss: 0.001673, test_loss: 0.002041, time cost: 8.865319
+2017-05-03 11:08:17, step: 16900, train_loss: 0.001562, test_loss: 0.002041, time cost: 8.686944
+2017-05-03 11:08:25, step: 17000, train_loss: 0.002065, test_loss: 0.002041, time cost: 8.606743
+2017-05-03 11:08:34, step: 17100, train_loss: 0.001578, test_loss: 0.002041, time cost: 8.759257
+2017-05-03 11:08:43, step: 17200, train_loss: 0.001764, test_loss: 0.002041, time cost: 8.84316
+2017-05-03 11:08:52, step: 17300, train_loss: 0.001831, test_loss: 0.002042, time cost: 8.695744
+2017-05-03 11:09:01, step: 17400, train_loss: 0.001678, test_loss: 0.002041, time cost: 8.850724
+2017-05-03 11:09:10, step: 17500, train_loss: 0.001671, test_loss: 0.002041, time cost: 8.908028
+2017-05-03 11:09:19, step: 17600, train_loss: 0.001875, test_loss: 0.002041, time cost: 8.775454
+2017-05-03 11:09:28, step: 17700, train_loss: 0.001875, test_loss: 0.002042, time cost: 8.632564
+2017-05-03 11:09:37, step: 17800, train_loss: 0.001687, test_loss: 0.002042, time cost: 8.835149
+2017-05-03 11:09:46, step: 17900, train_loss: 0.001688, test_loss: 0.002041, time cost: 8.661837
+2017-05-03 11:09:55, step: 18000, train_loss: 0.001762, test_loss: 0.002042, time cost: 8.702167
+2017-05-03 11:10:03, step: 18100, train_loss: 0.002135, test_loss: 0.002041, time cost: 8.683863
+2017-05-03 11:10:12, step: 18200, train_loss: 0.001678, test_loss: 0.002041, time cost: 8.872088
+2017-05-03 11:10:21, step: 18300, train_loss: 0.001311, test_loss: 0.002041, time cost: 8.692687
+2017-05-03 11:10:30, step: 18400, train_loss: 0.001509, test_loss: 0.002041, time cost: 8.711093
+2017-05-03 11:10:39, step: 18500, train_loss: 0.001827, test_loss: 0.002042, time cost: 8.900074
+2017-05-03 11:10:48, step: 18600, train_loss: 0.001802, test_loss: 0.002042, time cost: 8.66718
+2017-05-03 11:10:57, step: 18700, train_loss: 0.001852, test_loss: 0.002041, time cost: 8.697749
+2017-05-03 11:11:06, step: 18800, train_loss: 0.004253, test_loss: 0.002042, time cost: 8.730924
+2017-05-03 11:11:14, step: 18900, train_loss: 0.001876, test_loss: 0.002041, time cost: 8.686818
+2017-05-03 11:11:23, step: 19000, train_loss: 0.001524, test_loss: 0.002041, time cost: 8.682924
+2017-05-03 11:11:32, step: 19100, train_loss: 0.001860, test_loss: 0.002041, time cost: 8.831458
+2017-05-03 11:11:41, step: 19200, train_loss: 0.001778, test_loss: 0.002041, time cost: 8.768245
+2017-05-03 11:11:50, step: 19300, train_loss: 0.001579, test_loss: 0.002041, time cost: 8.758196
+2017-05-03 11:11:59, step: 19400, train_loss: 0.001705, test_loss: 0.002041, time cost: 8.826803
+2017-05-03 11:12:08, step: 19500, train_loss: 0.004251, test_loss: 0.002041, time cost: 8.824908
+2017-05-03 11:12:17, step: 19600, train_loss: 0.001740, test_loss: 0.002041, time cost: 8.797998
+2017-05-03 11:12:26, step: 19700, train_loss: 0.001680, test_loss: 0.002041, time cost: 8.770987
+2017-05-03 11:12:34, step: 19800, train_loss: 0.001678, test_loss: 0.002042, time cost: 8.636739
+2017-05-03 11:12:43, step: 19900, train_loss: 0.001829, test_loss: 0.002042, time cost: 8.822468
+I tensorflow/stream_executor/dso_loader.cc:125] successfully opened CUDA library libcublas.so.8.0 locally
+I tensorflow/stream_executor/dso_loader.cc:125] successfully opened CUDA library libcudnn.so.5 locally
+I tensorflow/stream_executor/dso_loader.cc:125] successfully opened CUDA library libcufft.so.8.0 locally
+I tensorflow/stream_executor/dso_loader.cc:125] successfully opened CUDA library libcuda.so.1 locally
+I tensorflow/stream_executor/dso_loader.cc:125] successfully opened CUDA library libcurand.so.8.0 locally
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:885] Found device 0 with properties: 
+name: TITAN X (Pascal)
+major: 6 minor: 1 memoryClockRate (GHz) 1.531
+pciBusID 0000:83:00.0
+Total memory: 11.90GiB
+Free memory: 11.76GiB
+W tensorflow/stream_executor/cuda/cuda_driver.cc:590] creating context when one is currently active; existing: 0x3499450
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:885] Found device 1 with properties: 
+name: TITAN X (Pascal)
+major: 6 minor: 1 memoryClockRate (GHz) 1.531
+pciBusID 0000:84:00.0
+Total memory: 11.90GiB
+Free memory: 11.76GiB
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:906] DMA: 0 1 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:916] 0:   Y Y 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:916] 1:   Y Y 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: TITAN X (Pascal), pci bus id: 0000:83:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:1) -> (device: 1, name: TITAN X (Pascal), pci bus id: 0000:84:00.0)
+0.001
+train_samples: 2656
+train_samples: 320
+2017-05-03 11:30:47, step: 0, train_loss: 0.096595, test_loss: 0.096676, time cost: 3.801249
+2017-05-03 11:30:56, step: 100, train_loss: 0.010908, test_loss: 0.011235, time cost: 8.508045
+2017-05-03 11:31:04, step: 200, train_loss: 0.011070, test_loss: 0.011164, time cost: 8.442991
+2017-05-03 11:31:13, step: 300, train_loss: 0.010577, test_loss: 0.011215, time cost: 8.465351
+2017-05-03 11:31:21, step: 400, train_loss: 0.012178, test_loss: 0.011183, time cost: 8.478581
+2017-05-03 11:31:30, step: 500, train_loss: 0.009041, test_loss: 0.011173, time cost: 8.509177
+2017-05-03 11:31:38, step: 600, train_loss: 0.011888, test_loss: 0.011206, time cost: 8.47713
+2017-05-03 11:31:47, step: 700, train_loss: 0.010373, test_loss: 0.011195, time cost: 8.511128
+2017-05-03 11:31:55, step: 800, train_loss: 0.011534, test_loss: 0.011168, time cost: 8.560902
+2017-05-03 11:32:04, step: 900, train_loss: 0.009884, test_loss: 0.011179, time cost: 8.645201
+2017-05-03 11:32:12, step: 1000, train_loss: 0.009233, test_loss: 0.011198, time cost: 8.466419
+2017-05-03 11:32:21, step: 1100, train_loss: 0.011151, test_loss: 0.011230, time cost: 8.584123
+2017-05-03 11:32:30, step: 1200, train_loss: 0.012660, test_loss: 0.011236, time cost: 8.548145
+2017-05-03 11:32:38, step: 1300, train_loss: 0.012297, test_loss: 0.011196, time cost: 8.628802
+2017-05-03 11:32:47, step: 1400, train_loss: 0.008741, test_loss: 0.011165, time cost: 8.383205
+2017-05-03 11:32:55, step: 1500, train_loss: 0.010475, test_loss: 0.011211, time cost: 8.534924
+2017-05-03 11:33:04, step: 1600, train_loss: 0.009887, test_loss: 0.011202, time cost: 8.458289
+2017-05-03 11:33:12, step: 1700, train_loss: 0.012740, test_loss: 0.011203, time cost: 8.577459
+2017-05-03 11:33:21, step: 1800, train_loss: 0.009090, test_loss: 0.011243, time cost: 8.743364
+2017-05-03 11:33:29, step: 1900, train_loss: 0.009114, test_loss: 0.011256, time cost: 8.421221
+2017-05-03 11:33:38, step: 2000, train_loss: 0.010618, test_loss: 0.011182, time cost: 8.531291
+2017-05-03 11:33:47, step: 2100, train_loss: 0.010723, test_loss: 0.011217, time cost: 8.561545
+2017-05-03 11:33:55, step: 2200, train_loss: 0.011987, test_loss: 0.011182, time cost: 8.437639
+2017-05-03 11:34:04, step: 2300, train_loss: 0.011050, test_loss: 0.011207, time cost: 8.716364
+2017-05-03 11:34:12, step: 2400, train_loss: 0.013262, test_loss: 0.011160, time cost: 8.386558
+2017-05-03 11:34:21, step: 2500, train_loss: 0.011741, test_loss: 0.011202, time cost: 8.387533
+2017-05-03 11:34:29, step: 2600, train_loss: 0.010662, test_loss: 0.011187, time cost: 8.497877
+2017-05-03 11:34:38, step: 2700, train_loss: 0.009636, test_loss: 0.011167, time cost: 8.586318
+2017-05-03 11:34:46, step: 2800, train_loss: 0.010922, test_loss: 0.011163, time cost: 8.424269
+2017-05-03 11:34:55, step: 2900, train_loss: 0.010968, test_loss: 0.011179, time cost: 8.53926
+2017-05-03 11:35:03, step: 3000, train_loss: 0.009688, test_loss: 0.011210, time cost: 8.521665
+2017-05-03 11:35:12, step: 3100, train_loss: 0.012867, test_loss: 0.011163, time cost: 8.426119
+2017-05-03 11:35:20, step: 3200, train_loss: 0.012115, test_loss: 0.011288, time cost: 8.419687
+2017-05-03 11:35:29, step: 3300, train_loss: 0.009572, test_loss: 0.011221, time cost: 8.704927
+2017-05-03 11:35:37, step: 3400, train_loss: 0.010995, test_loss: 0.011185, time cost: 8.415751
+2017-05-03 11:35:46, step: 3500, train_loss: 0.011070, test_loss: 0.011185, time cost: 8.468829
+2017-05-03 11:35:54, step: 3600, train_loss: 0.012762, test_loss: 0.011189, time cost: 8.429889
+2017-05-03 11:36:03, step: 3700, train_loss: 0.009488, test_loss: 0.011222, time cost: 8.590147
+2017-05-03 11:36:11, step: 3800, train_loss: 0.012415, test_loss: 0.011169, time cost: 8.395368
+2017-05-03 11:36:20, step: 3900, train_loss: 0.011724, test_loss: 0.011170, time cost: 8.598465000000001
+2017-05-03 11:36:29, step: 4000, train_loss: 0.010449, test_loss: 0.011193, time cost: 8.561965
+2017-05-03 11:36:37, step: 4100, train_loss: 0.010457, test_loss: 0.011174, time cost: 8.587159
+2017-05-03 11:36:46, step: 4200, train_loss: 0.011725, test_loss: 0.011197, time cost: 8.575252
+2017-05-03 11:36:55, step: 4300, train_loss: 0.009636, test_loss: 0.011241, time cost: 8.667823
+2017-05-03 11:37:03, step: 4400, train_loss: 0.010356, test_loss: 0.011182, time cost: 8.425408000000001
+2017-05-03 11:37:11, step: 4500, train_loss: 0.012042, test_loss: 0.011173, time cost: 8.37201
+2017-05-03 11:37:20, step: 4600, train_loss: 0.011643, test_loss: 0.011199, time cost: 8.516805
+2017-05-03 11:37:29, step: 4700, train_loss: 0.011760, test_loss: 0.011172, time cost: 8.483028000000001
+2017-05-03 11:37:37, step: 4800, train_loss: 0.011566, test_loss: 0.011165, time cost: 8.514262
+2017-05-03 11:37:45, step: 4900, train_loss: 0.010406, test_loss: 0.011186, time cost: 8.375012
+2017-05-03 11:37:54, step: 5000, train_loss: 0.010083, test_loss: 0.011215, time cost: 8.529498
+2017-05-03 11:38:03, step: 5100, train_loss: 0.009822, test_loss: 0.011159, time cost: 8.568576
+2017-05-03 11:38:11, step: 5200, train_loss: 0.010393, test_loss: 0.011180, time cost: 8.449033
+2017-05-03 11:38:20, step: 5300, train_loss: 0.013091, test_loss: 0.011159, time cost: 8.525266
+2017-05-03 11:38:28, step: 5400, train_loss: 0.012036, test_loss: 0.011171, time cost: 8.607354
+2017-05-03 11:38:37, step: 5500, train_loss: 0.009451, test_loss: 0.011174, time cost: 8.548845
+2017-05-03 11:38:45, step: 5600, train_loss: 0.011197, test_loss: 0.011193, time cost: 8.491457
+2017-05-03 11:38:54, step: 5700, train_loss: 0.009609, test_loss: 0.011168, time cost: 8.429977
+2017-05-03 11:39:02, step: 5800, train_loss: 0.012496, test_loss: 0.011174, time cost: 8.603029
+2017-05-03 11:39:11, step: 5900, train_loss: 0.011126, test_loss: 0.011187, time cost: 8.404264
+2017-05-03 11:39:20, step: 6000, train_loss: 0.009843, test_loss: 0.011166, time cost: 8.585813
+2017-05-03 11:39:28, step: 6100, train_loss: 0.009093, test_loss: 0.011188, time cost: 8.406863
+2017-05-03 11:39:36, step: 6200, train_loss: 0.011506, test_loss: 0.011187, time cost: 8.46304
+2017-05-03 11:39:45, step: 6300, train_loss: 0.010159, test_loss: 0.011185, time cost: 8.596153
+2017-05-03 11:39:54, step: 6400, train_loss: 0.009177, test_loss: 0.011166, time cost: 8.616931
+2017-05-03 11:40:02, step: 6500, train_loss: 0.011991, test_loss: 0.011167, time cost: 8.506018
+2017-05-03 11:40:11, step: 6600, train_loss: 0.010468, test_loss: 0.011185, time cost: 8.481122
+2017-05-03 11:40:19, step: 6700, train_loss: 0.011031, test_loss: 0.011168, time cost: 8.451122
+2017-05-03 11:40:28, step: 6800, train_loss: 0.012281, test_loss: 0.011178, time cost: 8.452966
+2017-05-03 11:40:36, step: 6900, train_loss: 0.009953, test_loss: 0.011180, time cost: 8.501974
+2017-05-03 11:40:45, step: 7000, train_loss: 0.009841, test_loss: 0.011183, time cost: 8.525434
+2017-05-03 11:40:53, step: 7100, train_loss: 0.011277, test_loss: 0.011173, time cost: 8.481234
+2017-05-03 11:41:02, step: 7200, train_loss: 0.011680, test_loss: 0.011176, time cost: 8.457177
+2017-05-03 11:41:10, step: 7300, train_loss: 0.012849, test_loss: 0.011181, time cost: 8.442355
+2017-05-03 11:41:19, step: 7400, train_loss: 0.011341, test_loss: 0.011165, time cost: 8.546553
+2017-05-03 11:41:27, step: 7500, train_loss: 0.011509, test_loss: 0.011177, time cost: 8.511788
+2017-05-03 11:41:36, step: 7600, train_loss: 0.012741, test_loss: 0.011175, time cost: 8.502882
+2017-05-03 11:41:44, step: 7700, train_loss: 0.009441, test_loss: 0.011171, time cost: 8.50003
+2017-05-03 11:41:53, step: 7800, train_loss: 0.011099, test_loss: 0.011179, time cost: 8.427382
+2017-05-03 11:42:01, step: 7900, train_loss: 0.011561, test_loss: 0.011170, time cost: 8.526816
+2017-05-03 11:42:10, step: 8000, train_loss: 0.010744, test_loss: 0.011176, time cost: 8.437561
+2017-05-03 11:42:18, step: 8100, train_loss: 0.011740, test_loss: 0.011190, time cost: 8.539107
+2017-05-03 11:42:27, step: 8200, train_loss: 0.010008, test_loss: 0.011177, time cost: 8.358492
+2017-05-03 11:42:35, step: 8300, train_loss: 0.011259, test_loss: 0.011188, time cost: 8.372002
+2017-05-03 11:42:44, step: 8400, train_loss: 0.010321, test_loss: 0.011169, time cost: 8.589308
+2017-05-03 11:42:52, step: 8500, train_loss: 0.009620, test_loss: 0.011161, time cost: 8.544335
+2017-05-03 11:43:01, step: 8600, train_loss: 0.011081, test_loss: 0.011172, time cost: 8.336764
+2017-05-03 11:43:09, step: 8700, train_loss: 0.009627, test_loss: 0.011158, time cost: 8.367922
+2017-05-03 11:43:18, step: 8800, train_loss: 0.009937, test_loss: 0.011173, time cost: 8.338768
+2017-05-03 11:43:26, step: 8900, train_loss: 0.013463, test_loss: 0.011169, time cost: 8.591546
+2017-05-03 11:43:35, step: 9000, train_loss: 0.012189, test_loss: 0.011169, time cost: 8.382286
+2017-05-03 11:43:43, step: 9100, train_loss: 0.010535, test_loss: 0.011163, time cost: 8.575363
+2017-05-03 11:43:52, step: 9200, train_loss: 0.010984, test_loss: 0.011175, time cost: 8.528729
+2017-05-03 11:44:00, step: 9300, train_loss: 0.011024, test_loss: 0.011189, time cost: 8.618774
+2017-05-03 11:44:09, step: 9400, train_loss: 0.011580, test_loss: 0.011175, time cost: 8.373331
+2017-05-03 11:44:17, step: 9500, train_loss: 0.009984, test_loss: 0.011184, time cost: 8.389298
+2017-05-03 11:44:26, step: 9600, train_loss: 0.012836, test_loss: 0.011193, time cost: 8.355734
+2017-05-03 11:44:34, step: 9700, train_loss: 0.012514, test_loss: 0.011177, time cost: 8.450197
+2017-05-03 11:44:43, step: 9800, train_loss: 0.012122, test_loss: 0.011164, time cost: 8.530286
+2017-05-03 11:44:51, step: 9900, train_loss: 0.011664, test_loss: 0.011170, time cost: 8.504439
+2017-05-03 11:45:00, step: 10000, train_loss: 0.010952, test_loss: 0.011172, time cost: 8.38398
+2017-05-03 11:45:08, step: 10100, train_loss: 0.012017, test_loss: 0.011170, time cost: 8.352511
+2017-05-03 11:45:16, step: 10200, train_loss: 0.011934, test_loss: 0.011169, time cost: 8.377666
+2017-05-03 11:45:25, step: 10300, train_loss: 0.010499, test_loss: 0.011170, time cost: 8.375752
+2017-05-03 11:45:33, step: 10400, train_loss: 0.010823, test_loss: 0.011168, time cost: 8.381692
+2017-05-03 11:45:42, step: 10500, train_loss: 0.011739, test_loss: 0.011168, time cost: 8.481068
+2017-05-03 11:45:50, step: 10600, train_loss: 0.010635, test_loss: 0.011168, time cost: 8.454373
+2017-05-03 11:45:59, step: 10700, train_loss: 0.011377, test_loss: 0.011169, time cost: 8.5268
+2017-05-03 11:46:07, step: 10800, train_loss: 0.012544, test_loss: 0.011166, time cost: 8.396957
+2017-05-03 11:46:16, step: 10900, train_loss: 0.012775, test_loss: 0.011165, time cost: 8.41721
+2017-05-03 11:46:24, step: 11000, train_loss: 0.011121, test_loss: 0.011167, time cost: 8.361654
+2017-05-03 11:46:32, step: 11100, train_loss: 0.013035, test_loss: 0.011164, time cost: 8.400333
+2017-05-03 11:46:41, step: 11200, train_loss: 0.012540, test_loss: 0.011167, time cost: 8.526814
+2017-05-03 11:46:49, step: 11300, train_loss: 0.012021, test_loss: 0.011169, time cost: 8.443429
+2017-05-03 11:46:58, step: 11400, train_loss: 0.010726, test_loss: 0.011167, time cost: 8.335237
+2017-05-03 11:47:06, step: 11500, train_loss: 0.010800, test_loss: 0.011165, time cost: 8.527322999999999
+2017-05-03 11:47:15, step: 11600, train_loss: 0.009925, test_loss: 0.011165, time cost: 8.372458
+2017-05-03 11:47:23, step: 11700, train_loss: 0.010654, test_loss: 0.011165, time cost: 8.389779
+2017-05-03 11:47:32, step: 11800, train_loss: 0.010693, test_loss: 0.011167, time cost: 8.64887
+2017-05-03 11:47:40, step: 11900, train_loss: 0.010378, test_loss: 0.011168, time cost: 8.403869
+2017-05-03 11:47:49, step: 12000, train_loss: 0.010959, test_loss: 0.011169, time cost: 8.434036
+2017-05-03 11:47:57, step: 12100, train_loss: 0.010239, test_loss: 0.011170, time cost: 8.448141
+2017-05-03 11:48:06, step: 12200, train_loss: 0.010238, test_loss: 0.011169, time cost: 8.457936
+2017-05-03 11:48:14, step: 12300, train_loss: 0.011653, test_loss: 0.011171, time cost: 8.395011
+2017-05-03 11:48:23, step: 12400, train_loss: 0.012123, test_loss: 0.011173, time cost: 8.340987
+2017-05-03 11:48:31, step: 12500, train_loss: 0.009301, test_loss: 0.011171, time cost: 8.40335
+2017-05-03 11:48:40, step: 12600, train_loss: 0.009189, test_loss: 0.011172, time cost: 8.62945
+2017-05-03 11:48:48, step: 12700, train_loss: 0.012180, test_loss: 0.011174, time cost: 8.337265
+2017-05-03 11:48:56, step: 12800, train_loss: 0.009903, test_loss: 0.011171, time cost: 8.272406
+2017-05-03 11:49:05, step: 12900, train_loss: 0.010452, test_loss: 0.011171, time cost: 8.445235
+2017-05-03 11:49:13, step: 13000, train_loss: 0.010192, test_loss: 0.011174, time cost: 8.357275
+2017-05-03 11:49:22, step: 13100, train_loss: 0.011586, test_loss: 0.011173, time cost: 8.391686
+2017-05-03 11:49:30, step: 13200, train_loss: 0.008730, test_loss: 0.011174, time cost: 8.297979
+2017-05-03 11:49:38, step: 13300, train_loss: 0.009906, test_loss: 0.011171, time cost: 8.304202
+2017-05-03 11:49:47, step: 13400, train_loss: 0.010733, test_loss: 0.011171, time cost: 8.370934
+2017-05-03 11:49:55, step: 13500, train_loss: 0.011559, test_loss: 0.011169, time cost: 8.393977
+2017-05-03 11:50:04, step: 13600, train_loss: 0.010213, test_loss: 0.011168, time cost: 8.437367
+2017-05-03 11:50:12, step: 13700, train_loss: 0.011569, test_loss: 0.011167, time cost: 8.39205
+2017-05-03 11:50:20, step: 13800, train_loss: 0.013473, test_loss: 0.011168, time cost: 8.417895
+2017-05-03 11:50:29, step: 13900, train_loss: 0.010339, test_loss: 0.011168, time cost: 8.279333
+2017-05-03 11:50:37, step: 14000, train_loss: 0.009620, test_loss: 0.011166, time cost: 8.474529
+2017-05-03 11:50:46, step: 14100, train_loss: 0.008978, test_loss: 0.011166, time cost: 8.431056
+2017-05-03 11:50:54, step: 14200, train_loss: 0.011284, test_loss: 0.011164, time cost: 8.414287
+2017-05-03 11:51:03, step: 14300, train_loss: 0.011244, test_loss: 0.011164, time cost: 8.390118
+2017-05-03 11:51:11, step: 14400, train_loss: 0.009847, test_loss: 0.011166, time cost: 8.38071
+2017-05-03 11:51:20, step: 14500, train_loss: 0.009933, test_loss: 0.011166, time cost: 8.443032
+2017-05-03 11:51:28, step: 14600, train_loss: 0.010799, test_loss: 0.011164, time cost: 8.188102
+2017-05-03 11:51:36, step: 14700, train_loss: 0.008817, test_loss: 0.011166, time cost: 8.348641
+2017-05-03 11:51:44, step: 14800, train_loss: 0.011763, test_loss: 0.011165, time cost: 8.35967
+2017-05-03 11:51:53, step: 14900, train_loss: 0.010718, test_loss: 0.011166, time cost: 8.367786
+2017-05-03 11:52:01, step: 15000, train_loss: 0.010959, test_loss: 0.011167, time cost: 8.368495
+2017-05-03 11:52:10, step: 15100, train_loss: 0.008982, test_loss: 0.011167, time cost: 8.394772
+2017-05-03 11:52:18, step: 15200, train_loss: 0.010720, test_loss: 0.011166, time cost: 8.385401
+2017-05-03 11:52:27, step: 15300, train_loss: 0.009769, test_loss: 0.011167, time cost: 8.43907
+2017-05-03 11:52:35, step: 15400, train_loss: 0.009577, test_loss: 0.011167, time cost: 8.397495
+2017-05-03 11:52:44, step: 15500, train_loss: 0.011877, test_loss: 0.011167, time cost: 8.637967
+2017-05-03 11:52:52, step: 15600, train_loss: 0.012770, test_loss: 0.011167, time cost: 8.26051
+2017-05-03 11:53:00, step: 15700, train_loss: 0.010924, test_loss: 0.011167, time cost: 8.373088
+2017-05-03 11:53:09, step: 15800, train_loss: 0.012769, test_loss: 0.011167, time cost: 8.362481
+2017-05-03 11:53:17, step: 15900, train_loss: 0.010847, test_loss: 0.011168, time cost: 8.509227
+2017-05-03 11:53:26, step: 16000, train_loss: 0.010624, test_loss: 0.011167, time cost: 8.39058
+2017-05-03 11:53:34, step: 16100, train_loss: 0.013475, test_loss: 0.011167, time cost: 8.416395
+2017-05-03 11:53:42, step: 16200, train_loss: 0.009767, test_loss: 0.011167, time cost: 8.32142
+2017-05-03 11:53:51, step: 16300, train_loss: 0.009952, test_loss: 0.011167, time cost: 8.410506
+2017-05-03 11:53:59, step: 16400, train_loss: 0.008825, test_loss: 0.011167, time cost: 8.281348
+2017-05-03 11:54:08, step: 16500, train_loss: 0.009620, test_loss: 0.011167, time cost: 8.640475
+2017-05-03 11:54:16, step: 16600, train_loss: 0.010850, test_loss: 0.011167, time cost: 8.307752
+2017-05-03 11:54:25, step: 16700, train_loss: 0.010644, test_loss: 0.011167, time cost: 8.439903
+2017-05-03 11:54:33, step: 16800, train_loss: 0.010242, test_loss: 0.011167, time cost: 8.298156
+2017-05-03 11:54:42, step: 16900, train_loss: 0.010850, test_loss: 0.011167, time cost: 8.624352
+2017-05-03 11:54:50, step: 17000, train_loss: 0.011931, test_loss: 0.011167, time cost: 8.42972
+2017-05-03 11:54:59, step: 17100, train_loss: 0.010715, test_loss: 0.011167, time cost: 8.362361
+2017-05-03 11:55:07, step: 17200, train_loss: 0.011742, test_loss: 0.011167, time cost: 8.534173
+2017-05-03 11:55:16, step: 17300, train_loss: 0.011786, test_loss: 0.011167, time cost: 8.55992
+2017-05-03 11:55:24, step: 17400, train_loss: 0.008824, test_loss: 0.011167, time cost: 8.444882
+2017-05-03 11:55:32, step: 17500, train_loss: 0.010241, test_loss: 0.011168, time cost: 8.307507
+2017-05-03 11:55:41, step: 17600, train_loss: 0.011877, test_loss: 0.011168, time cost: 8.328992
+2017-05-03 11:55:49, step: 17700, train_loss: 0.010644, test_loss: 0.011168, time cost: 8.34065
+2017-05-03 11:55:58, step: 17800, train_loss: 0.009911, test_loss: 0.011168, time cost: 8.384175
+2017-05-03 11:56:06, step: 17900, train_loss: 0.009911, test_loss: 0.011168, time cost: 8.622409
+2017-05-03 11:56:15, step: 18000, train_loss: 0.011733, test_loss: 0.011169, time cost: 8.334946
+2017-05-03 11:56:23, step: 18100, train_loss: 0.009955, test_loss: 0.011169, time cost: 8.33241
+2017-05-03 11:56:31, step: 18200, train_loss: 0.009082, test_loss: 0.011168, time cost: 8.275231
+2017-05-03 11:56:40, step: 18300, train_loss: 0.012760, test_loss: 0.011168, time cost: 8.473424
+2017-05-03 11:56:48, step: 18400, train_loss: 0.012317, test_loss: 0.011168, time cost: 8.396644
+2017-05-03 11:56:57, step: 18500, train_loss: 0.011638, test_loss: 0.011168, time cost: 8.238075
+2017-05-03 11:57:05, step: 18600, train_loss: 0.011233, test_loss: 0.011168, time cost: 8.501087
+2017-05-03 11:57:14, step: 18700, train_loss: 0.011377, test_loss: 0.011168, time cost: 8.491716
+2017-05-03 11:57:22, step: 18800, train_loss: 0.012858, test_loss: 0.011168, time cost: 8.275841
+2017-05-03 11:57:30, step: 18900, train_loss: 0.010642, test_loss: 0.011168, time cost: 8.295699
+2017-05-03 11:57:39, step: 19000, train_loss: 0.011560, test_loss: 0.011168, time cost: 8.445331
+2017-05-03 11:57:47, step: 19100, train_loss: 0.011640, test_loss: 0.011167, time cost: 8.339985
+2017-05-03 11:57:55, step: 19200, train_loss: 0.011512, test_loss: 0.011168, time cost: 8.295889
+2017-05-03 11:58:04, step: 19300, train_loss: 0.010712, test_loss: 0.011168, time cost: 8.258323
+2017-05-03 11:58:12, step: 19400, train_loss: 0.011759, test_loss: 0.011168, time cost: 8.395284
+2017-05-03 11:58:21, step: 19500, train_loss: 0.012858, test_loss: 0.011168, time cost: 8.52244
+2017-05-03 11:58:29, step: 19600, train_loss: 0.010379, test_loss: 0.011167, time cost: 8.423719
+2017-05-03 11:58:37, step: 19700, train_loss: 0.012121, test_loss: 0.011167, time cost: 8.340764
+2017-05-03 11:58:46, step: 19800, train_loss: 0.009880, test_loss: 0.011168, time cost: 8.375103
+2017-05-03 11:58:54, step: 19900, train_loss: 0.011638, test_loss: 0.011168, time cost: 8.415688
+I tensorflow/stream_executor/dso_loader.cc:125] successfully opened CUDA library libcublas.so.8.0 locally
+I tensorflow/stream_executor/dso_loader.cc:125] successfully opened CUDA library libcudnn.so.5 locally
+I tensorflow/stream_executor/dso_loader.cc:125] successfully opened CUDA library libcufft.so.8.0 locally
+I tensorflow/stream_executor/dso_loader.cc:125] successfully opened CUDA library libcuda.so.1 locally
+I tensorflow/stream_executor/dso_loader.cc:125] successfully opened CUDA library libcurand.so.8.0 locally
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:885] Found device 0 with properties: 
+name: TITAN X (Pascal)
+major: 6 minor: 1 memoryClockRate (GHz) 1.531
+pciBusID 0000:83:00.0
+Total memory: 11.90GiB
+Free memory: 11.76GiB
+W tensorflow/stream_executor/cuda/cuda_driver.cc:590] creating context when one is currently active; existing: 0x331df80
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:885] Found device 1 with properties: 
+name: TITAN X (Pascal)
+major: 6 minor: 1 memoryClockRate (GHz) 1.531
+pciBusID 0000:84:00.0
+Total memory: 11.90GiB
+Free memory: 11.76GiB
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:906] DMA: 0 1 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:916] 0:   Y Y 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:916] 1:   Y Y 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: TITAN X (Pascal), pci bus id: 0000:83:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:1) -> (device: 1, name: TITAN X (Pascal), pci bus id: 0000:84:00.0)
+0.001
+train_samples: 2656
+train_samples: 320
+2017-05-03 14:20:37, step: 0, train_loss: 0.096883, test_loss: 0.096766, time cost: 3.804312
+2017-05-03 14:20:45, step: 100, train_loss: 0.010908, test_loss: 0.011174, time cost: 8.406655
+2017-05-03 14:20:53, step: 200, train_loss: 0.011350, test_loss: 0.011182, time cost: 8.321541
+2017-05-03 14:21:02, step: 300, train_loss: 0.011215, test_loss: 0.011201, time cost: 8.390237
+2017-05-03 14:21:10, step: 400, train_loss: 0.010846, test_loss: 0.011152, time cost: 8.394862
+2017-05-03 14:21:19, step: 500, train_loss: 0.010433, test_loss: 0.011152, time cost: 8.425557
+2017-05-03 14:21:27, step: 600, train_loss: 0.012148, test_loss: 0.011157, time cost: 8.380187
+2017-05-03 14:21:36, step: 700, train_loss: 0.009383, test_loss: 0.011192, time cost: 8.43076
+2017-05-03 14:21:44, step: 800, train_loss: 0.009646, test_loss: 0.011158, time cost: 8.430136
+2017-05-03 14:21:53, step: 900, train_loss: 0.013311, test_loss: 0.011160, time cost: 8.707453
+2017-05-03 14:22:01, step: 1000, train_loss: 0.012322, test_loss: 0.011157, time cost: 8.60748
+2017-05-03 14:22:10, step: 1100, train_loss: 0.011262, test_loss: 0.011236, time cost: 8.545474
+2017-05-03 14:22:19, step: 1200, train_loss: 0.010235, test_loss: 0.011294, time cost: 8.8133
+2017-05-03 14:22:28, step: 1300, train_loss: 0.010103, test_loss: 0.011162, time cost: 8.618779
+2017-05-03 14:22:36, step: 1400, train_loss: 0.012200, test_loss: 0.011220, time cost: 8.554635
+2017-05-03 14:22:45, step: 1500, train_loss: 0.011241, test_loss: 0.011166, time cost: 8.505856
+2017-05-03 14:22:53, step: 1600, train_loss: 0.010930, test_loss: 0.011159, time cost: 8.652103
+2017-05-03 14:23:02, step: 1700, train_loss: 0.011168, test_loss: 0.011154, time cost: 8.527825
+2017-05-03 14:23:10, step: 1800, train_loss: 0.011969, test_loss: 0.011192, time cost: 8.342256
+2017-05-03 14:23:19, step: 1900, train_loss: 0.010427, test_loss: 0.011152, time cost: 8.419288
+2017-05-03 14:23:27, step: 2000, train_loss: 0.010900, test_loss: 0.011182, time cost: 8.711254
+2017-05-03 14:23:36, step: 2100, train_loss: 0.009615, test_loss: 0.011153, time cost: 8.603903
+2017-05-03 14:23:45, step: 2200, train_loss: 0.012175, test_loss: 0.011177, time cost: 8.631982
+2017-05-03 14:23:53, step: 2300, train_loss: 0.011452, test_loss: 0.011175, time cost: 8.510094
+2017-05-03 14:24:02, step: 2400, train_loss: 0.012351, test_loss: 0.011155, time cost: 8.58874
+2017-05-03 14:24:11, step: 2500, train_loss: 0.010818, test_loss: 0.011146, time cost: 8.718149
+2017-05-03 14:24:19, step: 2600, train_loss: 0.009389, test_loss: 0.011182, time cost: 8.514511
+2017-05-03 14:24:28, step: 2700, train_loss: 0.011783, test_loss: 0.011203, time cost: 8.656876
+2017-05-03 14:24:36, step: 2800, train_loss: 0.011304, test_loss: 0.011155, time cost: 8.584825
+2017-05-03 14:24:45, step: 2900, train_loss: 0.013823, test_loss: 0.011182, time cost: 8.53467
+2017-05-03 14:24:53, step: 3000, train_loss: 0.011779, test_loss: 0.011161, time cost: 8.42384
+2017-05-03 14:25:02, step: 3100, train_loss: 0.010444, test_loss: 0.011180, time cost: 8.406146
+2017-05-03 14:25:11, step: 3200, train_loss: 0.012154, test_loss: 0.011194, time cost: 8.66505
+2017-05-03 14:25:19, step: 3300, train_loss: 0.010777, test_loss: 0.011166, time cost: 8.571275
+2017-05-03 14:25:28, step: 3400, train_loss: 0.011844, test_loss: 0.011162, time cost: 8.641268
+2017-05-03 14:25:37, step: 3500, train_loss: 0.013054, test_loss: 0.011233, time cost: 8.610757
+2017-05-03 14:25:45, step: 3600, train_loss: 0.011049, test_loss: 0.011169, time cost: 8.68129
+2017-05-03 14:25:54, step: 3700, train_loss: 0.010751, test_loss: 0.011171, time cost: 8.667107
+2017-05-03 14:26:03, step: 3800, train_loss: 0.009908, test_loss: 0.011151, time cost: 8.596501
+2017-05-03 14:26:11, step: 3900, train_loss: 0.012278, test_loss: 0.011226, time cost: 8.496028
+2017-05-03 14:26:20, step: 4000, train_loss: 0.011661, test_loss: 0.011198, time cost: 8.606978
+2017-05-03 14:26:28, step: 4100, train_loss: 0.012699, test_loss: 0.011170, time cost: 8.531755
+2017-05-03 14:26:37, step: 4200, train_loss: 0.010498, test_loss: 0.011152, time cost: 8.525767
+2017-05-03 14:26:45, step: 4300, train_loss: 0.011732, test_loss: 0.011176, time cost: 8.63851
+2017-05-03 14:26:54, step: 4400, train_loss: 0.010832, test_loss: 0.011154, time cost: 8.492577
+2017-05-03 14:27:02, step: 4500, train_loss: 0.010638, test_loss: 0.011161, time cost: 8.424522
+2017-05-03 14:27:11, step: 4600, train_loss: 0.010984, test_loss: 0.011192, time cost: 8.468686
+2017-05-03 14:27:20, step: 4700, train_loss: 0.011309, test_loss: 0.011159, time cost: 8.725927
+2017-05-03 14:27:28, step: 4800, train_loss: 0.009634, test_loss: 0.011161, time cost: 8.541830000000001
+2017-05-03 14:27:37, step: 4900, train_loss: 0.009250, test_loss: 0.011165, time cost: 8.59668
+2017-05-03 14:27:46, step: 5000, train_loss: 0.013324, test_loss: 0.011164, time cost: 8.741512
+2017-05-03 14:27:55, step: 5100, train_loss: 0.009494, test_loss: 0.011144, time cost: 8.824208
+2017-05-03 14:28:03, step: 5200, train_loss: 0.009251, test_loss: 0.011149, time cost: 8.623328
+2017-05-03 14:28:12, step: 5300, train_loss: 0.012332, test_loss: 0.011150, time cost: 8.723912
+2017-05-03 14:28:21, step: 5400, train_loss: 0.012022, test_loss: 0.011154, time cost: 8.587736
+2017-05-03 14:28:29, step: 5500, train_loss: 0.010723, test_loss: 0.011159, time cost: 8.397372
+2017-05-03 14:28:38, step: 5600, train_loss: 0.011277, test_loss: 0.011158, time cost: 8.565355
+2017-05-03 14:28:46, step: 5700, train_loss: 0.011434, test_loss: 0.011145, time cost: 8.70262
+2017-05-03 14:28:55, step: 5800, train_loss: 0.012242, test_loss: 0.011163, time cost: 8.403471
+2017-05-03 14:29:03, step: 5900, train_loss: 0.010191, test_loss: 0.011159, time cost: 8.627496
+2017-05-03 14:29:12, step: 6000, train_loss: 0.011733, test_loss: 0.011153, time cost: 8.556744
+2017-05-03 14:29:20, step: 6100, train_loss: 0.010584, test_loss: 0.011157, time cost: 8.37257
+2017-05-03 14:29:29, step: 6200, train_loss: 0.009572, test_loss: 0.011146, time cost: 8.717118
+2017-05-03 14:29:38, step: 6300, train_loss: 0.011809, test_loss: 0.011153, time cost: 8.622418
+2017-05-03 14:29:46, step: 6400, train_loss: 0.012432, test_loss: 0.011146, time cost: 8.56608
+2017-05-03 14:29:55, step: 6500, train_loss: 0.012142, test_loss: 0.011152, time cost: 8.459015
+2017-05-03 14:30:04, step: 6600, train_loss: 0.011481, test_loss: 0.011158, time cost: 8.641194
+2017-05-03 14:30:12, step: 6700, train_loss: 0.012743, test_loss: 0.011154, time cost: 8.52944
+2017-05-03 14:30:21, step: 6800, train_loss: 0.010138, test_loss: 0.011159, time cost: 8.460218
+2017-05-03 14:30:29, step: 6900, train_loss: 0.013375, test_loss: 0.011161, time cost: 8.567402
+2017-05-03 14:30:38, step: 7000, train_loss: 0.010157, test_loss: 0.011153, time cost: 8.61911
+2017-05-03 14:30:46, step: 7100, train_loss: 0.009550, test_loss: 0.011166, time cost: 8.609984
+2017-05-03 14:30:55, step: 7200, train_loss: 0.010535, test_loss: 0.011151, time cost: 8.516529
+2017-05-03 14:31:04, step: 7300, train_loss: 0.013157, test_loss: 0.011167, time cost: 8.588578
+2017-05-03 14:31:12, step: 7400, train_loss: 0.010957, test_loss: 0.011142, time cost: 8.412987
+2017-05-03 14:31:21, step: 7500, train_loss: 0.009554, test_loss: 0.011159, time cost: 8.568815
+2017-05-03 14:31:29, step: 7600, train_loss: 0.010529, test_loss: 0.011152, time cost: 8.370203
+2017-05-03 14:31:38, step: 7700, train_loss: 0.010773, test_loss: 0.011146, time cost: 8.780207
+2017-05-03 14:31:47, step: 7800, train_loss: 0.010827, test_loss: 0.011159, time cost: 8.680687
+2017-05-03 14:31:55, step: 7900, train_loss: 0.012397, test_loss: 0.011147, time cost: 8.840794
+2017-05-03 14:32:04, step: 8000, train_loss: 0.012338, test_loss: 0.011150, time cost: 8.367898
+2017-05-03 14:32:13, step: 8100, train_loss: 0.010840, test_loss: 0.011147, time cost: 8.772662
+2017-05-03 14:32:21, step: 8200, train_loss: 0.009474, test_loss: 0.011157, time cost: 8.827957
+2017-05-03 14:32:30, step: 8300, train_loss: 0.009536, test_loss: 0.011164, time cost: 8.761414
+2017-05-03 14:32:39, step: 8400, train_loss: 0.010768, test_loss: 0.011148, time cost: 8.710779
+2017-05-03 14:32:48, step: 8500, train_loss: 0.013302, test_loss: 0.011156, time cost: 8.550023
+2017-05-03 14:32:56, step: 8600, train_loss: 0.010203, test_loss: 0.011167, time cost: 8.576729
+2017-05-03 14:33:05, step: 8700, train_loss: 0.011569, test_loss: 0.011156, time cost: 8.700783
+2017-05-03 14:33:14, step: 8800, train_loss: 0.012811, test_loss: 0.011148, time cost: 8.66207
+2017-05-03 14:33:22, step: 8900, train_loss: 0.011749, test_loss: 0.011146, time cost: 8.625265
+2017-05-03 14:33:31, step: 9000, train_loss: 0.012018, test_loss: 0.011161, time cost: 8.536984
+2017-05-03 14:33:39, step: 9100, train_loss: 0.011348, test_loss: 0.011160, time cost: 8.542586
+2017-05-03 14:33:48, step: 9200, train_loss: 0.011858, test_loss: 0.011158, time cost: 8.470383
+2017-05-03 14:33:56, step: 9300, train_loss: 0.011859, test_loss: 0.011151, time cost: 8.534346
+2017-05-03 14:34:05, step: 9400, train_loss: 0.012432, test_loss: 0.011141, time cost: 8.496742
+2017-05-03 14:34:14, step: 9500, train_loss: 0.013383, test_loss: 0.011167, time cost: 8.57228
+2017-05-03 14:34:22, step: 9600, train_loss: 0.013154, test_loss: 0.011155, time cost: 8.440162
+2017-05-03 14:34:31, step: 9700, train_loss: 0.011479, test_loss: 0.011172, time cost: 8.653074
+2017-05-03 14:34:39, step: 9800, train_loss: 0.010713, test_loss: 0.011146, time cost: 8.737866
+2017-05-03 14:34:48, step: 9900, train_loss: 0.011264, test_loss: 0.011153, time cost: 8.549792
+2017-05-03 14:34:56, step: 10000, train_loss: 0.011918, test_loss: 0.011179, time cost: 8.424273
+2017-05-03 14:35:05, step: 10100, train_loss: 0.012165, test_loss: 0.011169, time cost: 8.381443
+2017-05-03 14:35:13, step: 10200, train_loss: 0.009384, test_loss: 0.011163, time cost: 8.533825
+2017-05-03 14:35:22, step: 10300, train_loss: 0.012709, test_loss: 0.011160, time cost: 8.357492
+2017-05-03 14:35:30, step: 10400, train_loss: 0.012090, test_loss: 0.011154, time cost: 8.336906
+2017-05-03 14:35:39, step: 10500, train_loss: 0.011696, test_loss: 0.011151, time cost: 8.463856
+2017-05-03 14:35:47, step: 10600, train_loss: 0.010681, test_loss: 0.011150, time cost: 8.504539
+2017-05-03 14:35:56, step: 10700, train_loss: 0.011411, test_loss: 0.011151, time cost: 8.389934
+2017-05-03 14:36:04, step: 10800, train_loss: 0.011487, test_loss: 0.011151, time cost: 8.418893
+2017-05-03 14:36:13, step: 10900, train_loss: 0.011056, test_loss: 0.011152, time cost: 8.450056
+2017-05-03 14:36:21, step: 11000, train_loss: 0.010822, test_loss: 0.011152, time cost: 8.444084
+2017-05-03 14:36:29, step: 11100, train_loss: 0.012334, test_loss: 0.011150, time cost: 8.319508
+2017-05-03 14:36:38, step: 11200, train_loss: 0.011488, test_loss: 0.011149, time cost: 8.404402
+2017-05-03 14:36:46, step: 11300, train_loss: 0.012000, test_loss: 0.011152, time cost: 8.604321
+2017-05-03 14:36:55, step: 11400, train_loss: 0.012332, test_loss: 0.011152, time cost: 8.509372
+2017-05-03 14:37:03, step: 11500, train_loss: 0.012086, test_loss: 0.011149, time cost: 8.359893
+2017-05-03 14:37:12, step: 11600, train_loss: 0.009479, test_loss: 0.011152, time cost: 8.368979
+2017-05-03 14:37:20, step: 11700, train_loss: 0.011196, test_loss: 0.011153, time cost: 8.356398
+2017-05-03 14:37:28, step: 11800, train_loss: 0.011332, test_loss: 0.011151, time cost: 8.324532
+2017-05-03 14:37:37, step: 11900, train_loss: 0.009273, test_loss: 0.011150, time cost: 8.527623
+2017-05-03 14:37:45, step: 12000, train_loss: 0.013720, test_loss: 0.011147, time cost: 8.389185
+2017-05-03 14:37:54, step: 12100, train_loss: 0.012267, test_loss: 0.011149, time cost: 8.444746
+2017-05-03 14:38:02, step: 12200, train_loss: 0.012267, test_loss: 0.011149, time cost: 8.477388
+2017-05-03 14:38:11, step: 12300, train_loss: 0.010530, test_loss: 0.011148, time cost: 8.357537
+2017-05-03 14:38:19, step: 12400, train_loss: 0.010740, test_loss: 0.011149, time cost: 8.327246
+2017-05-03 14:38:28, step: 12500, train_loss: 0.010015, test_loss: 0.011149, time cost: 8.426403
+2017-05-03 14:38:36, step: 12600, train_loss: 0.012483, test_loss: 0.011153, time cost: 8.343898
+2017-05-03 14:38:44, step: 12700, train_loss: 0.012055, test_loss: 0.011152, time cost: 8.355004
+2017-05-03 14:38:53, step: 12800, train_loss: 0.013338, test_loss: 0.011153, time cost: 8.35628
+2017-05-03 14:39:01, step: 12900, train_loss: 0.011412, test_loss: 0.011149, time cost: 8.375019
+2017-05-03 14:39:10, step: 13000, train_loss: 0.011816, test_loss: 0.011149, time cost: 8.417298
+2017-05-03 14:39:18, step: 13100, train_loss: 0.012369, test_loss: 0.011151, time cost: 8.475355
+2017-05-03 14:39:27, step: 13200, train_loss: 0.011820, test_loss: 0.011149, time cost: 8.537977
+2017-05-03 14:39:35, step: 13300, train_loss: 0.010912, test_loss: 0.011149, time cost: 8.390839
+2017-05-03 14:39:44, step: 13400, train_loss: 0.012331, test_loss: 0.011149, time cost: 8.501379
+2017-05-03 14:39:52, step: 13500, train_loss: 0.011082, test_loss: 0.011149, time cost: 8.370256
+2017-05-03 14:40:01, step: 13600, train_loss: 0.011811, test_loss: 0.011151, time cost: 8.469783
+2017-05-03 14:40:09, step: 13700, train_loss: 0.011070, test_loss: 0.011152, time cost: 8.398882
+2017-05-03 14:40:18, step: 13800, train_loss: 0.011704, test_loss: 0.011155, time cost: 8.488545
+2017-05-03 14:40:26, step: 13900, train_loss: 0.010763, test_loss: 0.011152, time cost: 8.525481
+2017-05-03 14:40:35, step: 14000, train_loss: 0.011324, test_loss: 0.011151, time cost: 8.635627
+2017-05-03 14:40:43, step: 14100, train_loss: 0.011275, test_loss: 0.011149, time cost: 8.411548
+2017-05-03 14:40:52, step: 14200, train_loss: 0.009654, test_loss: 0.011148, time cost: 8.544298
+2017-05-03 14:41:01, step: 14300, train_loss: 0.011259, test_loss: 0.011148, time cost: 8.718518
+2017-05-03 14:41:09, step: 14400, train_loss: 0.010178, test_loss: 0.011150, time cost: 8.414932
+2017-05-03 14:41:17, step: 14500, train_loss: 0.009481, test_loss: 0.011153, time cost: 8.375021
+2017-05-03 14:41:26, step: 14600, train_loss: 0.012089, test_loss: 0.011152, time cost: 8.356308
+2017-05-03 14:41:34, step: 14700, train_loss: 0.011704, test_loss: 0.011152, time cost: 8.399634
+2017-05-03 14:41:43, step: 14800, train_loss: 0.010891, test_loss: 0.011150, time cost: 8.383205
+2017-05-03 14:41:51, step: 14900, train_loss: 0.010771, test_loss: 0.011152, time cost: 8.384326
+2017-05-03 14:41:59, step: 15000, train_loss: 0.011857, test_loss: 0.011151, time cost: 8.38459
+2017-05-03 14:42:08, step: 15100, train_loss: 0.011265, test_loss: 0.011151, time cost: 8.494281
+2017-05-03 14:42:16, step: 15200, train_loss: 0.010758, test_loss: 0.011151, time cost: 8.429955
+2017-05-03 14:42:25, step: 15300, train_loss: 0.011741, test_loss: 0.011151, time cost: 8.439838
+2017-05-03 14:42:33, step: 15400, train_loss: 0.013294, test_loss: 0.011151, time cost: 8.458716
+2017-05-03 14:42:42, step: 15500, train_loss: 0.011942, test_loss: 0.011151, time cost: 8.547597
+2017-05-03 14:42:51, step: 15600, train_loss: 0.011058, test_loss: 0.011151, time cost: 8.542608
+2017-05-03 14:42:59, step: 15700, train_loss: 0.010539, test_loss: 0.011151, time cost: 8.411453999999999
+2017-05-03 14:43:07, step: 15800, train_loss: 0.011058, test_loss: 0.011151, time cost: 8.294948
+2017-05-03 14:43:16, step: 15900, train_loss: 0.010994, test_loss: 0.011151, time cost: 8.486845
+2017-05-03 14:43:24, step: 16000, train_loss: 0.009444, test_loss: 0.011151, time cost: 8.563481
+2017-05-03 14:43:33, step: 16100, train_loss: 0.011716, test_loss: 0.011151, time cost: 8.3495
+2017-05-03 14:43:41, step: 16200, train_loss: 0.011740, test_loss: 0.011151, time cost: 8.369676
+2017-05-03 14:43:50, step: 16300, train_loss: 0.012821, test_loss: 0.011152, time cost: 8.638996
+2017-05-03 14:43:58, step: 16400, train_loss: 0.011702, test_loss: 0.011152, time cost: 8.336641
+2017-05-03 14:44:06, step: 16500, train_loss: 0.011327, test_loss: 0.011152, time cost: 8.292667
+2017-05-03 14:44:15, step: 16600, train_loss: 0.010994, test_loss: 0.011152, time cost: 8.442512
+2017-05-03 14:44:23, step: 16700, train_loss: 0.011190, test_loss: 0.011152, time cost: 8.517991
+2017-05-03 14:44:32, step: 16800, train_loss: 0.012248, test_loss: 0.011152, time cost: 8.365108
+2017-05-03 14:44:40, step: 16900, train_loss: 0.010996, test_loss: 0.011152, time cost: 8.37858
+2017-05-03 14:44:49, step: 17000, train_loss: 0.009358, test_loss: 0.011152, time cost: 8.535225
+2017-05-03 14:44:57, step: 17100, train_loss: 0.010764, test_loss: 0.011152, time cost: 8.409921
+2017-05-03 14:45:06, step: 17200, train_loss: 0.010894, test_loss: 0.011152, time cost: 8.383328
+2017-05-03 14:45:14, step: 17300, train_loss: 0.010873, test_loss: 0.011152, time cost: 8.464875
+2017-05-03 14:45:23, step: 17400, train_loss: 0.011697, test_loss: 0.011151, time cost: 8.461194
+2017-05-03 14:45:31, step: 17500, train_loss: 0.012250, test_loss: 0.011152, time cost: 8.49204
+2017-05-03 14:45:40, step: 17600, train_loss: 0.011939, test_loss: 0.011151, time cost: 8.479664
+2017-05-03 14:45:48, step: 17700, train_loss: 0.011350, test_loss: 0.011152, time cost: 8.393725
+2017-05-03 14:45:57, step: 17800, train_loss: 0.010917, test_loss: 0.011151, time cost: 8.51083
+2017-05-03 14:46:05, step: 17900, train_loss: 0.010917, test_loss: 0.011152, time cost: 8.492773
+2017-05-03 14:46:14, step: 18000, train_loss: 0.010894, test_loss: 0.011152, time cost: 8.292855
+2017-05-03 14:46:22, step: 18100, train_loss: 0.009481, test_loss: 0.011152, time cost: 8.331722
+2017-05-03 14:46:30, step: 18200, train_loss: 0.010551, test_loss: 0.011152, time cost: 8.375898
+2017-05-03 14:46:39, step: 18300, train_loss: 0.010522, test_loss: 0.011151, time cost: 8.391301
+2017-05-03 14:46:47, step: 18400, train_loss: 0.010095, test_loss: 0.011152, time cost: 8.351787999999999
+2017-05-03 14:46:55, step: 18500, train_loss: 0.010545, test_loss: 0.011152, time cost: 8.363379
+2017-05-03 14:47:04, step: 18600, train_loss: 0.011272, test_loss: 0.011151, time cost: 8.348138
+2017-05-03 14:47:13, step: 18700, train_loss: 0.011414, test_loss: 0.011151, time cost: 8.594489
+2017-05-03 14:47:21, step: 18800, train_loss: 0.013156, test_loss: 0.011151, time cost: 8.385081
+2017-05-03 14:47:30, step: 18900, train_loss: 0.011345, test_loss: 0.011151, time cost: 8.587797
+2017-05-03 14:47:38, step: 19000, train_loss: 0.011074, test_loss: 0.011151, time cost: 8.37008
+2017-05-03 14:47:46, step: 19100, train_loss: 0.011528, test_loss: 0.011151, time cost: 8.526821
+2017-05-03 14:47:55, step: 19200, train_loss: 0.009564, test_loss: 0.011151, time cost: 8.381816
+2017-05-03 14:48:03, step: 19300, train_loss: 0.010760, test_loss: 0.011151, time cost: 8.401034
+2017-05-03 14:48:12, step: 19400, train_loss: 0.010635, test_loss: 0.011151, time cost: 8.324298
+2017-05-03 14:48:20, step: 19500, train_loss: 0.013156, test_loss: 0.011151, time cost: 8.440383
+2017-05-03 14:48:29, step: 19600, train_loss: 0.009282, test_loss: 0.011151, time cost: 8.336512
+2017-05-03 14:48:37, step: 19700, train_loss: 0.010742, test_loss: 0.011151, time cost: 8.558767
+2017-05-03 14:48:46, step: 19800, train_loss: 0.013329, test_loss: 0.011151, time cost: 8.488552
+2017-05-03 14:48:54, step: 19900, train_loss: 0.010545, test_loss: 0.011152, time cost: 8.44547
+I tensorflow/stream_executor/dso_loader.cc:125] successfully opened CUDA library libcublas.so.8.0 locally
+I tensorflow/stream_executor/dso_loader.cc:125] successfully opened CUDA library libcudnn.so.5 locally
+I tensorflow/stream_executor/dso_loader.cc:125] successfully opened CUDA library libcufft.so.8.0 locally
+I tensorflow/stream_executor/dso_loader.cc:125] successfully opened CUDA library libcuda.so.1 locally
+I tensorflow/stream_executor/dso_loader.cc:125] successfully opened CUDA library libcurand.so.8.0 locally
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:885] Found device 0 with properties: 
+name: TITAN X (Pascal)
+major: 6 minor: 1 memoryClockRate (GHz) 1.531
+pciBusID 0000:83:00.0
+Total memory: 11.90GiB
+Free memory: 11.76GiB
+W tensorflow/stream_executor/cuda/cuda_driver.cc:590] creating context when one is currently active; existing: 0x3d39600
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:885] Found device 1 with properties: 
+name: TITAN X (Pascal)
+major: 6 minor: 1 memoryClockRate (GHz) 1.531
+pciBusID 0000:84:00.0
+Total memory: 11.90GiB
+Free memory: 11.76GiB
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:906] DMA: 0 1 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:916] 0:   Y Y 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:916] 1:   Y Y 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: TITAN X (Pascal), pci bus id: 0000:83:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:1) -> (device: 1, name: TITAN X (Pascal), pci bus id: 0000:84:00.0)
+0.001
+train_samples: 2656
+train_samples: 320
+2017-05-03 23:42:40, step: 0, train_loss: 0.023772, test_loss: 0.022859, time cost: 3.844722
+2017-05-03 23:42:49, step: 100, train_loss: 0.006651, test_loss: 0.007490, time cost: 8.606643
+2017-05-03 23:42:57, step: 200, train_loss: 0.005253, test_loss: 0.005324, time cost: 8.661675
+2017-05-03 23:43:06, step: 300, train_loss: 0.003856, test_loss: 0.004397, time cost: 8.613448
+2017-05-03 23:43:15, step: 400, train_loss: 0.003380, test_loss: 0.003503, time cost: 8.716194
+2017-05-03 23:43:24, step: 500, train_loss: 0.002495, test_loss: 0.003202, time cost: 8.685425
+2017-05-03 23:43:33, step: 600, train_loss: 0.002215, test_loss: 0.003020, time cost: 8.740124
+2017-05-03 23:43:42, step: 700, train_loss: 0.002155, test_loss: 0.003017, time cost: 8.729391
+2017-05-03 23:43:51, step: 800, train_loss: 0.002467, test_loss: 0.002964, time cost: 8.925481
+2017-05-03 23:44:00, step: 900, train_loss: 0.002328, test_loss: 0.002943, time cost: 8.951301
+2017-05-03 23:44:09, step: 1000, train_loss: 0.002793, test_loss: 0.003038, time cost: 8.823495
+2017-05-03 23:44:18, step: 1100, train_loss: 0.002312, test_loss: 0.002723, time cost: 8.914594
+2017-05-03 23:44:27, step: 1200, train_loss: 0.001753, test_loss: 0.002682, time cost: 8.910991
+2017-05-03 23:44:36, step: 1300, train_loss: 0.002284, test_loss: 0.002781, time cost: 8.90723
+2017-05-03 23:44:45, step: 1400, train_loss: 0.001977, test_loss: 0.002693, time cost: 8.860600999999999
+2017-05-03 23:44:54, step: 1500, train_loss: 0.002219, test_loss: 0.002678, time cost: 8.846232
+2017-05-03 23:45:03, step: 1600, train_loss: 0.002231, test_loss: 0.002764, time cost: 9.042639
+2017-05-03 23:45:12, step: 1700, train_loss: 0.001912, test_loss: 0.002929, time cost: 8.802397
+2017-05-03 23:45:21, step: 1800, train_loss: 0.001857, test_loss: 0.002696, time cost: 8.919903
+2017-05-03 23:45:31, step: 1900, train_loss: 0.001939, test_loss: 0.002641, time cost: 9.11356
+2017-05-03 23:45:40, step: 2000, train_loss: 0.002102, test_loss: 0.002736, time cost: 8.768167
+2017-05-03 23:45:49, step: 2100, train_loss: 0.002239, test_loss: 0.002632, time cost: 8.934135
+2017-05-03 23:45:58, step: 2200, train_loss: 0.001966, test_loss: 0.002632, time cost: 8.869602
+2017-05-03 23:46:07, step: 2300, train_loss: 0.002105, test_loss: 0.002801, time cost: 8.845451
+2017-05-03 23:46:16, step: 2400, train_loss: 0.001793, test_loss: 0.002577, time cost: 8.885578
+2017-05-03 23:46:25, step: 2500, train_loss: 0.002116, test_loss: 0.002715, time cost: 8.915891
+2017-05-03 23:46:34, step: 2600, train_loss: 0.002112, test_loss: 0.002554, time cost: 8.851086
+2017-05-03 23:46:43, step: 2700, train_loss: 0.002274, test_loss: 0.002636, time cost: 8.957921
+2017-05-03 23:46:52, step: 2800, train_loss: 0.002201, test_loss: 0.002550, time cost: 9.020452
+2017-05-03 23:47:01, step: 2900, train_loss: 0.002253, test_loss: 0.002559, time cost: 8.929628
+2017-05-03 23:47:10, step: 3000, train_loss: 0.001728, test_loss: 0.002571, time cost: 8.84771
+2017-05-03 23:47:19, step: 3100, train_loss: 0.001782, test_loss: 0.002602, time cost: 8.883841
+2017-05-03 23:47:28, step: 3200, train_loss: 0.002251, test_loss: 0.002605, time cost: 8.889711
+2017-05-03 23:47:37, step: 3300, train_loss: 0.001863, test_loss: 0.002547, time cost: 8.858159
+2017-05-03 23:47:46, step: 3400, train_loss: 0.001813, test_loss: 0.002549, time cost: 8.864193
+2017-05-03 23:47:55, step: 3500, train_loss: 0.001891, test_loss: 0.002550, time cost: 8.951026
+2017-05-03 23:48:04, step: 3600, train_loss: 0.001730, test_loss: 0.002553, time cost: 8.768401
+2017-05-03 23:48:13, step: 3700, train_loss: 0.001821, test_loss: 0.002567, time cost: 8.949609
+2017-05-03 23:48:22, step: 3800, train_loss: 0.001979, test_loss: 0.002555, time cost: 8.721926
+2017-05-03 23:48:31, step: 3900, train_loss: 0.002244, test_loss: 0.002526, time cost: 8.788792
+2017-05-03 23:48:40, step: 4000, train_loss: 0.002064, test_loss: 0.002548, time cost: 8.96452
+2017-05-03 23:48:49, step: 4100, train_loss: 0.001823, test_loss: 0.002557, time cost: 8.874675
+2017-05-03 23:48:58, step: 4200, train_loss: 0.001917, test_loss: 0.002559, time cost: 8.837011
+2017-05-03 23:49:07, step: 4300, train_loss: 0.001758, test_loss: 0.002531, time cost: 8.856022
+2017-05-03 23:49:16, step: 4400, train_loss: 0.001844, test_loss: 0.002528, time cost: 8.919744
+2017-05-03 23:49:25, step: 4500, train_loss: 0.001898, test_loss: 0.002518, time cost: 8.839159
+2017-05-03 23:49:34, step: 4600, train_loss: 0.002141, test_loss: 0.002590, time cost: 8.78717
+2017-05-03 23:49:43, step: 4700, train_loss: 0.001729, test_loss: 0.002549, time cost: 8.941654
+2017-05-03 23:49:52, step: 4800, train_loss: 0.001863, test_loss: 0.002505, time cost: 8.863391
+2017-05-03 23:50:01, step: 4900, train_loss: 0.001865, test_loss: 0.002544, time cost: 8.815928
+2017-05-03 23:50:10, step: 5000, train_loss: 0.001805, test_loss: 0.002499, time cost: 8.711137
+2017-05-03 23:50:19, step: 5100, train_loss: 0.001692, test_loss: 0.002486, time cost: 8.838135
+2017-05-03 23:50:29, step: 5200, train_loss: 0.001792, test_loss: 0.002474, time cost: 9.060645
+2017-05-03 23:50:38, step: 5300, train_loss: 0.001608, test_loss: 0.002470, time cost: 8.851015
+2017-05-03 23:50:46, step: 5400, train_loss: 0.001914, test_loss: 0.002466, time cost: 8.711482
+2017-05-03 23:50:55, step: 5500, train_loss: 0.001724, test_loss: 0.002468, time cost: 8.699136
+2017-05-03 23:51:04, step: 5600, train_loss: 0.001890, test_loss: 0.002482, time cost: 8.788546
+2017-05-03 23:51:13, step: 5700, train_loss: 0.001984, test_loss: 0.002475, time cost: 8.817347999999999
+2017-05-03 23:51:22, step: 5800, train_loss: 0.001790, test_loss: 0.002472, time cost: 8.883729
+2017-05-03 23:51:31, step: 5900, train_loss: 0.002104, test_loss: 0.002469, time cost: 8.788149
+2017-05-03 23:51:40, step: 6000, train_loss: 0.001610, test_loss: 0.002473, time cost: 8.746746
+2017-05-03 23:51:49, step: 6100, train_loss: 0.001746, test_loss: 0.002468, time cost: 8.840505
+2017-05-03 23:51:58, step: 6200, train_loss: 0.001795, test_loss: 0.002480, time cost: 8.745076
+2017-05-03 23:52:07, step: 6300, train_loss: 0.001852, test_loss: 0.002483, time cost: 8.725405
+2017-05-03 23:52:16, step: 6400, train_loss: 0.002009, test_loss: 0.002482, time cost: 8.752546
+2017-05-03 23:52:25, step: 6500, train_loss: 0.001686, test_loss: 0.002466, time cost: 8.797726
+2017-05-03 23:52:33, step: 6600, train_loss: 0.001944, test_loss: 0.002471, time cost: 8.750902
+2017-05-03 23:52:42, step: 6700, train_loss: 0.001731, test_loss: 0.002475, time cost: 8.799012
+2017-05-03 23:52:51, step: 6800, train_loss: 0.002009, test_loss: 0.002476, time cost: 8.85783
+2017-05-03 23:53:00, step: 6900, train_loss: 0.001727, test_loss: 0.002468, time cost: 8.87092
+2017-05-03 23:53:09, step: 7000, train_loss: 0.001898, test_loss: 0.002496, time cost: 8.796935
+2017-05-03 23:53:18, step: 7100, train_loss: 0.001777, test_loss: 0.002477, time cost: 8.724256
+2017-05-03 23:53:27, step: 7200, train_loss: 0.001792, test_loss: 0.002467, time cost: 8.688857
+2017-05-03 23:53:36, step: 7300, train_loss: 0.001443, test_loss: 0.002478, time cost: 8.797344
+2017-05-03 23:53:45, step: 7400, train_loss: 0.001703, test_loss: 0.002468, time cost: 8.925347
+2017-05-03 23:53:54, step: 7500, train_loss: 0.001767, test_loss: 0.002479, time cost: 8.721258
+2017-05-03 23:54:03, step: 7600, train_loss: 0.001507, test_loss: 0.002470, time cost: 8.897121
+2017-05-03 23:54:12, step: 7700, train_loss: 0.001688, test_loss: 0.002478, time cost: 8.82716
+2017-05-03 23:54:21, step: 7800, train_loss: 0.001848, test_loss: 0.002468, time cost: 8.818807
+2017-05-03 23:54:30, step: 7900, train_loss: 0.001596, test_loss: 0.002474, time cost: 8.773507
+2017-05-03 23:54:39, step: 8000, train_loss: 0.001741, test_loss: 0.002467, time cost: 8.843985
+2017-05-03 23:54:48, step: 8100, train_loss: 0.001698, test_loss: 0.002468, time cost: 8.78714
+2017-05-03 23:54:57, step: 8200, train_loss: 0.001687, test_loss: 0.002490, time cost: 8.730062
+2017-05-03 23:55:06, step: 8300, train_loss: 0.001771, test_loss: 0.002492, time cost: 8.88141
+2017-05-03 23:55:15, step: 8400, train_loss: 0.001668, test_loss: 0.002466, time cost: 8.850459
+2017-05-03 23:55:24, step: 8500, train_loss: 0.001747, test_loss: 0.002471, time cost: 8.821013
+2017-05-03 23:55:32, step: 8600, train_loss: 0.002080, test_loss: 0.002469, time cost: 8.661813
+2017-05-03 23:55:41, step: 8700, train_loss: 0.001970, test_loss: 0.002468, time cost: 8.897004
+2017-05-03 23:55:51, step: 8800, train_loss: 0.001542, test_loss: 0.002467, time cost: 9.016226
+2017-05-03 23:56:00, step: 8900, train_loss: 0.001708, test_loss: 0.002499, time cost: 8.783612
+2017-05-03 23:56:08, step: 9000, train_loss: 0.001880, test_loss: 0.002472, time cost: 8.773258
+2017-05-03 23:56:17, step: 9100, train_loss: 0.001612, test_loss: 0.002490, time cost: 8.837521
+2017-05-03 23:56:26, step: 9200, train_loss: 0.001719, test_loss: 0.002476, time cost: 8.855734
+2017-05-03 23:56:35, step: 9300, train_loss: 0.001697, test_loss: 0.002466, time cost: 8.814313
+2017-05-03 23:56:44, step: 9400, train_loss: 0.001592, test_loss: 0.002472, time cost: 8.674881
+2017-05-03 23:56:53, step: 9500, train_loss: 0.001674, test_loss: 0.002464, time cost: 8.801284
+2017-05-03 23:57:02, step: 9600, train_loss: 0.001429, test_loss: 0.002465, time cost: 8.748307
+2017-05-03 23:57:11, step: 9700, train_loss: 0.001976, test_loss: 0.002475, time cost: 8.783195
+2017-05-03 23:57:20, step: 9800, train_loss: 0.001432, test_loss: 0.002473, time cost: 8.790966
+2017-05-03 23:57:29, step: 9900, train_loss: 0.001595, test_loss: 0.002490, time cost: 8.773422
+2017-05-03 23:57:38, step: 10000, train_loss: 0.001860, test_loss: 0.002474, time cost: 8.796401
+2017-05-03 23:57:47, step: 10100, train_loss: 0.001830, test_loss: 0.002465, time cost: 8.850938
+2017-05-03 23:57:56, step: 10200, train_loss: 0.001550, test_loss: 0.002463, time cost: 8.843036
+2017-05-03 23:58:05, step: 10300, train_loss: 0.001683, test_loss: 0.002463, time cost: 8.735295
+2017-05-03 23:58:14, step: 10400, train_loss: 0.001924, test_loss: 0.002463, time cost: 8.804498
+2017-05-03 23:58:22, step: 10500, train_loss: 0.001562, test_loss: 0.002463, time cost: 8.740207
+2017-05-03 23:58:31, step: 10600, train_loss: 0.001767, test_loss: 0.002464, time cost: 8.784821
+2017-05-03 23:58:40, step: 10700, train_loss: 0.001400, test_loss: 0.002462, time cost: 8.688166
+2017-05-03 23:58:49, step: 10800, train_loss: 0.001966, test_loss: 0.002461, time cost: 8.723834
+2017-05-03 23:58:58, step: 10900, train_loss: 0.001505, test_loss: 0.002468, time cost: 8.825296999999999
+2017-05-03 23:59:07, step: 11000, train_loss: 0.001829, test_loss: 0.002462, time cost: 8.863364
+2017-05-03 23:59:16, step: 11100, train_loss: 0.001563, test_loss: 0.002463, time cost: 8.708129
+2017-05-03 23:59:25, step: 11200, train_loss: 0.001954, test_loss: 0.002468, time cost: 8.661649
+2017-05-03 23:59:34, step: 11300, train_loss: 0.001831, test_loss: 0.002461, time cost: 8.80057
+2017-05-03 23:59:43, step: 11400, train_loss: 0.001714, test_loss: 0.002464, time cost: 8.814856
+2017-05-03 23:59:52, step: 11500, train_loss: 0.001919, test_loss: 0.002465, time cost: 8.78375
+2017-05-04 00:00:00, step: 11600, train_loss: 0.001679, test_loss: 0.002465, time cost: 8.698815
+2017-05-04 00:00:09, step: 11700, train_loss: 0.001880, test_loss: 0.002463, time cost: 8.712769
+2017-05-04 00:00:18, step: 11800, train_loss: 0.001333, test_loss: 0.002462, time cost: 8.733834
+2017-05-04 00:00:27, step: 11900, train_loss: 0.001521, test_loss: 0.002466, time cost: 8.659089999999999
+2017-05-04 00:00:36, step: 12000, train_loss: 0.001993, test_loss: 0.002463, time cost: 8.799636
+2017-05-04 00:00:45, step: 12100, train_loss: 0.001741, test_loss: 0.002462, time cost: 8.828578
+2017-05-04 00:00:54, step: 12200, train_loss: 0.001743, test_loss: 0.002460, time cost: 8.721107
+2017-05-04 00:01:03, step: 12300, train_loss: 0.001749, test_loss: 0.002463, time cost: 8.817493
+2017-05-04 00:01:12, step: 12400, train_loss: 0.001423, test_loss: 0.002470, time cost: 8.765224
+2017-05-04 00:01:21, step: 12500, train_loss: 0.001559, test_loss: 0.002464, time cost: 8.830316
+2017-05-04 00:01:30, step: 12600, train_loss: 0.001946, test_loss: 0.002461, time cost: 8.897326
+2017-05-04 00:01:38, step: 12700, train_loss: 0.001851, test_loss: 0.002467, time cost: 8.620713
+2017-05-04 00:01:47, step: 12800, train_loss: 0.001670, test_loss: 0.002461, time cost: 8.814801
+2017-05-04 00:01:56, step: 12900, train_loss: 0.001901, test_loss: 0.002464, time cost: 8.751934
+2017-05-04 00:02:05, step: 13000, train_loss: 0.001800, test_loss: 0.002465, time cost: 8.774625
+2017-05-04 00:02:14, step: 13100, train_loss: 0.001564, test_loss: 0.002467, time cost: 8.844706
+2017-05-04 00:02:23, step: 13200, train_loss: 0.001996, test_loss: 0.002465, time cost: 8.829225
+2017-05-04 00:02:32, step: 13300, train_loss: 0.001838, test_loss: 0.002463, time cost: 8.952234
+2017-05-04 00:02:41, step: 13400, train_loss: 0.001705, test_loss: 0.002464, time cost: 8.901582
+2017-05-04 00:02:50, step: 13500, train_loss: 0.001773, test_loss: 0.002466, time cost: 8.821283
+2017-05-04 00:02:59, step: 13600, train_loss: 0.001791, test_loss: 0.002460, time cost: 8.753243
+2017-05-04 00:03:08, step: 13700, train_loss: 0.001764, test_loss: 0.002464, time cost: 8.813909
+2017-05-04 00:03:17, step: 13800, train_loss: 0.001683, test_loss: 0.002467, time cost: 8.970806
+2017-05-04 00:03:26, step: 13900, train_loss: 0.001630, test_loss: 0.002461, time cost: 8.806028
+2017-05-04 00:03:35, step: 14000, train_loss: 0.001748, test_loss: 0.002462, time cost: 8.720817
+2017-05-04 00:03:44, step: 14100, train_loss: 0.001746, test_loss: 0.002469, time cost: 8.809087
+2017-05-04 00:03:53, step: 14200, train_loss: 0.001766, test_loss: 0.002464, time cost: 8.835749
+2017-05-04 00:04:02, step: 14300, train_loss: 0.001631, test_loss: 0.002465, time cost: 8.759248
+2017-05-04 00:04:11, step: 14400, train_loss: 0.001825, test_loss: 0.002466, time cost: 8.675561
+2017-05-04 00:04:20, step: 14500, train_loss: 0.001677, test_loss: 0.002467, time cost: 8.83846
+2017-05-04 00:04:29, step: 14600, train_loss: 0.001936, test_loss: 0.002459, time cost: 8.753781
+2017-05-04 00:04:38, step: 14700, train_loss: 0.001592, test_loss: 0.002472, time cost: 8.743232
+2017-05-04 00:04:46, step: 14800, train_loss: 0.001934, test_loss: 0.002464, time cost: 8.738296
+2017-05-04 00:04:55, step: 14900, train_loss: 0.001755, test_loss: 0.002463, time cost: 8.774945
+2017-05-04 00:05:04, step: 15000, train_loss: 0.001825, test_loss: 0.002464, time cost: 8.752255
+2017-05-04 00:05:13, step: 15100, train_loss: 0.001739, test_loss: 0.002464, time cost: 8.867952
+2017-05-04 00:05:22, step: 15200, train_loss: 0.001756, test_loss: 0.002462, time cost: 8.74879
+2017-05-04 00:05:31, step: 15300, train_loss: 0.001542, test_loss: 0.002464, time cost: 8.765652
+2017-05-04 00:05:40, step: 15400, train_loss: 0.001720, test_loss: 0.002461, time cost: 8.869179
+2017-05-04 00:05:49, step: 15500, train_loss: 0.001377, test_loss: 0.002462, time cost: 8.673803
+2017-05-04 00:05:58, step: 15600, train_loss: 0.001498, test_loss: 0.002464, time cost: 8.660703999999999
+2017-05-04 00:06:07, step: 15700, train_loss: 0.001700, test_loss: 0.002463, time cost: 8.720548
+2017-05-04 00:06:16, step: 15800, train_loss: 0.001503, test_loss: 0.002461, time cost: 8.940187
+2017-05-04 00:06:25, step: 15900, train_loss: 0.001685, test_loss: 0.002464, time cost: 8.799115
+2017-05-04 00:06:34, step: 16000, train_loss: 0.001798, test_loss: 0.002461, time cost: 8.721079
+2017-05-04 00:06:43, step: 16100, train_loss: 0.001672, test_loss: 0.002463, time cost: 8.838208999999999
+2017-05-04 00:06:51, step: 16200, train_loss: 0.001542, test_loss: 0.002463, time cost: 8.721971
+2017-05-04 00:07:00, step: 16300, train_loss: 0.001533, test_loss: 0.002463, time cost: 8.870344
+2017-05-04 00:07:09, step: 16400, train_loss: 0.001581, test_loss: 0.002462, time cost: 8.811267
+2017-05-04 00:07:18, step: 16500, train_loss: 0.001740, test_loss: 0.002461, time cost: 8.880584
+2017-05-04 00:07:27, step: 16600, train_loss: 0.001684, test_loss: 0.002462, time cost: 8.698881
+2017-05-04 00:07:36, step: 16700, train_loss: 0.001877, test_loss: 0.002462, time cost: 8.78905
+2017-05-04 00:07:45, step: 16800, train_loss: 0.001740, test_loss: 0.002462, time cost: 8.769275
+2017-05-04 00:07:54, step: 16900, train_loss: 0.001683, test_loss: 0.002462, time cost: 8.60874
+2017-05-04 00:08:03, step: 17000, train_loss: 0.001539, test_loss: 0.002462, time cost: 8.728833999999999
+2017-05-04 00:08:12, step: 17100, train_loss: 0.001755, test_loss: 0.002463, time cost: 8.77118
+2017-05-04 00:08:21, step: 17200, train_loss: 0.001938, test_loss: 0.002464, time cost: 8.798794000000001
+2017-05-04 00:08:30, step: 17300, train_loss: 0.001665, test_loss: 0.002463, time cost: 8.842714
+2017-05-04 00:08:39, step: 17400, train_loss: 0.001582, test_loss: 0.002462, time cost: 8.716903
+2017-05-04 00:08:47, step: 17500, train_loss: 0.001738, test_loss: 0.002462, time cost: 8.736845
+2017-05-04 00:08:56, step: 17600, train_loss: 0.001376, test_loss: 0.002463, time cost: 8.864915
+2017-05-04 00:09:05, step: 17700, train_loss: 0.001590, test_loss: 0.002461, time cost: 8.665956
+2017-05-04 00:09:14, step: 17800, train_loss: 0.001837, test_loss: 0.002462, time cost: 8.799478
+2017-05-04 00:09:23, step: 17900, train_loss: 0.001836, test_loss: 0.002463, time cost: 8.796653
+2017-05-04 00:09:32, step: 18000, train_loss: 0.001937, test_loss: 0.002464, time cost: 8.719583
+2017-05-04 00:09:41, step: 18100, train_loss: 0.001674, test_loss: 0.002464, time cost: 8.748709999999999
+2017-05-04 00:09:50, step: 18200, train_loss: 0.001695, test_loss: 0.002463, time cost: 8.844117
+2017-05-04 00:09:59, step: 18300, train_loss: 0.001492, test_loss: 0.002463, time cost: 8.667418
+2017-05-04 00:10:07, step: 18400, train_loss: 0.001906, test_loss: 0.002461, time cost: 8.730704
+2017-05-04 00:10:16, step: 18500, train_loss: 0.001747, test_loss: 0.002463, time cost: 8.772347
+2017-05-04 00:10:25, step: 18600, train_loss: 0.001630, test_loss: 0.002462, time cost: 8.698685
+2017-05-04 00:10:34, step: 18700, train_loss: 0.001398, test_loss: 0.002462, time cost: 8.855751
+2017-05-04 00:10:43, step: 18800, train_loss: 0.001413, test_loss: 0.002463, time cost: 8.786576
+2017-05-04 00:10:52, step: 18900, train_loss: 0.001590, test_loss: 0.002463, time cost: 8.709859
+2017-05-04 00:11:01, step: 19000, train_loss: 0.001764, test_loss: 0.002463, time cost: 8.875031
+2017-05-04 00:11:10, step: 19100, train_loss: 0.002123, test_loss: 0.002462, time cost: 8.741533
+2017-05-04 00:11:19, step: 19200, train_loss: 0.001738, test_loss: 0.002464, time cost: 8.873028
+2017-05-04 00:11:28, step: 19300, train_loss: 0.001755, test_loss: 0.002462, time cost: 8.816649
+2017-05-04 00:11:37, step: 19400, train_loss: 0.001725, test_loss: 0.002463, time cost: 8.702173
+2017-05-04 00:11:46, step: 19500, train_loss: 0.001412, test_loss: 0.002462, time cost: 8.746418
+2017-05-04 00:11:55, step: 19600, train_loss: 0.001508, test_loss: 0.002462, time cost: 8.967001
+2017-05-04 00:12:04, step: 19700, train_loss: 0.001408, test_loss: 0.002463, time cost: 8.692956
+2017-05-04 00:12:13, step: 19800, train_loss: 0.001659, test_loss: 0.002462, time cost: 8.84353
+2017-05-04 00:12:21, step: 19900, train_loss: 0.001748, test_loss: 0.002464, time cost: 8.764977
+I tensorflow/stream_executor/dso_loader.cc:125] successfully opened CUDA library libcublas.so.8.0 locally
+I tensorflow/stream_executor/dso_loader.cc:125] successfully opened CUDA library libcudnn.so.5 locally
+I tensorflow/stream_executor/dso_loader.cc:125] successfully opened CUDA library libcufft.so.8.0 locally
+I tensorflow/stream_executor/dso_loader.cc:125] successfully opened CUDA library libcuda.so.1 locally
+I tensorflow/stream_executor/dso_loader.cc:125] successfully opened CUDA library libcurand.so.8.0 locally
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:885] Found device 0 with properties: 
+name: TITAN X (Pascal)
+major: 6 minor: 1 memoryClockRate (GHz) 1.531
+pciBusID 0000:83:00.0
+Total memory: 11.90GiB
+Free memory: 11.76GiB
+W tensorflow/stream_executor/cuda/cuda_driver.cc:590] creating context when one is currently active; existing: 0x5087930
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:885] Found device 1 with properties: 
+name: TITAN X (Pascal)
+major: 6 minor: 1 memoryClockRate (GHz) 1.531
+pciBusID 0000:84:00.0
+Total memory: 11.90GiB
+Free memory: 11.76GiB
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:906] DMA: 0 1 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:916] 0:   Y Y 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:916] 1:   Y Y 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: TITAN X (Pascal), pci bus id: 0000:83:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:1) -> (device: 1, name: TITAN X (Pascal), pci bus id: 0000:84:00.0)
+0.001
+56738
+train_samples: 2656
+train_samples: 320
+2017-05-09 15:45:30, step: 0, train_loss: 0.019500, test_loss: 0.019927, time cost: 3.96523
+2017-05-09 15:45:39, step: 100, train_loss: 0.006931, test_loss: 0.006257, time cost: 9.390195
+2017-05-09 15:45:49, step: 200, train_loss: 0.003578, test_loss: 0.004428, time cost: 9.497172
+2017-05-09 15:45:59, step: 300, train_loss: 0.003651, test_loss: 0.003410, time cost: 9.441341
+2017-05-09 15:46:08, step: 400, train_loss: 0.002638, test_loss: 0.002779, time cost: 9.547772
+2017-05-09 15:46:18, step: 500, train_loss: 0.002032, test_loss: 0.002544, time cost: 9.530608
+2017-05-09 15:46:28, step: 600, train_loss: 0.002647, test_loss: 0.002638, time cost: 9.614207
+2017-05-09 15:46:38, step: 700, train_loss: 0.001704, test_loss: 0.002324, time cost: 9.631896
+2017-05-09 15:46:48, step: 800, train_loss: 0.002353, test_loss: 0.002439, time cost: 9.910145
+2017-05-09 15:46:58, step: 900, train_loss: 0.001698, test_loss: 0.002288, time cost: 9.689931
+2017-05-09 15:47:08, step: 1000, train_loss: 0.001859, test_loss: 0.002230, time cost: 9.785876
+2017-05-09 15:47:18, step: 1100, train_loss: 0.001774, test_loss: 0.002195, time cost: 9.714749
+2017-05-09 15:47:27, step: 1200, train_loss: 0.001433, test_loss: 0.002155, time cost: 9.644127
+2017-05-09 15:47:37, step: 1300, train_loss: 0.001833, test_loss: 0.002183, time cost: 9.716627
+2017-05-09 15:47:47, step: 1400, train_loss: 0.001672, test_loss: 0.002158, time cost: 9.615447
+2017-05-09 15:47:57, step: 1500, train_loss: 0.001682, test_loss: 0.002212, time cost: 9.611558
+2017-05-09 15:48:07, step: 1600, train_loss: 0.001726, test_loss: 0.002114, time cost: 9.686493
+2017-05-09 15:48:16, step: 1700, train_loss: 0.001893, test_loss: 0.002111, time cost: 9.66986
+2017-05-09 15:48:26, step: 1800, train_loss: 0.001591, test_loss: 0.002110, time cost: 9.702334
+2017-05-09 15:48:36, step: 1900, train_loss: 0.001672, test_loss: 0.002195, time cost: 9.651828
+2017-05-09 15:48:46, step: 2000, train_loss: 0.001547, test_loss: 0.002123, time cost: 9.886721
+2017-05-09 15:48:56, step: 2100, train_loss: 0.001695, test_loss: 0.002085, time cost: 9.723113
+2017-05-09 15:49:06, step: 2200, train_loss: 0.001830, test_loss: 0.002202, time cost: 9.659803
+2017-05-09 15:49:16, step: 2300, train_loss: 0.001635, test_loss: 0.002187, time cost: 9.703904
+2017-05-09 15:49:26, step: 2400, train_loss: 0.001621, test_loss: 0.002081, time cost: 9.714694
+2017-05-09 15:49:36, step: 2500, train_loss: 0.001774, test_loss: 0.002073, time cost: 9.784629
+2017-05-09 15:49:45, step: 2600, train_loss: 0.001674, test_loss: 0.002070, time cost: 9.659624
+2017-05-09 15:49:55, step: 2700, train_loss: 0.001710, test_loss: 0.002087, time cost: 9.841322
+2017-05-09 15:50:05, step: 2800, train_loss: 0.001282, test_loss: 0.002124, time cost: 9.712434
+2017-05-09 15:50:15, step: 2900, train_loss: 0.001756, test_loss: 0.002067, time cost: 9.678446
+2017-05-09 15:50:25, step: 3000, train_loss: 0.001534, test_loss: 0.002105, time cost: 9.753151
+2017-05-09 15:50:35, step: 3100, train_loss: 0.001351, test_loss: 0.002061, time cost: 9.769422
+2017-05-09 15:50:45, step: 3200, train_loss: 0.001900, test_loss: 0.002158, time cost: 9.781269
+2017-05-09 15:50:55, step: 3300, train_loss: 0.001608, test_loss: 0.002082, time cost: 9.739023
+2017-05-09 15:51:05, step: 3400, train_loss: 0.001513, test_loss: 0.002056, time cost: 9.730432
+2017-05-09 15:51:15, step: 3500, train_loss: 0.001701, test_loss: 0.002066, time cost: 9.678199
+2017-05-09 15:51:24, step: 3600, train_loss: 0.001755, test_loss: 0.002107, time cost: 9.81768
+2017-05-09 15:51:34, step: 3700, train_loss: 0.001523, test_loss: 0.002060, time cost: 9.615731
+2017-05-09 15:51:44, step: 3800, train_loss: 0.001665, test_loss: 0.002062, time cost: 9.720449
+2017-05-09 15:51:54, step: 3900, train_loss: 0.001540, test_loss: 0.002038, time cost: 9.657979
+2017-05-09 15:52:04, step: 4000, train_loss: 0.001448, test_loss: 0.002110, time cost: 9.744112
+2017-05-09 15:52:14, step: 4100, train_loss: 0.001514, test_loss: 0.002035, time cost: 9.612278
+2017-05-09 15:52:23, step: 4200, train_loss: 0.001907, test_loss: 0.002036, time cost: 9.728274
+2017-05-09 15:52:33, step: 4300, train_loss: 0.001445, test_loss: 0.002067, time cost: 9.700673
+2017-05-09 15:52:43, step: 4400, train_loss: 0.001319, test_loss: 0.002066, time cost: 9.689591
+2017-05-09 15:52:53, step: 4500, train_loss: 0.001827, test_loss: 0.002041, time cost: 9.788729
+2017-05-09 15:53:03, step: 4600, train_loss: 0.001629, test_loss: 0.002037, time cost: 9.634612
+2017-05-09 15:53:13, step: 4700, train_loss: 0.001666, test_loss: 0.002123, time cost: 9.776212
+2017-05-09 15:53:23, step: 4800, train_loss: 0.001622, test_loss: 0.002024, time cost: 9.714572
+2017-05-09 15:53:32, step: 4900, train_loss: 0.001587, test_loss: 0.002042, time cost: 9.601741
+2017-05-09 15:53:42, step: 5000, train_loss: 0.001342, test_loss: 0.002037, time cost: 9.750689
+2017-05-09 15:53:52, step: 5100, train_loss: 0.003663, test_loss: 0.001992, time cost: 9.671194
+2017-05-09 15:54:02, step: 5200, train_loss: 0.001508, test_loss: 0.002003, time cost: 9.676696
+2017-05-09 15:54:12, step: 5300, train_loss: 0.001455, test_loss: 0.001999, time cost: 9.720007
+2017-05-09 15:54:22, step: 5400, train_loss: 0.001676, test_loss: 0.002002, time cost: 9.72375
+2017-05-09 15:54:31, step: 5500, train_loss: 0.001447, test_loss: 0.002004, time cost: 9.648895
+2017-05-09 15:54:41, step: 5600, train_loss: 0.001478, test_loss: 0.002016, time cost: 9.680348
+2017-05-09 15:54:51, step: 5700, train_loss: 0.001453, test_loss: 0.001993, time cost: 9.714243
+2017-05-09 15:55:01, step: 5800, train_loss: 0.001457, test_loss: 0.001998, time cost: 9.733910999999999
+2017-05-09 15:55:11, step: 5900, train_loss: 0.001432, test_loss: 0.001993, time cost: 9.772655
+2017-05-09 15:55:21, step: 6000, train_loss: 0.001313, test_loss: 0.001994, time cost: 9.693812
+2017-05-09 15:55:31, step: 6100, train_loss: 0.001409, test_loss: 0.001997, time cost: 9.690476
+2017-05-09 15:55:40, step: 6200, train_loss: 0.001574, test_loss: 0.002011, time cost: 9.660409
+2017-05-09 15:55:50, step: 6300, train_loss: 0.001571, test_loss: 0.002006, time cost: 9.751099
+2017-05-09 15:56:00, step: 6400, train_loss: 0.001476, test_loss: 0.002010, time cost: 9.723952
+2017-05-09 15:56:10, step: 6500, train_loss: 0.001600, test_loss: 0.002010, time cost: 9.670385
+2017-05-09 15:56:20, step: 6600, train_loss: 0.001361, test_loss: 0.001990, time cost: 9.736369
+2017-05-09 15:56:30, step: 6700, train_loss: 0.001618, test_loss: 0.002000, time cost: 9.755917
+2017-05-09 15:56:40, step: 6800, train_loss: 0.001539, test_loss: 0.001998, time cost: 9.677246
+2017-05-09 15:56:49, step: 6900, train_loss: 0.001275, test_loss: 0.002005, time cost: 9.712954
+2017-05-09 15:56:59, step: 7000, train_loss: 0.001373, test_loss: 0.002001, time cost: 9.617806999999999
+2017-05-09 15:57:09, step: 7100, train_loss: 0.001788, test_loss: 0.001998, time cost: 9.785345
+2017-05-09 15:57:19, step: 7200, train_loss: 0.001841, test_loss: 0.001995, time cost: 9.733696
+2017-05-09 15:57:29, step: 7300, train_loss: 0.001433, test_loss: 0.002010, time cost: 9.686419
+2017-05-09 15:57:39, step: 7400, train_loss: 0.001526, test_loss: 0.001995, time cost: 9.774253
+2017-05-09 15:57:49, step: 7500, train_loss: 0.001555, test_loss: 0.001993, time cost: 9.635788
+2017-05-09 15:57:58, step: 7600, train_loss: 0.001199, test_loss: 0.001995, time cost: 9.750474
+2017-05-09 15:58:08, step: 7700, train_loss: 0.001438, test_loss: 0.002020, time cost: 9.665039
+2017-05-09 15:58:18, step: 7800, train_loss: 0.001496, test_loss: 0.001995, time cost: 9.634021
+2017-05-09 15:58:28, step: 7900, train_loss: 0.001367, test_loss: 0.002007, time cost: 9.697964
+2017-05-09 15:58:38, step: 8000, train_loss: 0.001387, test_loss: 0.001994, time cost: 9.792409
+2017-05-09 15:58:48, step: 8100, train_loss: 0.001571, test_loss: 0.001991, time cost: 9.851141
+2017-05-09 15:58:58, step: 8200, train_loss: 0.003640, test_loss: 0.002006, time cost: 9.767916
+2017-05-09 15:59:08, step: 8300, train_loss: 0.001789, test_loss: 0.001995, time cost: 9.8392
+2017-05-09 15:59:18, step: 8400, train_loss: 0.001160, test_loss: 0.001987, time cost: 9.732907
+2017-05-09 15:59:27, step: 8500, train_loss: 0.001544, test_loss: 0.002006, time cost: 9.522472
+2017-05-09 15:59:37, step: 8600, train_loss: 0.001417, test_loss: 0.001988, time cost: 9.66733
+2017-05-09 15:59:47, step: 8700, train_loss: 0.001437, test_loss: 0.001997, time cost: 9.792086
+2017-05-09 15:59:57, step: 8800, train_loss: 0.001338, test_loss: 0.001992, time cost: 9.70828
+2017-05-09 16:00:07, step: 8900, train_loss: 0.001503, test_loss: 0.001992, time cost: 9.615472
+2017-05-09 16:00:17, step: 9000, train_loss: 0.001326, test_loss: 0.001996, time cost: 9.764623
+2017-05-09 16:00:26, step: 9100, train_loss: 0.001333, test_loss: 0.001997, time cost: 9.742011
+2017-05-09 16:00:36, step: 9200, train_loss: 0.001394, test_loss: 0.001985, time cost: 9.767274
+2017-05-09 16:00:46, step: 9300, train_loss: 0.001376, test_loss: 0.001992, time cost: 9.735472
+2017-05-09 16:00:56, step: 9400, train_loss: 0.001368, test_loss: 0.002007, time cost: 9.708459
+2017-05-09 16:01:06, step: 9500, train_loss: 0.001256, test_loss: 0.002000, time cost: 9.774989
+2017-05-09 16:01:16, step: 9600, train_loss: 0.001427, test_loss: 0.001995, time cost: 9.680312
+2017-05-09 16:01:26, step: 9700, train_loss: 0.001466, test_loss: 0.001988, time cost: 9.683085
+2017-05-09 16:01:35, step: 9800, train_loss: 0.001343, test_loss: 0.001989, time cost: 9.698004
+2017-05-09 16:01:45, step: 9900, train_loss: 0.001537, test_loss: 0.002001, time cost: 9.665199
+2017-05-09 16:01:55, step: 10000, train_loss: 0.001758, test_loss: 0.001988, time cost: 9.684998
+2017-05-09 16:02:05, step: 10100, train_loss: 0.001625, test_loss: 0.001987, time cost: 9.690517
+2017-05-09 16:02:15, step: 10200, train_loss: 0.001584, test_loss: 0.001987, time cost: 9.644449999999999
+2017-05-09 16:02:25, step: 10300, train_loss: 0.001418, test_loss: 0.001994, time cost: 9.801817
+2017-05-09 16:02:35, step: 10400, train_loss: 0.001492, test_loss: 0.001991, time cost: 9.702361
+2017-05-09 16:02:44, step: 10500, train_loss: 0.001352, test_loss: 0.001989, time cost: 9.669975
+2017-05-09 16:02:54, step: 10600, train_loss: 0.001360, test_loss: 0.001994, time cost: 9.754955
+2017-05-09 16:03:04, step: 10700, train_loss: 0.001300, test_loss: 0.001989, time cost: 9.724432
+2017-05-09 16:03:14, step: 10800, train_loss: 0.001454, test_loss: 0.001988, time cost: 9.647099
+2017-05-09 16:03:24, step: 10900, train_loss: 0.001533, test_loss: 0.001984, time cost: 9.674402
+2017-05-09 16:03:34, step: 11000, train_loss: 0.001477, test_loss: 0.001991, time cost: 9.709702
+2017-05-09 16:03:43, step: 11100, train_loss: 0.001412, test_loss: 0.001987, time cost: 9.594878
+2017-05-09 16:03:53, step: 11200, train_loss: 0.001450, test_loss: 0.001985, time cost: 9.645362
+2017-05-09 16:04:03, step: 11300, train_loss: 0.001625, test_loss: 0.001985, time cost: 9.670002
+2017-05-09 16:04:13, step: 11400, train_loss: 0.001363, test_loss: 0.001995, time cost: 9.822948
+2017-05-09 16:04:23, step: 11500, train_loss: 0.001493, test_loss: 0.001989, time cost: 9.664188
+2017-05-09 16:04:33, step: 11600, train_loss: 0.003675, test_loss: 0.001990, time cost: 9.699049
+2017-05-09 16:04:42, step: 11700, train_loss: 0.001474, test_loss: 0.001986, time cost: 9.675176
+2017-05-09 16:04:52, step: 11800, train_loss: 0.001541, test_loss: 0.001988, time cost: 9.594376
+2017-05-09 16:05:02, step: 11900, train_loss: 0.001269, test_loss: 0.001995, time cost: 9.710293
+2017-05-09 16:05:12, step: 12000, train_loss: 0.001580, test_loss: 0.001984, time cost: 9.619564
+2017-05-09 16:05:22, step: 12100, train_loss: 0.001475, test_loss: 0.001992, time cost: 9.777496
+2017-05-09 16:05:31, step: 12200, train_loss: 0.001473, test_loss: 0.001988, time cost: 9.594526
+2017-05-09 16:05:41, step: 12300, train_loss: 0.001828, test_loss: 0.001987, time cost: 9.796587
+2017-05-09 16:05:51, step: 12400, train_loss: 0.001334, test_loss: 0.001986, time cost: 9.606891
+2017-05-09 16:06:01, step: 12500, train_loss: 0.001326, test_loss: 0.001992, time cost: 9.676449999999999
+2017-05-09 16:06:11, step: 12600, train_loss: 0.001428, test_loss: 0.001989, time cost: 9.747604
+2017-05-09 16:06:21, step: 12700, train_loss: 0.001315, test_loss: 0.001989, time cost: 9.642177
+2017-05-09 16:06:30, step: 12800, train_loss: 0.001243, test_loss: 0.001990, time cost: 9.787992
+2017-05-09 16:06:40, step: 12900, train_loss: 0.001308, test_loss: 0.001983, time cost: 9.699884
+2017-05-09 16:06:50, step: 13000, train_loss: 0.001537, test_loss: 0.001987, time cost: 9.718402
+2017-05-09 16:07:00, step: 13100, train_loss: 0.001322, test_loss: 0.001988, time cost: 9.682326
+2017-05-09 16:07:10, step: 13200, train_loss: 0.001361, test_loss: 0.001989, time cost: 9.722297
+2017-05-09 16:07:20, step: 13300, train_loss: 0.001481, test_loss: 0.001988, time cost: 9.657258
+2017-05-09 16:07:29, step: 13400, train_loss: 0.001357, test_loss: 0.001990, time cost: 9.740303
+2017-05-09 16:07:39, step: 13500, train_loss: 0.001253, test_loss: 0.001987, time cost: 9.669558
+2017-05-09 16:07:49, step: 13600, train_loss: 0.001530, test_loss: 0.001991, time cost: 9.693854
+2017-05-09 16:07:59, step: 13700, train_loss: 0.001252, test_loss: 0.001987, time cost: 9.604136
+2017-05-09 16:08:09, step: 13800, train_loss: 0.001491, test_loss: 0.001993, time cost: 9.691758
+2017-05-09 16:08:19, step: 13900, train_loss: 0.001134, test_loss: 0.001985, time cost: 9.626494
+2017-05-09 16:08:28, step: 14000, train_loss: 0.001392, test_loss: 0.001988, time cost: 9.72945
+2017-05-09 16:08:38, step: 14100, train_loss: 0.001516, test_loss: 0.001987, time cost: 9.619425
+2017-05-09 16:08:48, step: 14200, train_loss: 0.001759, test_loss: 0.001986, time cost: 9.762853
+2017-05-09 16:08:58, step: 14300, train_loss: 0.001384, test_loss: 0.001991, time cost: 9.7593
+2017-05-09 16:09:08, step: 14400, train_loss: 0.001345, test_loss: 0.001988, time cost: 9.542313
+2017-05-09 16:09:18, step: 14500, train_loss: 0.003680, test_loss: 0.001987, time cost: 9.737832000000001
+2017-05-09 16:09:27, step: 14600, train_loss: 0.001491, test_loss: 0.001986, time cost: 9.567678
+2017-05-09 16:09:37, step: 14700, train_loss: 0.001391, test_loss: 0.001994, time cost: 9.614843
+2017-05-09 16:09:47, step: 14800, train_loss: 0.001483, test_loss: 0.001989, time cost: 9.635956
+2017-05-09 16:09:57, step: 14900, train_loss: 0.001339, test_loss: 0.001985, time cost: 9.607112
+2017-05-09 16:10:06, step: 15000, train_loss: 0.001723, test_loss: 0.001984, time cost: 9.749033
+2017-05-09 16:10:16, step: 15100, train_loss: 0.001512, test_loss: 0.001986, time cost: 9.650081
+2017-05-09 16:10:26, step: 15200, train_loss: 0.001341, test_loss: 0.001987, time cost: 9.570886
+2017-05-09 16:10:36, step: 15300, train_loss: 0.001264, test_loss: 0.001989, time cost: 9.581399
+2017-05-09 16:10:46, step: 15400, train_loss: 0.001527, test_loss: 0.001985, time cost: 9.705444
+2017-05-09 16:10:55, step: 15500, train_loss: 0.001245, test_loss: 0.001987, time cost: 9.677034
+2017-05-09 16:11:05, step: 15600, train_loss: 0.001521, test_loss: 0.001990, time cost: 9.696328
+2017-05-09 16:11:15, step: 15700, train_loss: 0.001354, test_loss: 0.001986, time cost: 9.594828
+2017-05-09 16:11:25, step: 15800, train_loss: 0.001522, test_loss: 0.001987, time cost: 9.548106
+2017-05-09 16:11:34, step: 15900, train_loss: 0.001693, test_loss: 0.001987, time cost: 9.706033
+2017-05-09 16:11:44, step: 16000, train_loss: 0.001493, test_loss: 0.001987, time cost: 9.598666
+2017-05-09 16:11:54, step: 16100, train_loss: 0.001494, test_loss: 0.001986, time cost: 9.697977
+2017-05-09 16:12:04, step: 16200, train_loss: 0.001264, test_loss: 0.001986, time cost: 9.542168
+2017-05-09 16:12:13, step: 16300, train_loss: 0.001323, test_loss: 0.001988, time cost: 9.616014
+2017-05-09 16:12:23, step: 16400, train_loss: 0.001381, test_loss: 0.001989, time cost: 9.642781
+2017-05-09 16:12:33, step: 16500, train_loss: 0.001390, test_loss: 0.001987, time cost: 9.742423
+2017-05-09 16:12:43, step: 16600, train_loss: 0.001694, test_loss: 0.001985, time cost: 9.55862
+2017-05-09 16:12:52, step: 16700, train_loss: 0.001465, test_loss: 0.001988, time cost: 9.560477
+2017-05-09 16:13:02, step: 16800, train_loss: 0.001467, test_loss: 0.001987, time cost: 9.776612
+2017-05-09 16:13:12, step: 16900, train_loss: 0.001695, test_loss: 0.001989, time cost: 9.53527
+2017-05-09 16:13:22, step: 17000, train_loss: 0.001566, test_loss: 0.001987, time cost: 9.619822
+2017-05-09 16:13:32, step: 17100, train_loss: 0.001342, test_loss: 0.001987, time cost: 9.701387
+2017-05-09 16:13:41, step: 17200, train_loss: 0.001486, test_loss: 0.001991, time cost: 9.65887
+2017-05-09 16:13:51, step: 17300, train_loss: 0.001527, test_loss: 0.001987, time cost: 9.550491
+2017-05-09 16:14:01, step: 17400, train_loss: 0.001378, test_loss: 0.001987, time cost: 9.674428
+2017-05-09 16:14:11, step: 17500, train_loss: 0.001467, test_loss: 0.001987, time cost: 9.581241
+2017-05-09 16:14:21, step: 17600, train_loss: 0.001245, test_loss: 0.001988, time cost: 9.697567
+2017-05-09 16:14:30, step: 17700, train_loss: 0.001271, test_loss: 0.001988, time cost: 9.614077
+2017-05-09 16:14:40, step: 17800, train_loss: 0.001481, test_loss: 0.001987, time cost: 9.582205
+2017-05-09 16:14:50, step: 17900, train_loss: 0.001481, test_loss: 0.001989, time cost: 9.666985
+2017-05-09 16:15:00, step: 18000, train_loss: 0.001484, test_loss: 0.001988, time cost: 9.685091
+2017-05-09 16:15:09, step: 18100, train_loss: 0.003671, test_loss: 0.001992, time cost: 9.549761
+2017-05-09 16:15:19, step: 18200, train_loss: 0.001380, test_loss: 0.001988, time cost: 9.617
+2017-05-09 16:15:29, step: 18300, train_loss: 0.001181, test_loss: 0.001988, time cost: 9.549623
+2017-05-09 16:15:39, step: 18400, train_loss: 0.001497, test_loss: 0.001989, time cost: 9.619691
+2017-05-09 16:15:48, step: 18500, train_loss: 0.001826, test_loss: 0.001989, time cost: 9.580734
+2017-05-09 16:15:58, step: 18600, train_loss: 0.001382, test_loss: 0.001988, time cost: 9.663581
+2017-05-09 16:16:08, step: 18700, train_loss: 0.001297, test_loss: 0.001988, time cost: 9.475228
+2017-05-09 16:16:18, step: 18800, train_loss: 0.001415, test_loss: 0.001988, time cost: 9.638729
+2017-05-09 16:16:27, step: 18900, train_loss: 0.001271, test_loss: 0.001987, time cost: 9.513898
+2017-05-09 16:16:37, step: 19000, train_loss: 0.001249, test_loss: 0.001989, time cost: 9.654268
+2017-05-09 16:16:47, step: 19100, train_loss: 0.001423, test_loss: 0.001987, time cost: 9.711083
+2017-05-09 16:16:57, step: 19200, train_loss: 0.001516, test_loss: 0.001989, time cost: 9.535088
+2017-05-09 16:17:06, step: 19300, train_loss: 0.001342, test_loss: 0.001987, time cost: 9.662354
+2017-05-09 16:17:16, step: 19400, train_loss: 0.001651, test_loss: 0.001989, time cost: 9.695594
+2017-05-09 16:17:26, step: 19500, train_loss: 0.001413, test_loss: 0.001989, time cost: 9.660861
+2017-05-09 16:17:36, step: 19600, train_loss: 0.001265, test_loss: 0.001988, time cost: 9.521918
+2017-05-09 16:17:45, step: 19700, train_loss: 0.001327, test_loss: 0.001986, time cost: 9.471203
+2017-05-09 16:17:55, step: 19800, train_loss: 0.001234, test_loss: 0.001988, time cost: 9.513178
+2017-05-09 16:18:04, step: 19900, train_loss: 0.001826, test_loss: 0.001989, time cost: 9.515486
+I tensorflow/stream_executor/dso_loader.cc:125] successfully opened CUDA library libcublas.so.8.0 locally
+I tensorflow/stream_executor/dso_loader.cc:125] successfully opened CUDA library libcudnn.so.5 locally
+I tensorflow/stream_executor/dso_loader.cc:125] successfully opened CUDA library libcufft.so.8.0 locally
+I tensorflow/stream_executor/dso_loader.cc:125] successfully opened CUDA library libcuda.so.1 locally
+I tensorflow/stream_executor/dso_loader.cc:125] successfully opened CUDA library libcurand.so.8.0 locally
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:885] Found device 0 with properties: 
+name: TITAN X (Pascal)
+major: 6 minor: 1 memoryClockRate (GHz) 1.531
+pciBusID 0000:83:00.0
+Total memory: 11.90GiB
+Free memory: 11.76GiB
+W tensorflow/stream_executor/cuda/cuda_driver.cc:590] creating context when one is currently active; existing: 0x3f7a740
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:885] Found device 1 with properties: 
+name: TITAN X (Pascal)
+major: 6 minor: 1 memoryClockRate (GHz) 1.531
+pciBusID 0000:84:00.0
+Total memory: 11.90GiB
+Free memory: 11.76GiB
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:906] DMA: 0 1 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:916] 0:   Y Y 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:916] 1:   Y Y 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: TITAN X (Pascal), pci bus id: 0000:83:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:1) -> (device: 1, name: TITAN X (Pascal), pci bus id: 0000:84:00.0)
+0.001
+56738
+train_samples: 2656
+train_samples: 320
+2017-05-09 19:33:45, step: 0, train_loss: 0.032516, test_loss: 0.029289, time cost: 3.637898
+2017-05-09 19:33:55, step: 100, train_loss: 0.010918, test_loss: 0.011259, time cost: 9.302159
+2017-05-09 19:34:04, step: 200, train_loss: 0.007918, test_loss: 0.008578, time cost: 9.228976
+2017-05-09 19:34:13, step: 300, train_loss: 0.006516, test_loss: 0.006782, time cost: 9.312308
+2017-05-09 19:34:23, step: 400, train_loss: 0.007335, test_loss: 0.005753, time cost: 9.310555
+2017-05-09 19:34:32, step: 500, train_loss: 0.003176, test_loss: 0.004861, time cost: 9.319662
+2017-05-09 19:34:42, step: 600, train_loss: 0.004609, test_loss: 0.004317, time cost: 9.380991999999999
+2017-05-09 19:34:51, step: 700, train_loss: 0.003818, test_loss: 0.004092, time cost: 9.366771
+2017-05-09 19:35:01, step: 800, train_loss: 0.003185, test_loss: 0.003782, time cost: 9.571078
+2017-05-09 19:35:11, step: 900, train_loss: 0.003356, test_loss: 0.003503, time cost: 9.575098
+2017-05-09 19:35:21, step: 1000, train_loss: 0.003111, test_loss: 0.003315, time cost: 9.5583
+2017-05-09 19:35:30, step: 1100, train_loss: 0.003106, test_loss: 0.003228, time cost: 9.594206
+2017-05-09 19:35:40, step: 1200, train_loss: 0.004378, test_loss: 0.003172, time cost: 9.545069
+2017-05-09 19:35:50, step: 1300, train_loss: 0.002388, test_loss: 0.003217, time cost: 9.634823
+2017-05-09 19:36:00, step: 1400, train_loss: 0.002434, test_loss: 0.002968, time cost: 9.434096
+2017-05-09 19:36:09, step: 1500, train_loss: 0.002389, test_loss: 0.002874, time cost: 9.509957
+2017-05-09 19:36:19, step: 1600, train_loss: 0.002115, test_loss: 0.002883, time cost: 9.481489
+2017-05-09 19:36:28, step: 1700, train_loss: 0.002091, test_loss: 0.002972, time cost: 9.471327
+2017-05-09 19:36:38, step: 1800, train_loss: 0.002265, test_loss: 0.002749, time cost: 9.375329
+2017-05-09 19:36:48, step: 1900, train_loss: 0.001829, test_loss: 0.002727, time cost: 9.457857
+2017-05-09 19:36:57, step: 2000, train_loss: 0.002110, test_loss: 0.002759, time cost: 9.5447
+2017-05-09 19:37:07, step: 2100, train_loss: 0.002518, test_loss: 0.002874, time cost: 9.37084
+2017-05-09 19:37:17, step: 2200, train_loss: 0.003136, test_loss: 0.002635, time cost: 9.583545
+2017-05-09 19:37:26, step: 2300, train_loss: 0.002486, test_loss: 0.002680, time cost: 9.662889
+2017-05-09 19:37:36, step: 2400, train_loss: 0.001905, test_loss: 0.002592, time cost: 9.483965
+2017-05-09 19:37:46, step: 2500, train_loss: 0.002440, test_loss: 0.002839, time cost: 9.489238
+2017-05-09 19:37:55, step: 2600, train_loss: 0.002193, test_loss: 0.002594, time cost: 9.437552
+2017-05-09 19:38:05, step: 2700, train_loss: 0.002344, test_loss: 0.002515, time cost: 9.576687
+2017-05-09 19:38:15, step: 2800, train_loss: 0.002562, test_loss: 0.003045, time cost: 9.550459
+2017-05-09 19:38:24, step: 2900, train_loss: 0.002026, test_loss: 0.002478, time cost: 9.444707
+2017-05-09 19:38:34, step: 3000, train_loss: 0.002165, test_loss: 0.002591, time cost: 9.528103
+2017-05-09 19:38:44, step: 3100, train_loss: 0.003825, test_loss: 0.002475, time cost: 9.460641
+2017-05-09 19:38:53, step: 3200, train_loss: 0.001835, test_loss: 0.002404, time cost: 9.579532
+2017-05-09 19:39:03, step: 3300, train_loss: 0.002039, test_loss: 0.002417, time cost: 9.584023
+2017-05-09 19:39:13, step: 3400, train_loss: 0.002213, test_loss: 0.002369, time cost: 9.48063
+2017-05-09 19:39:23, step: 3500, train_loss: 0.002231, test_loss: 0.002407, time cost: 9.631632
+2017-05-09 19:39:32, step: 3600, train_loss: 0.001618, test_loss: 0.002365, time cost: 9.567597
+2017-05-09 19:39:42, step: 3700, train_loss: 0.001941, test_loss: 0.002293, time cost: 9.471708
+2017-05-09 19:39:51, step: 3800, train_loss: 0.001835, test_loss: 0.002460, time cost: 9.456567
+2017-05-09 19:40:01, step: 3900, train_loss: 0.002162, test_loss: 0.002305, time cost: 9.510976
+2017-05-09 19:40:11, step: 4000, train_loss: 0.002120, test_loss: 0.002409, time cost: 9.48339
+2017-05-09 19:40:20, step: 4100, train_loss: 0.002131, test_loss: 0.002456, time cost: 9.45564
+2017-05-09 19:40:30, step: 4200, train_loss: 0.001834, test_loss: 0.002282, time cost: 9.623906
+2017-05-09 19:40:40, step: 4300, train_loss: 0.001947, test_loss: 0.002328, time cost: 9.533375
+2017-05-09 19:40:50, step: 4400, train_loss: 0.001715, test_loss: 0.002249, time cost: 9.574701
+2017-05-09 19:40:59, step: 4500, train_loss: 0.001826, test_loss: 0.002304, time cost: 9.476158
+2017-05-09 19:41:09, step: 4600, train_loss: 0.002079, test_loss: 0.002234, time cost: 9.586107
+2017-05-09 19:41:18, step: 4700, train_loss: 0.002176, test_loss: 0.002255, time cost: 9.431382
+2017-05-09 19:41:28, step: 4800, train_loss: 0.001973, test_loss: 0.002215, time cost: 9.656883
+2017-05-09 19:41:38, step: 4900, train_loss: 0.001622, test_loss: 0.002198, time cost: 9.49258
+2017-05-09 19:41:48, step: 5000, train_loss: 0.001672, test_loss: 0.002241, time cost: 9.450175
+2017-05-09 19:41:57, step: 5100, train_loss: 0.001515, test_loss: 0.002144, time cost: 9.589799
+2017-05-09 19:42:07, step: 5200, train_loss: 0.001552, test_loss: 0.002148, time cost: 9.552636
+2017-05-09 19:42:17, step: 5300, train_loss: 0.001583, test_loss: 0.002145, time cost: 9.507353
+2017-05-09 19:42:26, step: 5400, train_loss: 0.001675, test_loss: 0.002136, time cost: 9.495196
+2017-05-09 19:42:36, step: 5500, train_loss: 0.001814, test_loss: 0.002134, time cost: 9.474282
+2017-05-09 19:42:46, step: 5600, train_loss: 0.001651, test_loss: 0.002139, time cost: 9.480905
+2017-05-09 19:42:55, step: 5700, train_loss: 0.001735, test_loss: 0.002135, time cost: 9.499061
+2017-05-09 19:43:05, step: 5800, train_loss: 0.001686, test_loss: 0.002131, time cost: 9.65628
+2017-05-09 19:43:15, step: 5900, train_loss: 0.001583, test_loss: 0.002130, time cost: 9.601921
+2017-05-09 19:43:25, step: 6000, train_loss: 0.001730, test_loss: 0.002137, time cost: 9.560271
+2017-05-09 19:43:34, step: 6100, train_loss: 0.001351, test_loss: 0.002157, time cost: 9.669086
+2017-05-09 19:43:44, step: 6200, train_loss: 0.001822, test_loss: 0.002129, time cost: 9.529222
+2017-05-09 19:43:54, step: 6300, train_loss: 0.001721, test_loss: 0.002123, time cost: 9.429508
+2017-05-09 19:44:03, step: 6400, train_loss: 0.001838, test_loss: 0.002127, time cost: 9.521560000000001
+2017-05-09 19:44:13, step: 6500, train_loss: 0.002539, test_loss: 0.002119, time cost: 9.580848
+2017-05-09 19:44:23, step: 6600, train_loss: 0.001761, test_loss: 0.002118, time cost: 9.562597
+2017-05-09 19:44:32, step: 6700, train_loss: 0.001795, test_loss: 0.002131, time cost: 9.481572
+2017-05-09 19:44:42, step: 6800, train_loss: 0.001495, test_loss: 0.002141, time cost: 9.60962
+2017-05-09 19:44:52, step: 6900, train_loss: 0.001545, test_loss: 0.002142, time cost: 9.570688
+2017-05-09 19:45:02, step: 7000, train_loss: 0.001579, test_loss: 0.002124, time cost: 9.596197
+2017-05-09 19:45:11, step: 7100, train_loss: 0.001730, test_loss: 0.002128, time cost: 9.503823
+2017-05-09 19:45:21, step: 7200, train_loss: 0.001671, test_loss: 0.002132, time cost: 9.516175
+2017-05-09 19:45:31, step: 7300, train_loss: 0.001664, test_loss: 0.002124, time cost: 9.589109
+2017-05-09 19:45:40, step: 7400, train_loss: 0.001659, test_loss: 0.002115, time cost: 9.515202
+2017-05-09 19:45:50, step: 7500, train_loss: 0.001796, test_loss: 0.002117, time cost: 9.640383
+2017-05-09 19:46:00, step: 7600, train_loss: 0.003740, test_loss: 0.002128, time cost: 9.521236
+2017-05-09 19:46:10, step: 7700, train_loss: 0.001803, test_loss: 0.002111, time cost: 9.551167
+2017-05-09 19:46:19, step: 7800, train_loss: 0.001750, test_loss: 0.002128, time cost: 9.632475
+2017-05-09 19:46:29, step: 7900, train_loss: 0.001469, test_loss: 0.002121, time cost: 9.569808
+2017-05-09 19:46:39, step: 8000, train_loss: 0.001529, test_loss: 0.002116, time cost: 9.552734
+2017-05-09 19:46:48, step: 8100, train_loss: 0.001625, test_loss: 0.002109, time cost: 9.565571
+2017-05-09 19:46:58, step: 8200, train_loss: 0.001498, test_loss: 0.002118, time cost: 9.441445
+2017-05-09 19:47:08, step: 8300, train_loss: 0.001718, test_loss: 0.002110, time cost: 9.552919
+2017-05-09 19:47:17, step: 8400, train_loss: 0.001543, test_loss: 0.002102, time cost: 9.521093
+2017-05-09 19:47:27, step: 8500, train_loss: 0.001679, test_loss: 0.002121, time cost: 9.606569
+2017-05-09 19:47:37, step: 8600, train_loss: 0.001566, test_loss: 0.002107, time cost: 9.532253
+2017-05-09 19:47:46, step: 8700, train_loss: 0.001681, test_loss: 0.002109, time cost: 9.374384
+2017-05-09 19:47:56, step: 8800, train_loss: 0.001840, test_loss: 0.002111, time cost: 9.514686
+2017-05-09 19:48:06, step: 8900, train_loss: 0.001789, test_loss: 0.002099, time cost: 9.565898
+2017-05-09 19:48:15, step: 9000, train_loss: 0.001835, test_loss: 0.002103, time cost: 9.491853
+2017-05-09 19:48:25, step: 9100, train_loss: 0.001451, test_loss: 0.002116, time cost: 9.530686
+2017-05-09 19:48:35, step: 9200, train_loss: 0.001704, test_loss: 0.002103, time cost: 9.521298999999999
+2017-05-09 19:48:44, step: 9300, train_loss: 0.001724, test_loss: 0.002148, time cost: 9.487551
+2017-05-09 19:48:54, step: 9400, train_loss: 0.001475, test_loss: 0.002106, time cost: 9.521813
+2017-05-09 19:49:04, step: 9500, train_loss: 0.001497, test_loss: 0.002116, time cost: 9.481805
+2017-05-09 19:49:13, step: 9600, train_loss: 0.001654, test_loss: 0.002132, time cost: 9.488526
+2017-05-09 19:49:23, step: 9700, train_loss: 0.001657, test_loss: 0.002101, time cost: 9.566356
+2017-05-09 19:49:33, step: 9800, train_loss: 0.001781, test_loss: 0.002100, time cost: 9.542953
+2017-05-09 19:49:42, step: 9900, train_loss: 0.001842, test_loss: 0.002102, time cost: 9.513308
+2017-05-09 19:49:52, step: 10000, train_loss: 0.001551, test_loss: 0.002096, time cost: 9.678917
+2017-05-09 19:50:02, step: 10100, train_loss: 0.001628, test_loss: 0.002087, time cost: 9.459474
+2017-05-09 19:50:11, step: 10200, train_loss: 0.001497, test_loss: 0.002091, time cost: 9.487423
+2017-05-09 19:50:21, step: 10300, train_loss: 0.001636, test_loss: 0.002087, time cost: 9.564331
+2017-05-09 19:50:31, step: 10400, train_loss: 0.001338, test_loss: 0.002090, time cost: 9.563549
+2017-05-09 19:50:40, step: 10500, train_loss: 0.001456, test_loss: 0.002088, time cost: 9.489995
+2017-05-09 19:50:50, step: 10600, train_loss: 0.001838, test_loss: 0.002091, time cost: 9.589639
+2017-05-09 19:51:00, step: 10700, train_loss: 0.001743, test_loss: 0.002087, time cost: 9.536337
+2017-05-09 19:51:10, step: 10800, train_loss: 0.001629, test_loss: 0.002085, time cost: 9.649884
+2017-05-09 19:51:19, step: 10900, train_loss: 0.001413, test_loss: 0.002084, time cost: 9.43883
+2017-05-09 19:51:29, step: 11000, train_loss: 0.001701, test_loss: 0.002088, time cost: 9.605133
+2017-05-09 19:51:39, step: 11100, train_loss: 0.001540, test_loss: 0.002090, time cost: 9.439186
+2017-05-09 19:51:48, step: 11200, train_loss: 0.001629, test_loss: 0.002091, time cost: 9.512264
+2017-05-09 19:51:58, step: 11300, train_loss: 0.001630, test_loss: 0.002091, time cost: 9.459174
+2017-05-09 19:52:08, step: 11400, train_loss: 0.001500, test_loss: 0.002086, time cost: 9.512447
+2017-05-09 19:52:17, step: 11500, train_loss: 0.001330, test_loss: 0.002085, time cost: 9.476811
+2017-05-09 19:52:27, step: 11600, train_loss: 0.001465, test_loss: 0.002082, time cost: 9.483942
+2017-05-09 19:52:37, step: 11700, train_loss: 0.001712, test_loss: 0.002086, time cost: 9.594162
+2017-05-09 19:52:46, step: 11800, train_loss: 0.001641, test_loss: 0.002083, time cost: 9.425636
+2017-05-09 19:52:56, step: 11900, train_loss: 0.001718, test_loss: 0.002092, time cost: 9.407049
+2017-05-09 19:53:05, step: 12000, train_loss: 0.001696, test_loss: 0.002085, time cost: 9.387894
+2017-05-09 19:53:15, step: 12100, train_loss: 0.001766, test_loss: 0.002083, time cost: 9.578625
+2017-05-09 19:53:25, step: 12200, train_loss: 0.001768, test_loss: 0.002089, time cost: 9.462062
+2017-05-09 19:53:34, step: 12300, train_loss: 0.001608, test_loss: 0.002086, time cost: 9.43036
+2017-05-09 19:53:44, step: 12400, train_loss: 0.001783, test_loss: 0.002088, time cost: 9.518118
+2017-05-09 19:53:54, step: 12500, train_loss: 0.001836, test_loss: 0.002086, time cost: 9.618989
+2017-05-09 19:54:03, step: 12600, train_loss: 0.001763, test_loss: 0.002085, time cost: 9.474928
+2017-05-09 19:54:13, step: 12700, train_loss: 0.001802, test_loss: 0.002089, time cost: 9.467853
+2017-05-09 19:54:22, step: 12800, train_loss: 0.001465, test_loss: 0.002085, time cost: 9.410211
+2017-05-09 19:54:32, step: 12900, train_loss: 0.001701, test_loss: 0.002084, time cost: 9.64415
+2017-05-09 19:54:42, step: 13000, train_loss: 0.001646, test_loss: 0.002094, time cost: 9.456707
+2017-05-09 19:54:51, step: 13100, train_loss: 0.001452, test_loss: 0.002087, time cost: 9.585363
+2017-05-09 19:55:01, step: 13200, train_loss: 0.001633, test_loss: 0.002088, time cost: 9.578854
+2017-05-09 19:55:11, step: 13300, train_loss: 0.001483, test_loss: 0.002083, time cost: 9.430275
+2017-05-09 19:55:20, step: 13400, train_loss: 0.001496, test_loss: 0.002086, time cost: 9.49034
+2017-05-09 19:55:30, step: 13500, train_loss: 0.001537, test_loss: 0.002083, time cost: 9.653648
+2017-05-09 19:55:40, step: 13600, train_loss: 0.001638, test_loss: 0.002087, time cost: 9.40295
+2017-05-09 19:55:49, step: 13700, train_loss: 0.001538, test_loss: 0.002083, time cost: 9.449843
+2017-05-09 19:55:59, step: 13800, train_loss: 0.001758, test_loss: 0.002091, time cost: 9.417031
+2017-05-09 19:56:08, step: 13900, train_loss: 0.001510, test_loss: 0.002085, time cost: 9.463948
+2017-05-09 19:56:18, step: 14000, train_loss: 0.001870, test_loss: 0.002083, time cost: 9.352312
+2017-05-09 19:56:28, step: 14100, train_loss: 0.001472, test_loss: 0.002087, time cost: 9.48015
+2017-05-09 19:56:37, step: 14200, train_loss: 0.001693, test_loss: 0.002089, time cost: 9.446909
+2017-05-09 19:56:47, step: 14300, train_loss: 0.001805, test_loss: 0.002082, time cost: 9.511399
+2017-05-09 19:56:57, step: 14400, train_loss: 0.001486, test_loss: 0.002084, time cost: 9.607529
+2017-05-09 19:57:06, step: 14500, train_loss: 0.001470, test_loss: 0.002091, time cost: 9.494162
+2017-05-09 19:57:16, step: 14600, train_loss: 0.001329, test_loss: 0.002085, time cost: 9.559978
+2017-05-09 19:57:25, step: 14700, train_loss: 0.001558, test_loss: 0.002087, time cost: 9.385433
+2017-05-09 19:57:35, step: 14800, train_loss: 0.001720, test_loss: 0.002082, time cost: 9.473461
+2017-05-09 19:57:45, step: 14900, train_loss: 0.001456, test_loss: 0.002083, time cost: 9.399866
+2017-05-09 19:57:54, step: 15000, train_loss: 0.001516, test_loss: 0.002086, time cost: 9.364435
+2017-05-09 19:58:04, step: 15100, train_loss: 0.001472, test_loss: 0.002084, time cost: 9.379457
+2017-05-09 19:58:13, step: 15200, train_loss: 0.001455, test_loss: 0.002084, time cost: 9.541426
+2017-05-09 19:58:23, step: 15300, train_loss: 0.001666, test_loss: 0.002085, time cost: 9.456431
+2017-05-09 19:58:32, step: 15400, train_loss: 0.001627, test_loss: 0.002083, time cost: 9.349179
+2017-05-09 19:58:42, step: 15500, train_loss: 0.001600, test_loss: 0.002083, time cost: 9.399631
+2017-05-09 19:58:52, step: 15600, train_loss: 0.001407, test_loss: 0.002086, time cost: 9.503964
+2017-05-09 19:59:01, step: 15700, train_loss: 0.001763, test_loss: 0.002081, time cost: 9.439091
+2017-05-09 19:59:11, step: 15800, train_loss: 0.001407, test_loss: 0.002084, time cost: 9.461733
+2017-05-09 19:59:20, step: 15900, train_loss: 0.001620, test_loss: 0.002083, time cost: 9.315426
+2017-05-09 19:59:30, step: 16000, train_loss: 0.001694, test_loss: 0.002083, time cost: 9.663898
+2017-05-09 19:59:40, step: 16100, train_loss: 0.001757, test_loss: 0.002084, time cost: 9.457606
+2017-05-09 19:59:49, step: 16200, train_loss: 0.001662, test_loss: 0.002083, time cost: 9.467366
+2017-05-09 19:59:59, step: 16300, train_loss: 0.001813, test_loss: 0.002082, time cost: 9.362765
+2017-05-09 20:00:08, step: 16400, train_loss: 0.001551, test_loss: 0.002082, time cost: 9.46845
+2017-05-09 20:00:18, step: 16500, train_loss: 0.001872, test_loss: 0.002081, time cost: 9.503814
+2017-05-09 20:00:27, step: 16600, train_loss: 0.001622, test_loss: 0.002082, time cost: 9.306502
+2017-05-09 20:00:37, step: 16700, train_loss: 0.001703, test_loss: 0.002084, time cost: 9.434782
+2017-05-09 20:00:47, step: 16800, train_loss: 0.001760, test_loss: 0.002083, time cost: 9.379063
+2017-05-09 20:00:56, step: 16900, train_loss: 0.001618, test_loss: 0.002084, time cost: 9.37247
+2017-05-09 20:01:06, step: 17000, train_loss: 0.001484, test_loss: 0.002083, time cost: 9.35169
+2017-05-09 20:01:15, step: 17100, train_loss: 0.001456, test_loss: 0.002082, time cost: 9.263694
+2017-05-09 20:01:25, step: 17200, train_loss: 0.001718, test_loss: 0.002084, time cost: 9.451797
+2017-05-09 20:01:34, step: 17300, train_loss: 0.001576, test_loss: 0.002084, time cost: 9.272983
+2017-05-09 20:01:44, step: 17400, train_loss: 0.001550, test_loss: 0.002083, time cost: 9.409887
+2017-05-09 20:01:53, step: 17500, train_loss: 0.001760, test_loss: 0.002085, time cost: 9.186083
+2017-05-09 20:02:02, step: 17600, train_loss: 0.001599, test_loss: 0.002082, time cost: 9.390662
+2017-05-09 20:02:12, step: 17700, train_loss: 0.001490, test_loss: 0.002085, time cost: 9.269147
+2017-05-09 20:02:21, step: 17800, train_loss: 0.001483, test_loss: 0.002083, time cost: 9.334868
+2017-05-09 20:02:31, step: 17900, train_loss: 0.001484, test_loss: 0.002085, time cost: 9.259202
+2017-05-09 20:02:40, step: 18000, train_loss: 0.001718, test_loss: 0.002082, time cost: 9.309724
+2017-05-09 20:02:50, step: 18100, train_loss: 0.001461, test_loss: 0.002084, time cost: 9.338464
+2017-05-09 20:02:59, step: 18200, train_loss: 0.001276, test_loss: 0.002083, time cost: 9.349291000000001
+2017-05-09 20:03:09, step: 18300, train_loss: 0.003731, test_loss: 0.002083, time cost: 9.24455
+2017-05-09 20:03:18, step: 18400, train_loss: 0.001435, test_loss: 0.002083, time cost: 9.355023
+2017-05-09 20:03:27, step: 18500, train_loss: 0.001604, test_loss: 0.002084, time cost: 9.255185
+2017-05-09 20:03:37, step: 18600, train_loss: 0.001804, test_loss: 0.002082, time cost: 9.351113
+2017-05-09 20:03:46, step: 18700, train_loss: 0.001737, test_loss: 0.002083, time cost: 9.306132999999999
+2017-05-09 20:03:56, step: 18800, train_loss: 0.001612, test_loss: 0.002082, time cost: 9.348711
+2017-05-09 20:04:05, step: 18900, train_loss: 0.001490, test_loss: 0.002084, time cost: 9.303854
+2017-05-09 20:04:15, step: 19000, train_loss: 0.001533, test_loss: 0.002082, time cost: 9.349659
+2017-05-09 20:04:24, step: 19100, train_loss: 0.001958, test_loss: 0.002084, time cost: 9.263017
+2017-05-09 20:04:34, step: 19200, train_loss: 0.001697, test_loss: 0.002082, time cost: 9.250511
+2017-05-09 20:04:43, step: 19300, train_loss: 0.001456, test_loss: 0.002084, time cost: 9.257427
+2017-05-09 20:04:53, step: 19400, train_loss: 0.001528, test_loss: 0.002082, time cost: 9.393428
+2017-05-09 20:05:02, step: 19500, train_loss: 0.001609, test_loss: 0.002082, time cost: 9.275215
+2017-05-09 20:05:11, step: 19600, train_loss: 0.001699, test_loss: 0.002082, time cost: 9.289272
+2017-05-09 20:05:21, step: 19700, train_loss: 0.001772, test_loss: 0.002080, time cost: 9.265412
+2017-05-09 20:05:30, step: 19800, train_loss: 0.001458, test_loss: 0.002084, time cost: 9.245324
+2017-05-09 20:05:40, step: 19900, train_loss: 0.001603, test_loss: 0.002082, time cost: 9.263894
+I tensorflow/stream_executor/dso_loader.cc:125] successfully opened CUDA library libcublas.so.8.0 locally
+I tensorflow/stream_executor/dso_loader.cc:125] successfully opened CUDA library libcudnn.so.5 locally
+I tensorflow/stream_executor/dso_loader.cc:125] successfully opened CUDA library libcufft.so.8.0 locally
+I tensorflow/stream_executor/dso_loader.cc:125] successfully opened CUDA library libcuda.so.1 locally
+I tensorflow/stream_executor/dso_loader.cc:125] successfully opened CUDA library libcurand.so.8.0 locally
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:885] Found device 0 with properties: 
+name: TITAN X (Pascal)
+major: 6 minor: 1 memoryClockRate (GHz) 1.531
+pciBusID 0000:83:00.0
+Total memory: 11.90GiB
+Free memory: 11.76GiB
+W tensorflow/stream_executor/cuda/cuda_driver.cc:590] creating context when one is currently active; existing: 0x3b086a0
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:885] Found device 1 with properties: 
+name: TITAN X (Pascal)
+major: 6 minor: 1 memoryClockRate (GHz) 1.531
+pciBusID 0000:84:00.0
+Total memory: 11.90GiB
+Free memory: 11.76GiB
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:906] DMA: 0 1 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:916] 0:   Y Y 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:916] 1:   Y Y 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: TITAN X (Pascal), pci bus id: 0000:83:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:1) -> (device: 1, name: TITAN X (Pascal), pci bus id: 0000:84:00.0)
+0.001
+56542
+train_samples: 2816
+train_samples: 320
+2017-05-16 22:56:55, step: 0, train_loss: 0.028233, test_loss: 0.029309, time cost: 3.946036
+2017-05-16 22:57:05, step: 100, train_loss: 0.011722, test_loss: 0.011546, time cost: 9.356724
+2017-05-16 22:57:14, step: 200, train_loss: 0.007509, test_loss: 0.008567, time cost: 9.253683
+2017-05-16 22:57:24, step: 300, train_loss: 0.007184, test_loss: 0.006917, time cost: 9.307075
+2017-05-16 22:57:33, step: 400, train_loss: 0.005348, test_loss: 0.005766, time cost: 9.332146
+2017-05-16 22:57:43, step: 500, train_loss: 0.005687, test_loss: 0.004874, time cost: 9.424629
+2017-05-16 22:57:52, step: 600, train_loss: 0.003826, test_loss: 0.004328, time cost: 9.418389
+2017-05-16 22:58:02, step: 700, train_loss: 0.003676, test_loss: 0.003916, time cost: 9.46938
+2017-05-16 22:58:12, step: 800, train_loss: 0.003530, test_loss: 0.004035, time cost: 9.460598
+2017-05-16 22:58:21, step: 900, train_loss: 0.003070, test_loss: 0.003502, time cost: 9.483686
+2017-05-16 22:58:31, step: 1000, train_loss: 0.002683, test_loss: 0.003393, time cost: 9.514884
+2017-05-16 22:58:41, step: 1100, train_loss: 0.002800, test_loss: 0.003360, time cost: 9.489775
+2017-05-16 22:58:50, step: 1200, train_loss: 0.002145, test_loss: 0.003121, time cost: 9.517679
+2017-05-16 22:59:00, step: 1300, train_loss: 0.002363, test_loss: 0.003069, time cost: 9.545751
+2017-05-16 22:59:10, step: 1400, train_loss: 0.002721, test_loss: 0.003111, time cost: 9.354189
+2017-05-16 22:59:19, step: 1500, train_loss: 0.002669, test_loss: 0.002999, time cost: 9.463045
+2017-05-16 22:59:29, step: 1600, train_loss: 0.002114, test_loss: 0.002879, time cost: 9.584684
+2017-05-16 22:59:39, step: 1700, train_loss: 0.002646, test_loss: 0.002922, time cost: 9.583877
+2017-05-16 22:59:48, step: 1800, train_loss: 0.002605, test_loss: 0.002822, time cost: 9.484825
+2017-05-16 22:59:58, step: 1900, train_loss: 0.002487, test_loss: 0.002746, time cost: 9.484315
+2017-05-16 23:00:08, step: 2000, train_loss: 0.002340, test_loss: 0.002961, time cost: 9.533326
+2017-05-16 23:00:17, step: 2100, train_loss: 0.002102, test_loss: 0.002744, time cost: 9.599067
+2017-05-16 23:00:27, step: 2200, train_loss: 0.002617, test_loss: 0.002738, time cost: 9.543233
+2017-05-16 23:00:37, step: 2300, train_loss: 0.002298, test_loss: 0.002654, time cost: 9.503818
+2017-05-16 23:00:46, step: 2400, train_loss: 0.002372, test_loss: 0.002621, time cost: 9.402457
+2017-05-16 23:00:56, step: 2500, train_loss: 0.001967, test_loss: 0.002555, time cost: 9.554938
+2017-05-16 23:01:06, step: 2600, train_loss: 0.002074, test_loss: 0.002533, time cost: 9.499607
+2017-05-16 23:01:15, step: 2700, train_loss: 0.002209, test_loss: 0.002563, time cost: 9.497622
+2017-05-16 23:01:25, step: 2800, train_loss: 0.001993, test_loss: 0.002528, time cost: 9.429927
+2017-05-16 23:01:34, step: 2900, train_loss: 0.002320, test_loss: 0.002510, time cost: 9.512441
+2017-05-16 23:01:44, step: 3000, train_loss: 0.001951, test_loss: 0.002498, time cost: 9.578617
+2017-05-16 23:01:54, step: 3100, train_loss: 0.002935, test_loss: 0.002497, time cost: 9.532278
+2017-05-16 23:02:03, step: 3200, train_loss: 0.001921, test_loss: 0.002512, time cost: 9.538591
+2017-05-16 23:02:13, step: 3300, train_loss: 0.002121, test_loss: 0.002399, time cost: 9.602103
+2017-05-16 23:02:23, step: 3400, train_loss: 0.001761, test_loss: 0.002412, time cost: 9.608937
+2017-05-16 23:02:33, step: 3500, train_loss: 0.002344, test_loss: 0.002370, time cost: 9.557662
+2017-05-16 23:02:42, step: 3600, train_loss: 0.001894, test_loss: 0.002424, time cost: 9.49779
+2017-05-16 23:02:52, step: 3700, train_loss: 0.001798, test_loss: 0.002379, time cost: 9.483932
+2017-05-16 23:03:02, step: 3800, train_loss: 0.003093, test_loss: 0.002367, time cost: 9.600727
+2017-05-16 23:03:11, step: 3900, train_loss: 0.002455, test_loss: 0.002409, time cost: 9.542568
+2017-05-16 23:03:21, step: 4000, train_loss: 0.001778, test_loss: 0.002350, time cost: 9.464975
+2017-05-16 23:03:31, step: 4100, train_loss: 0.002241, test_loss: 0.002325, time cost: 9.409247
+2017-05-16 23:03:40, step: 4200, train_loss: 0.002230, test_loss: 0.002413, time cost: 9.43529
+2017-05-16 23:03:50, step: 4300, train_loss: 0.001837, test_loss: 0.002285, time cost: 9.604394
+2017-05-16 23:04:00, step: 4400, train_loss: 0.002108, test_loss: 0.002300, time cost: 9.609505
+2017-05-16 23:04:09, step: 4500, train_loss: 0.001637, test_loss: 0.002343, time cost: 9.482087
+2017-05-16 23:04:19, step: 4600, train_loss: 0.001646, test_loss: 0.002292, time cost: 9.440134
+2017-05-16 23:04:29, step: 4700, train_loss: 0.001914, test_loss: 0.002255, time cost: 9.585982
+2017-05-16 23:04:38, step: 4800, train_loss: 0.001835, test_loss: 0.002295, time cost: 9.454782
+2017-05-16 23:04:48, step: 4900, train_loss: 0.002054, test_loss: 0.002299, time cost: 9.57568
+2017-05-16 23:04:58, step: 5000, train_loss: 0.001757, test_loss: 0.002246, time cost: 9.578996
+2017-05-16 23:05:07, step: 5100, train_loss: 0.001674, test_loss: 0.002178, time cost: 9.468423
+2017-05-16 23:05:17, step: 5200, train_loss: 0.001792, test_loss: 0.002176, time cost: 9.550338
+2017-05-16 23:05:27, step: 5300, train_loss: 0.001705, test_loss: 0.002174, time cost: 9.465326
+2017-05-16 23:05:36, step: 5400, train_loss: 0.001594, test_loss: 0.002176, time cost: 9.418233
+2017-05-16 23:05:46, step: 5500, train_loss: 0.001728, test_loss: 0.002169, time cost: 9.480983
+2017-05-16 23:05:55, step: 5600, train_loss: 0.001653, test_loss: 0.002169, time cost: 9.556386
+2017-05-16 23:06:05, step: 5700, train_loss: 0.001864, test_loss: 0.002174, time cost: 9.585043
+2017-05-16 23:06:15, step: 5800, train_loss: 0.001553, test_loss: 0.002174, time cost: 9.451837
+2017-05-16 23:06:24, step: 5900, train_loss: 0.002107, test_loss: 0.002169, time cost: 9.415113999999999
+2017-05-16 23:06:34, step: 6000, train_loss: 0.001693, test_loss: 0.002161, time cost: 9.465116
+2017-05-16 23:06:43, step: 6100, train_loss: 0.001616, test_loss: 0.002160, time cost: 9.445417
+2017-05-16 23:06:53, step: 6200, train_loss: 0.001719, test_loss: 0.002158, time cost: 9.522549
+2017-05-16 23:07:03, step: 6300, train_loss: 0.001897, test_loss: 0.002163, time cost: 9.48141
+2017-05-16 23:07:12, step: 6400, train_loss: 0.001795, test_loss: 0.002158, time cost: 9.375803
+2017-05-16 23:07:22, step: 6500, train_loss: 0.001641, test_loss: 0.002163, time cost: 9.52778
+2017-05-16 23:07:32, step: 6600, train_loss: 0.001721, test_loss: 0.002162, time cost: 9.546823
+2017-05-16 23:07:41, step: 6700, train_loss: 0.001445, test_loss: 0.002150, time cost: 9.514617
+2017-05-16 23:07:51, step: 6800, train_loss: 0.001535, test_loss: 0.002152, time cost: 9.468898
+2017-05-16 23:08:00, step: 6900, train_loss: 0.002000, test_loss: 0.002150, time cost: 9.417476
+2017-05-16 23:08:10, step: 7000, train_loss: 0.001627, test_loss: 0.002158, time cost: 9.520051
+2017-05-16 23:08:20, step: 7100, train_loss: 0.001673, test_loss: 0.002159, time cost: 9.41092
+2017-05-16 23:08:29, step: 7200, train_loss: 0.001776, test_loss: 0.002159, time cost: 9.533760000000001
+2017-05-16 23:08:39, step: 7300, train_loss: 0.001706, test_loss: 0.002141, time cost: 9.441609
+2017-05-16 23:08:49, step: 7400, train_loss: 0.002017, test_loss: 0.002157, time cost: 9.889423
+2017-05-16 23:08:59, step: 7500, train_loss: 0.001527, test_loss: 0.002159, time cost: 9.556583
+2017-05-16 23:09:09, step: 7600, train_loss: 0.001300, test_loss: 0.002151, time cost: 9.687303
+2017-05-16 23:09:18, step: 7700, train_loss: 0.001508, test_loss: 0.002142, time cost: 9.473958
+2017-05-16 23:09:28, step: 7800, train_loss: 0.001609, test_loss: 0.002146, time cost: 9.529077000000001
+2017-05-16 23:09:37, step: 7900, train_loss: 0.001923, test_loss: 0.002137, time cost: 9.442253000000001
+2017-05-16 23:09:47, step: 8000, train_loss: 0.001753, test_loss: 0.002141, time cost: 9.50869
+2017-05-16 23:09:57, step: 8100, train_loss: 0.001591, test_loss: 0.002144, time cost: 9.458768
+2017-05-16 23:10:06, step: 8200, train_loss: 0.001897, test_loss: 0.002144, time cost: 9.397229
+2017-05-16 23:10:16, step: 8300, train_loss: 0.001998, test_loss: 0.002147, time cost: 9.497185
+2017-05-16 23:10:26, step: 8400, train_loss: 0.001533, test_loss: 0.002139, time cost: 9.584574
+2017-05-16 23:10:35, step: 8500, train_loss: 0.002500, test_loss: 0.002143, time cost: 9.401979
+2017-05-16 23:10:45, step: 8600, train_loss: 0.001590, test_loss: 0.002135, time cost: 9.455823
+2017-05-16 23:10:54, step: 8700, train_loss: 0.001737, test_loss: 0.002148, time cost: 9.499167
+2017-05-16 23:11:04, step: 8800, train_loss: 0.001869, test_loss: 0.002127, time cost: 9.440936
+2017-05-16 23:11:14, step: 8900, train_loss: 0.001662, test_loss: 0.002137, time cost: 9.564849
+2017-05-16 23:11:23, step: 9000, train_loss: 0.001622, test_loss: 0.002135, time cost: 9.441431
+2017-05-16 23:11:33, step: 9100, train_loss: 0.001489, test_loss: 0.002132, time cost: 9.557428
+2017-05-16 23:11:43, step: 9200, train_loss: 0.001127, test_loss: 0.002143, time cost: 9.611866
+2017-05-16 23:11:52, step: 9300, train_loss: 0.001681, test_loss: 0.002125, time cost: 9.480756
+2017-05-16 23:12:02, step: 9400, train_loss: 0.001667, test_loss: 0.002153, time cost: 9.583701
+2017-05-16 23:12:12, step: 9500, train_loss: 0.001667, test_loss: 0.002127, time cost: 9.51509
+2017-05-16 23:12:21, step: 9600, train_loss: 0.002039, test_loss: 0.002123, time cost: 9.439391
+2017-05-16 23:12:31, step: 9700, train_loss: 0.001659, test_loss: 0.002135, time cost: 9.489348
+2017-05-16 23:12:40, step: 9800, train_loss: 0.001638, test_loss: 0.002124, time cost: 9.346963
+2017-05-16 23:12:50, step: 9900, train_loss: 0.001628, test_loss: 0.002130, time cost: 9.545208
+2017-05-16 23:13:00, step: 10000, train_loss: 0.001822, test_loss: 0.002122, time cost: 9.516597
+2017-05-16 23:13:09, step: 10100, train_loss: 0.001594, test_loss: 0.002114, time cost: 9.396373
+2017-05-16 23:13:19, step: 10200, train_loss: 0.001885, test_loss: 0.002113, time cost: 9.54195
+2017-05-16 23:13:28, step: 10300, train_loss: 0.001598, test_loss: 0.002112, time cost: 9.44457
+2017-05-16 23:13:38, step: 10400, train_loss: 0.001808, test_loss: 0.002112, time cost: 9.450869
+2017-05-16 23:13:48, step: 10500, train_loss: 0.001665, test_loss: 0.002111, time cost: 9.489066
+2017-05-16 23:13:57, step: 10600, train_loss: 0.001643, test_loss: 0.002110, time cost: 9.474807
+2017-05-16 23:14:07, step: 10700, train_loss: 0.001120, test_loss: 0.002109, time cost: 9.477716
+2017-05-16 23:14:17, step: 10800, train_loss: 0.001574, test_loss: 0.002116, time cost: 9.433587
+2017-05-16 23:14:26, step: 10900, train_loss: 0.001891, test_loss: 0.002111, time cost: 9.4206
+2017-05-16 23:14:36, step: 11000, train_loss: 0.001636, test_loss: 0.002113, time cost: 9.447943
+2017-05-16 23:14:45, step: 11100, train_loss: 0.001597, test_loss: 0.002109, time cost: 9.469801
+2017-05-16 23:14:55, step: 11200, train_loss: 0.001672, test_loss: 0.002110, time cost: 9.48051
+2017-05-16 23:15:05, step: 11300, train_loss: 0.001971, test_loss: 0.002109, time cost: 9.503443
+2017-05-16 23:15:14, step: 11400, train_loss: 0.001498, test_loss: 0.002110, time cost: 9.502344
+2017-05-16 23:15:24, step: 11500, train_loss: 0.001735, test_loss: 0.002110, time cost: 9.626547
+2017-05-16 23:15:34, step: 11600, train_loss: 0.001290, test_loss: 0.002108, time cost: 9.524169
+2017-05-16 23:15:43, step: 11700, train_loss: 0.001675, test_loss: 0.002110, time cost: 9.515205
+2017-05-16 23:15:53, step: 11800, train_loss: 0.001118, test_loss: 0.002110, time cost: 9.499273
+2017-05-16 23:16:03, step: 11900, train_loss: 0.001872, test_loss: 0.002113, time cost: 9.505921
+2017-05-16 23:16:12, step: 12000, train_loss: 0.001653, test_loss: 0.002112, time cost: 9.414018
+2017-05-16 23:16:22, step: 12100, train_loss: 0.001771, test_loss: 0.002110, time cost: 9.496532
+2017-05-16 23:16:32, step: 12200, train_loss: 0.001668, test_loss: 0.002112, time cost: 9.597189
+2017-05-16 23:16:41, step: 12300, train_loss: 0.001772, test_loss: 0.002111, time cost: 9.423723
+2017-05-16 23:16:51, step: 12400, train_loss: 0.001863, test_loss: 0.002107, time cost: 9.45395
+2017-05-16 23:17:01, step: 12500, train_loss: 0.001509, test_loss: 0.002108, time cost: 9.607918
+2017-05-16 23:17:10, step: 12600, train_loss: 0.001496, test_loss: 0.002112, time cost: 9.50033
+2017-05-16 23:17:20, step: 12700, train_loss: 0.001608, test_loss: 0.002109, time cost: 9.356184
+2017-05-16 23:17:29, step: 12800, train_loss: 0.001485, test_loss: 0.002111, time cost: 9.482452
+2017-05-16 23:17:39, step: 12900, train_loss: 0.001655, test_loss: 0.002110, time cost: 9.552665
+2017-05-16 23:17:49, step: 13000, train_loss: 0.001689, test_loss: 0.002107, time cost: 9.541663
+2017-05-16 23:17:58, step: 13100, train_loss: 0.001676, test_loss: 0.002110, time cost: 9.390747
+2017-05-16 23:18:08, step: 13200, train_loss: 0.001287, test_loss: 0.002108, time cost: 9.47399
+2017-05-16 23:18:17, step: 13300, train_loss: 0.001670, test_loss: 0.002111, time cost: 9.50813
+2017-05-16 23:18:27, step: 13400, train_loss: 0.001602, test_loss: 0.002106, time cost: 9.458379
+2017-05-16 23:18:37, step: 13500, train_loss: 0.001378, test_loss: 0.002107, time cost: 9.52656
+2017-05-16 23:18:46, step: 13600, train_loss: 0.001599, test_loss: 0.002108, time cost: 9.446774
+2017-05-16 23:18:56, step: 13700, train_loss: 0.001711, test_loss: 0.002110, time cost: 9.490887
+2017-05-16 23:19:06, step: 13800, train_loss: 0.001867, test_loss: 0.002111, time cost: 9.693675
+2017-05-16 23:19:15, step: 13900, train_loss: 0.001732, test_loss: 0.002107, time cost: 9.471224
+2017-05-16 23:19:25, step: 14000, train_loss: 0.001643, test_loss: 0.002106, time cost: 9.55071
+2017-05-16 23:19:35, step: 14100, train_loss: 0.001567, test_loss: 0.002108, time cost: 9.574886
+2017-05-16 23:19:44, step: 14200, train_loss: 0.001810, test_loss: 0.002116, time cost: 9.433631
+2017-05-16 23:19:54, step: 14300, train_loss: 0.001576, test_loss: 0.002106, time cost: 9.594971
+2017-05-16 23:20:04, step: 14400, train_loss: 0.001506, test_loss: 0.002106, time cost: 9.42955
+2017-05-16 23:20:13, step: 14500, train_loss: 0.001544, test_loss: 0.002108, time cost: 9.50962
+2017-05-16 23:20:23, step: 14600, train_loss: 0.001852, test_loss: 0.002108, time cost: 9.58773
+2017-05-16 23:20:33, step: 14700, train_loss: 0.001112, test_loss: 0.002107, time cost: 9.557001
+2017-05-16 23:20:42, step: 14800, train_loss: 0.001729, test_loss: 0.002108, time cost: 9.532291
+2017-05-16 23:20:52, step: 14900, train_loss: 0.001591, test_loss: 0.002107, time cost: 9.478901
+2017-05-16 23:21:02, step: 15000, train_loss: 0.001708, test_loss: 0.002110, time cost: 9.713215
+2017-05-16 23:21:12, step: 15100, train_loss: 0.001710, test_loss: 0.002107, time cost: 10.050545
+2017-05-16 23:21:22, step: 15200, train_loss: 0.001601, test_loss: 0.002106, time cost: 9.592291
+2017-05-16 23:21:31, step: 15300, train_loss: 0.001574, test_loss: 0.002106, time cost: 9.574144
+2017-05-16 23:21:41, step: 15400, train_loss: 0.001636, test_loss: 0.002105, time cost: 9.583383
+2017-05-16 23:21:51, step: 15500, train_loss: 0.001873, test_loss: 0.002105, time cost: 9.607348
+2017-05-16 23:22:01, step: 15600, train_loss: 0.001543, test_loss: 0.002105, time cost: 9.508947
+2017-05-16 23:22:10, step: 15700, train_loss: 0.001591, test_loss: 0.002105, time cost: 9.538224
+2017-05-16 23:22:20, step: 15800, train_loss: 0.001549, test_loss: 0.002104, time cost: 9.472232
+2017-05-16 23:22:30, step: 15900, train_loss: 0.001491, test_loss: 0.002105, time cost: 9.577086
+2017-05-16 23:22:39, step: 16000, train_loss: 0.001779, test_loss: 0.002105, time cost: 9.442534
+2017-05-16 23:22:49, step: 16100, train_loss: 0.001651, test_loss: 0.002104, time cost: 9.442108
+2017-05-16 23:22:59, step: 16200, train_loss: 0.001519, test_loss: 0.002104, time cost: 9.60738
+2017-05-16 23:23:08, step: 16300, train_loss: 0.001627, test_loss: 0.002104, time cost: 9.500126
+2017-05-16 23:23:18, step: 16400, train_loss: 0.001415, test_loss: 0.002105, time cost: 9.513075
+2017-05-16 23:23:28, step: 16500, train_loss: 0.001572, test_loss: 0.002105, time cost: 9.653319
+2017-05-16 23:23:37, step: 16600, train_loss: 0.001680, test_loss: 0.002104, time cost: 9.559162
+2017-05-16 23:23:47, step: 16700, train_loss: 0.001611, test_loss: 0.002107, time cost: 9.476769
+2017-05-16 23:23:57, step: 16800, train_loss: 0.001719, test_loss: 0.002104, time cost: 9.675598
+2017-05-16 23:24:06, step: 16900, train_loss: 0.001442, test_loss: 0.002104, time cost: 9.400157
+2017-05-16 23:24:16, step: 17000, train_loss: 0.001682, test_loss: 0.002106, time cost: 9.544733
+2017-05-16 23:24:26, step: 17100, train_loss: 0.001624, test_loss: 0.002105, time cost: 9.642359
+2017-05-16 23:24:35, step: 17200, train_loss: 0.001434, test_loss: 0.002105, time cost: 9.420257
+2017-05-16 23:24:45, step: 17300, train_loss: 0.001635, test_loss: 0.002103, time cost: 9.444442
+2017-05-16 23:24:54, step: 17400, train_loss: 0.001541, test_loss: 0.002104, time cost: 9.334459
+2017-05-16 23:25:04, step: 17500, train_loss: 0.001498, test_loss: 0.002103, time cost: 9.514552
+2017-05-16 23:25:14, step: 17600, train_loss: 0.001542, test_loss: 0.002105, time cost: 9.589592
+2017-05-16 23:25:23, step: 17700, train_loss: 0.001923, test_loss: 0.002104, time cost: 9.498552
+2017-05-16 23:25:33, step: 17800, train_loss: 0.001519, test_loss: 0.002105, time cost: 9.624935
+2017-05-16 23:25:43, step: 17900, train_loss: 0.003260, test_loss: 0.002106, time cost: 9.530792
+2017-05-16 23:25:53, step: 18000, train_loss: 0.001435, test_loss: 0.002105, time cost: 9.579788
+2017-05-16 23:26:02, step: 18100, train_loss: 0.001783, test_loss: 0.002104, time cost: 9.569864
+2017-05-16 23:26:12, step: 18200, train_loss: 0.001639, test_loss: 0.002104, time cost: 9.494423
+2017-05-16 23:26:22, step: 18300, train_loss: 0.001719, test_loss: 0.002105, time cost: 9.531947
+2017-05-16 23:26:31, step: 18400, train_loss: 0.001436, test_loss: 0.002103, time cost: 9.463244
+2017-05-16 23:26:41, step: 18500, train_loss: 0.001904, test_loss: 0.002104, time cost: 9.567039
+2017-05-16 23:26:51, step: 18600, train_loss: 0.001518, test_loss: 0.002104, time cost: 9.567177000000001
+2017-05-16 23:27:00, step: 18700, train_loss: 0.001623, test_loss: 0.002105, time cost: 9.365857
+2017-05-16 23:27:10, step: 18800, train_loss: 0.001548, test_loss: 0.002105, time cost: 9.427582
+2017-05-16 23:27:19, step: 18900, train_loss: 0.001931, test_loss: 0.002104, time cost: 9.500588
+2017-05-16 23:27:29, step: 19000, train_loss: 0.001596, test_loss: 0.002104, time cost: 9.444859
+2017-05-16 23:27:38, step: 19100, train_loss: 0.001648, test_loss: 0.002104, time cost: 9.470671
+2017-05-16 23:27:48, step: 19200, train_loss: 0.001578, test_loss: 0.002105, time cost: 9.386639
+2017-05-16 23:27:58, step: 19300, train_loss: 0.001777, test_loss: 0.002105, time cost: 9.489458
+2017-05-16 23:28:07, step: 19400, train_loss: 0.001447, test_loss: 0.002104, time cost: 9.501290000000001
+2017-05-16 23:28:17, step: 19500, train_loss: 0.001650, test_loss: 0.002103, time cost: 9.448389
+2017-05-16 23:28:26, step: 19600, train_loss: 0.001964, test_loss: 0.002105, time cost: 9.487962
+2017-05-16 23:28:36, step: 19700, train_loss: 0.001707, test_loss: 0.002106, time cost: 9.438768
+2017-05-16 23:28:46, step: 19800, train_loss: 0.001553, test_loss: 0.002105, time cost: 9.584469
+2017-05-16 23:28:55, step: 19900, train_loss: 0.001711, test_loss: 0.002106, time cost: 9.454461
+I tensorflow/stream_executor/dso_loader.cc:125] successfully opened CUDA library libcublas.so.8.0 locally
+I tensorflow/stream_executor/dso_loader.cc:125] successfully opened CUDA library libcudnn.so.5 locally
+I tensorflow/stream_executor/dso_loader.cc:125] successfully opened CUDA library libcufft.so.8.0 locally
+I tensorflow/stream_executor/dso_loader.cc:125] successfully opened CUDA library libcuda.so.1 locally
+I tensorflow/stream_executor/dso_loader.cc:125] successfully opened CUDA library libcurand.so.8.0 locally
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:885] Found device 0 with properties: 
+name: TITAN X (Pascal)
+major: 6 minor: 1 memoryClockRate (GHz) 1.531
+pciBusID 0000:83:00.0
+Total memory: 11.90GiB
+Free memory: 11.76GiB
+W tensorflow/stream_executor/cuda/cuda_driver.cc:590] creating context when one is currently active; existing: 0x51548a0
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:885] Found device 1 with properties: 
+name: TITAN X (Pascal)
+major: 6 minor: 1 memoryClockRate (GHz) 1.531
+pciBusID 0000:84:00.0
+Total memory: 11.90GiB
+Free memory: 11.76GiB
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:906] DMA: 0 1 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:916] 0:   Y Y 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:916] 1:   Y Y 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: TITAN X (Pascal), pci bus id: 0000:83:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:1) -> (device: 1, name: TITAN X (Pascal), pci bus id: 0000:84:00.0)
+0.001
+4092
+train_samples: 2816
+train_samples: 320
+2017-05-17 01:24:02, step: 0, train_loss: 0.018272, test_loss: 0.021161, time cost: 3.999061
+2017-05-17 01:24:11, step: 100, train_loss: 0.006139, test_loss: 0.006894, time cost: 9.252989
+2017-05-17 01:24:21, step: 200, train_loss: 0.005059, test_loss: 0.005066, time cost: 9.228448
+2017-05-17 01:24:30, step: 300, train_loss: 0.003205, test_loss: 0.003559, time cost: 9.226189
+2017-05-17 01:24:40, step: 400, train_loss: 0.003227, test_loss: 0.002953, time cost: 9.299423
+2017-05-17 01:24:49, step: 500, train_loss: 0.003453, test_loss: 0.003011, time cost: 9.336028
+2017-05-17 01:24:59, step: 600, train_loss: 0.002697, test_loss: 0.002479, time cost: 9.38818
+2017-05-17 01:25:08, step: 700, train_loss: 0.002070, test_loss: 0.002350, time cost: 9.435427
+2017-05-17 01:25:18, step: 800, train_loss: 0.002441, test_loss: 0.002153, time cost: 9.523865
+2017-05-17 01:25:28, step: 900, train_loss: 0.001971, test_loss: 0.002242, time cost: 9.593184
+2017-05-17 01:25:38, step: 1000, train_loss: 0.002081, test_loss: 0.002122, time cost: 9.629291
+2017-05-17 01:25:47, step: 1100, train_loss: 0.001747, test_loss: 0.002025, time cost: 9.607128
+2017-05-17 01:25:57, step: 1200, train_loss: 0.001733, test_loss: 0.001951, time cost: 9.531434
+2017-05-17 01:26:07, step: 1300, train_loss: 0.004577, test_loss: 0.001989, time cost: 9.49826
+2017-05-17 01:26:16, step: 1400, train_loss: 0.001867, test_loss: 0.002052, time cost: 9.409113
+2017-05-17 01:26:26, step: 1500, train_loss: 0.002136, test_loss: 0.002009, time cost: 9.39275
+2017-05-17 01:26:35, step: 1600, train_loss: 0.001736, test_loss: 0.001893, time cost: 9.42597
+2017-05-17 01:26:45, step: 1700, train_loss: 0.002166, test_loss: 0.001948, time cost: 9.415315
+2017-05-17 01:26:55, step: 1800, train_loss: 0.001508, test_loss: 0.001871, time cost: 9.434049
+2017-05-17 01:27:04, step: 1900, train_loss: 0.001866, test_loss: 0.002048, time cost: 9.411841
+2017-05-17 01:27:14, step: 2000, train_loss: 0.001849, test_loss: 0.001906, time cost: 9.473811
+2017-05-17 01:27:24, step: 2100, train_loss: 0.001898, test_loss: 0.001842, time cost: 9.495926
+2017-05-17 01:27:33, step: 2200, train_loss: 0.002038, test_loss: 0.002019, time cost: 9.45345
+2017-05-17 01:27:43, step: 2300, train_loss: 0.001570, test_loss: 0.001841, time cost: 9.598798
+2017-05-17 01:27:53, step: 2400, train_loss: 0.001545, test_loss: 0.001841, time cost: 9.492803
+2017-05-17 01:28:02, step: 2500, train_loss: 0.001671, test_loss: 0.001807, time cost: 9.44256
+2017-05-17 01:28:12, step: 2600, train_loss: 0.001549, test_loss: 0.001846, time cost: 9.512723
+2017-05-17 01:28:21, step: 2700, train_loss: 0.001767, test_loss: 0.001801, time cost: 9.445706
+2017-05-17 01:28:31, step: 2800, train_loss: 0.001805, test_loss: 0.001819, time cost: 9.513304
+2017-05-17 01:28:41, step: 2900, train_loss: 0.001734, test_loss: 0.001794, time cost: 9.509193
+2017-05-17 01:28:50, step: 3000, train_loss: 0.001650, test_loss: 0.001847, time cost: 9.469447
+2017-05-17 01:29:00, step: 3100, train_loss: 0.001851, test_loss: 0.001786, time cost: 9.477786
+2017-05-17 01:29:10, step: 3200, train_loss: 0.001647, test_loss: 0.001779, time cost: 9.371967
+2017-05-17 01:29:19, step: 3300, train_loss: 0.001709, test_loss: 0.001795, time cost: 9.593079
+2017-05-17 01:29:29, step: 3400, train_loss: 0.001736, test_loss: 0.001779, time cost: 9.489009
+2017-05-17 01:29:39, step: 3500, train_loss: 0.001597, test_loss: 0.001765, time cost: 9.682832
+2017-05-17 01:29:49, step: 3600, train_loss: 0.001588, test_loss: 0.001773, time cost: 10.059526
+2017-05-17 01:29:59, step: 3700, train_loss: 0.002125, test_loss: 0.001840, time cost: 10.041641
+2017-05-17 01:30:09, step: 3800, train_loss: 0.001643, test_loss: 0.001786, time cost: 10.016637
+2017-05-17 01:30:20, step: 3900, train_loss: 0.001752, test_loss: 0.001774, time cost: 10.007718
+2017-05-17 01:30:30, step: 4000, train_loss: 0.001643, test_loss: 0.001796, time cost: 10.00178
+2017-05-17 01:30:40, step: 4100, train_loss: 0.001544, test_loss: 0.001915, time cost: 10.013064
+2017-05-17 01:30:50, step: 4200, train_loss: 0.001496, test_loss: 0.001815, time cost: 10.054056
+2017-05-17 01:31:00, step: 4300, train_loss: 0.001568, test_loss: 0.001814, time cost: 9.902742
+2017-05-17 01:31:10, step: 4400, train_loss: 0.001444, test_loss: 0.001809, time cost: 9.996218
+2017-05-17 01:31:20, step: 4500, train_loss: 0.001811, test_loss: 0.001782, time cost: 9.968511
+2017-05-17 01:31:30, step: 4600, train_loss: 0.001589, test_loss: 0.001741, time cost: 9.931428
+2017-05-17 01:31:41, step: 4700, train_loss: 0.001699, test_loss: 0.001844, time cost: 9.942881
+2017-05-17 01:31:51, step: 4800, train_loss: 0.001609, test_loss: 0.001753, time cost: 9.995112
+2017-05-17 01:32:01, step: 4900, train_loss: 0.001628, test_loss: 0.001738, time cost: 10.036803
+2017-05-17 01:32:11, step: 5000, train_loss: 0.001497, test_loss: 0.001782, time cost: 9.929118
+2017-05-17 01:32:21, step: 5100, train_loss: 0.001546, test_loss: 0.001709, time cost: 9.976704
+2017-05-17 01:32:31, step: 5200, train_loss: 0.001340, test_loss: 0.001702, time cost: 9.984642000000001
+2017-05-17 01:32:41, step: 5300, train_loss: 0.001392, test_loss: 0.001703, time cost: 9.891999
+2017-05-17 01:32:51, step: 5400, train_loss: 0.002141, test_loss: 0.001701, time cost: 9.95075
+2017-05-17 01:33:01, step: 5500, train_loss: 0.001456, test_loss: 0.001702, time cost: 10.008197
+2017-05-17 01:33:12, step: 5600, train_loss: 0.001672, test_loss: 0.001709, time cost: 10.034954
+2017-05-17 01:33:22, step: 5700, train_loss: 0.001419, test_loss: 0.001706, time cost: 9.956937
+2017-05-17 01:33:32, step: 5800, train_loss: 0.001674, test_loss: 0.001710, time cost: 10.035663
+2017-05-17 01:33:42, step: 5900, train_loss: 0.001583, test_loss: 0.001703, time cost: 10.00759
+2017-05-17 01:33:52, step: 6000, train_loss: 0.001437, test_loss: 0.001705, time cost: 10.027687
+2017-05-17 01:34:02, step: 6100, train_loss: 0.001913, test_loss: 0.001700, time cost: 10.04158
+2017-05-17 01:34:13, step: 6200, train_loss: 0.001548, test_loss: 0.001700, time cost: 10.006313
+2017-05-17 01:34:23, step: 6300, train_loss: 0.001543, test_loss: 0.001703, time cost: 10.062952
+2017-05-17 01:34:33, step: 6400, train_loss: 0.001290, test_loss: 0.001700, time cost: 10.00132
+2017-05-17 01:34:43, step: 6500, train_loss: 0.001407, test_loss: 0.001699, time cost: 9.969451
+2017-05-17 01:34:53, step: 6600, train_loss: 0.002140, test_loss: 0.001702, time cost: 9.973179
+2017-05-17 01:35:03, step: 6700, train_loss: 0.001688, test_loss: 0.001702, time cost: 9.984981
+2017-05-17 01:35:13, step: 6800, train_loss: 0.001721, test_loss: 0.001702, time cost: 9.973227
+2017-05-17 01:35:24, step: 6900, train_loss: 0.001308, test_loss: 0.001705, time cost: 10.032825
+2017-05-17 01:35:34, step: 7000, train_loss: 0.001647, test_loss: 0.001709, time cost: 9.920684
+2017-05-17 01:35:44, step: 7100, train_loss: 0.001765, test_loss: 0.001696, time cost: 10.053709
+2017-05-17 01:35:54, step: 7200, train_loss: 0.001330, test_loss: 0.001711, time cost: 9.990068
+2017-05-17 01:36:04, step: 7300, train_loss: 0.001429, test_loss: 0.001720, time cost: 9.92672
+2017-05-17 01:36:14, step: 7400, train_loss: 0.001831, test_loss: 0.001734, time cost: 10.04673
+2017-05-17 01:36:25, step: 7500, train_loss: 0.001478, test_loss: 0.001699, time cost: 10.033989
+2017-05-17 01:36:35, step: 7600, train_loss: 0.001293, test_loss: 0.001696, time cost: 9.97624
+2017-05-17 01:36:45, step: 7700, train_loss: 0.001491, test_loss: 0.001698, time cost: 10.071971
+2017-05-17 01:36:55, step: 7800, train_loss: 0.001530, test_loss: 0.001699, time cost: 10.026168
+2017-05-17 01:37:05, step: 7900, train_loss: 0.001944, test_loss: 0.001701, time cost: 10.011156
+2017-05-17 01:37:15, step: 8000, train_loss: 0.001589, test_loss: 0.001696, time cost: 10.092405
+2017-05-17 01:37:26, step: 8100, train_loss: 0.001398, test_loss: 0.001696, time cost: 9.935818
+2017-05-17 01:37:36, step: 8200, train_loss: 0.001557, test_loss: 0.001697, time cost: 9.999123
+2017-05-17 01:37:46, step: 8300, train_loss: 0.001702, test_loss: 0.001695, time cost: 10.000453
+2017-05-17 01:37:56, step: 8400, train_loss: 0.001320, test_loss: 0.001702, time cost: 9.957759
+2017-05-17 01:38:06, step: 8500, train_loss: 0.001735, test_loss: 0.001696, time cost: 10.030879
+2017-05-17 01:38:16, step: 8600, train_loss: 0.001240, test_loss: 0.001714, time cost: 10.028191
+2017-05-17 01:38:26, step: 8700, train_loss: 0.001429, test_loss: 0.001695, time cost: 10.00468
+2017-05-17 01:38:37, step: 8800, train_loss: 0.001721, test_loss: 0.001711, time cost: 9.997643
+2017-05-17 01:38:47, step: 8900, train_loss: 0.001799, test_loss: 0.001694, time cost: 10.006939
+2017-05-17 01:38:57, step: 9000, train_loss: 0.001376, test_loss: 0.001692, time cost: 10.004971
+2017-05-17 01:39:07, step: 9100, train_loss: 0.001766, test_loss: 0.001693, time cost: 9.992042
+2017-05-17 01:39:17, step: 9200, train_loss: 0.001593, test_loss: 0.001695, time cost: 9.984419
+2017-05-17 01:39:27, step: 9300, train_loss: 0.001471, test_loss: 0.001694, time cost: 10.074807
+2017-05-17 01:39:38, step: 9400, train_loss: 0.001520, test_loss: 0.001713, time cost: 9.984653
+2017-05-17 01:39:48, step: 9500, train_loss: 0.001483, test_loss: 0.001693, time cost: 10.015084
+2017-05-17 01:39:58, step: 9600, train_loss: 0.001336, test_loss: 0.001691, time cost: 9.970548
+2017-05-17 01:40:08, step: 9700, train_loss: 0.002123, test_loss: 0.001693, time cost: 10.046666
+2017-05-17 01:40:18, step: 9800, train_loss: 0.001666, test_loss: 0.001695, time cost: 10.016448
+2017-05-17 01:40:28, step: 9900, train_loss: 0.001402, test_loss: 0.001696, time cost: 9.948759
+2017-05-17 01:40:38, step: 10000, train_loss: 0.001434, test_loss: 0.001725, time cost: 10.026931
+2017-05-17 01:40:49, step: 10100, train_loss: 0.001381, test_loss: 0.001689, time cost: 10.097587
+2017-05-17 01:40:59, step: 10200, train_loss: 0.001905, test_loss: 0.001688, time cost: 10.057233
+2017-05-17 01:41:09, step: 10300, train_loss: 0.001745, test_loss: 0.001687, time cost: 9.962782
+2017-05-17 01:41:19, step: 10400, train_loss: 0.001380, test_loss: 0.001687, time cost: 9.888581
+2017-05-17 01:41:29, step: 10500, train_loss: 0.001460, test_loss: 0.001687, time cost: 9.988335
+2017-05-17 01:41:39, step: 10600, train_loss: 0.001546, test_loss: 0.001688, time cost: 9.950358
+2017-05-17 01:41:49, step: 10700, train_loss: 0.001601, test_loss: 0.001687, time cost: 10.117443
+2017-05-17 01:41:59, step: 10800, train_loss: 0.001384, test_loss: 0.001688, time cost: 9.928733
+2017-05-17 01:42:10, step: 10900, train_loss: 0.001500, test_loss: 0.001686, time cost: 10.006584
+2017-05-17 01:42:20, step: 11000, train_loss: 0.001467, test_loss: 0.001689, time cost: 10.031132
+2017-05-17 01:42:30, step: 11100, train_loss: 0.001624, test_loss: 0.001687, time cost: 9.978379
+2017-05-17 01:42:40, step: 11200, train_loss: 0.001410, test_loss: 0.001687, time cost: 10.012513
+2017-05-17 01:42:50, step: 11300, train_loss: 0.001730, test_loss: 0.001688, time cost: 9.98643
+2017-05-17 01:43:00, step: 11400, train_loss: 0.001303, test_loss: 0.001688, time cost: 9.902887
+2017-05-17 01:43:10, step: 11500, train_loss: 0.001641, test_loss: 0.001688, time cost: 9.915813
+2017-05-17 01:43:20, step: 11600, train_loss: 0.001287, test_loss: 0.001688, time cost: 10.004435
+2017-05-17 01:43:31, step: 11700, train_loss: 0.001402, test_loss: 0.001687, time cost: 9.99276
+2017-05-17 01:43:41, step: 11800, train_loss: 0.001591, test_loss: 0.001690, time cost: 10.02738
+2017-05-17 01:43:51, step: 11900, train_loss: 0.001903, test_loss: 0.001687, time cost: 10.02445
+2017-05-17 01:44:01, step: 12000, train_loss: 0.001356, test_loss: 0.001690, time cost: 9.928182
+2017-05-17 01:44:11, step: 12100, train_loss: 0.001832, test_loss: 0.001686, time cost: 10.100947
+2017-05-17 01:44:21, step: 12200, train_loss: 0.001411, test_loss: 0.001688, time cost: 10.09915
+2017-05-17 01:44:32, step: 12300, train_loss: 0.001828, test_loss: 0.001687, time cost: 9.972304
+2017-05-17 01:44:42, step: 12400, train_loss: 0.001765, test_loss: 0.001687, time cost: 10.05481
+2017-05-17 01:44:52, step: 12500, train_loss: 0.001670, test_loss: 0.001687, time cost: 10.02188
+2017-05-17 01:45:02, step: 12600, train_loss: 0.001606, test_loss: 0.001687, time cost: 10.036323
+2017-05-17 01:45:12, step: 12700, train_loss: 0.001508, test_loss: 0.001686, time cost: 10.026115
+2017-05-17 01:45:22, step: 12800, train_loss: 0.001468, test_loss: 0.001687, time cost: 10.026515
+2017-05-17 01:45:33, step: 12900, train_loss: 0.001563, test_loss: 0.001687, time cost: 9.965015
+2017-05-17 01:45:43, step: 13000, train_loss: 0.001486, test_loss: 0.001687, time cost: 10.001383
+2017-05-17 01:45:53, step: 13100, train_loss: 0.001552, test_loss: 0.001687, time cost: 9.957409
+2017-05-17 01:46:03, step: 13200, train_loss: 0.001276, test_loss: 0.001687, time cost: 10.01607
+2017-05-17 01:46:13, step: 13300, train_loss: 0.001553, test_loss: 0.001686, time cost: 10.075882
+2017-05-17 01:46:23, step: 13400, train_loss: 0.001505, test_loss: 0.001686, time cost: 9.988004
+2017-05-17 01:46:33, step: 13500, train_loss: 0.001665, test_loss: 0.001687, time cost: 9.969076
+2017-05-17 01:46:44, step: 13600, train_loss: 0.001502, test_loss: 0.001685, time cost: 10.029484
+2017-05-17 01:46:54, step: 13700, train_loss: 0.001479, test_loss: 0.001690, time cost: 10.085198
+2017-05-17 01:47:04, step: 13800, train_loss: 0.001387, test_loss: 0.001688, time cost: 9.994996
+2017-05-17 01:47:14, step: 13900, train_loss: 0.001579, test_loss: 0.001687, time cost: 10.059637
+2017-05-17 01:47:24, step: 14000, train_loss: 0.001482, test_loss: 0.001686, time cost: 9.956646
+2017-05-17 01:47:34, step: 14100, train_loss: 0.001624, test_loss: 0.001688, time cost: 10.057624
+2017-05-17 01:47:44, step: 14200, train_loss: 0.001382, test_loss: 0.001690, time cost: 9.846032
+2017-05-17 01:47:55, step: 14300, train_loss: 0.001498, test_loss: 0.001690, time cost: 10.029288
+2017-05-17 01:48:05, step: 14400, train_loss: 0.001668, test_loss: 0.001688, time cost: 10.026368
+2017-05-17 01:48:15, step: 14500, train_loss: 0.001390, test_loss: 0.001686, time cost: 9.991967
+2017-05-17 01:48:25, step: 14600, train_loss: 0.001762, test_loss: 0.001688, time cost: 10.067523
+2017-05-17 01:48:35, step: 14700, train_loss: 0.001587, test_loss: 0.001687, time cost: 10.060267
+2017-05-17 01:48:45, step: 14800, train_loss: 0.001640, test_loss: 0.001686, time cost: 10.015619
+2017-05-17 01:48:56, step: 14900, train_loss: 0.001663, test_loss: 0.001687, time cost: 10.042818
+2017-05-17 01:49:06, step: 15000, train_loss: 0.001293, test_loss: 0.001686, time cost: 10.00543
+2017-05-17 01:49:16, step: 15100, train_loss: 0.001792, test_loss: 0.001685, time cost: 9.983879
+2017-05-17 01:49:26, step: 15200, train_loss: 0.001361, test_loss: 0.001685, time cost: 9.999048
+2017-05-17 01:49:36, step: 15300, train_loss: 0.001491, test_loss: 0.001686, time cost: 10.087235
+2017-05-17 01:49:46, step: 15400, train_loss: 0.001736, test_loss: 0.001687, time cost: 10.059069
+2017-05-17 01:49:57, step: 15500, train_loss: 0.001900, test_loss: 0.001686, time cost: 9.961882
+2017-05-17 01:50:07, step: 15600, train_loss: 0.001388, test_loss: 0.001685, time cost: 10.085718
+2017-05-17 01:50:17, step: 15700, train_loss: 0.001452, test_loss: 0.001685, time cost: 10.010701
+2017-05-17 01:50:27, step: 15800, train_loss: 0.001555, test_loss: 0.001686, time cost: 10.019843
+2017-05-17 01:50:37, step: 15900, train_loss: 0.001612, test_loss: 0.001686, time cost: 9.945137
+2017-05-17 01:50:47, step: 16000, train_loss: 0.001584, test_loss: 0.001685, time cost: 10.054541
+2017-05-17 01:50:58, step: 16100, train_loss: 0.001560, test_loss: 0.001685, time cost: 10.387814
+2017-05-17 01:51:08, step: 16200, train_loss: 0.002083, test_loss: 0.001686, time cost: 10.386532
+2017-05-17 01:51:19, step: 16300, train_loss: 0.001498, test_loss: 0.001686, time cost: 10.251777
+2017-05-17 01:51:29, step: 16400, train_loss: 0.001365, test_loss: 0.001685, time cost: 10.280325
+2017-05-17 01:51:40, step: 16500, train_loss: 0.001620, test_loss: 0.001685, time cost: 10.074569
+2017-05-17 01:51:50, step: 16600, train_loss: 0.001505, test_loss: 0.001685, time cost: 10.088952
+2017-05-17 01:52:00, step: 16700, train_loss: 0.001630, test_loss: 0.001685, time cost: 10.095125
+2017-05-17 01:52:10, step: 16800, train_loss: 0.001257, test_loss: 0.001685, time cost: 9.905842
+2017-05-17 01:52:20, step: 16900, train_loss: 0.001495, test_loss: 0.001686, time cost: 10.000139
+2017-05-17 01:52:30, step: 17000, train_loss: 0.001505, test_loss: 0.001685, time cost: 9.978383000000001
+2017-05-17 01:52:41, step: 17100, train_loss: 0.001539, test_loss: 0.001686, time cost: 10.078875
+2017-05-17 01:52:51, step: 17200, train_loss: 0.001240, test_loss: 0.001685, time cost: 9.943998
+2017-05-17 01:53:01, step: 17300, train_loss: 0.001478, test_loss: 0.001685, time cost: 10.012637
+2017-05-17 01:53:11, step: 17400, train_loss: 0.001387, test_loss: 0.001685, time cost: 10.060136
+2017-05-17 01:53:21, step: 17500, train_loss: 0.001664, test_loss: 0.001685, time cost: 10.002803
+2017-05-17 01:53:31, step: 17600, train_loss: 0.001483, test_loss: 0.001685, time cost: 10.058899
+2017-05-17 01:53:41, step: 17700, train_loss: 0.001664, test_loss: 0.001685, time cost: 9.964557
+2017-05-17 01:53:52, step: 17800, train_loss: 0.004545, test_loss: 0.001685, time cost: 9.932393
+2017-05-17 01:54:02, step: 17900, train_loss: 0.001547, test_loss: 0.001685, time cost: 10.03578
+2017-05-17 01:54:12, step: 18000, train_loss: 0.001240, test_loss: 0.001685, time cost: 10.00632
+2017-05-17 01:54:22, step: 18100, train_loss: 0.001381, test_loss: 0.001685, time cost: 10.033342
+2017-05-17 01:54:32, step: 18200, train_loss: 0.001341, test_loss: 0.001686, time cost: 10.030491
+2017-05-17 01:54:42, step: 18300, train_loss: 0.001330, test_loss: 0.001686, time cost: 10.027638
+2017-05-17 01:54:53, step: 18400, train_loss: 0.001737, test_loss: 0.001686, time cost: 10.034434
+2017-05-17 01:55:03, step: 18500, train_loss: 0.001490, test_loss: 0.001685, time cost: 10.074608
+2017-05-17 01:55:13, step: 18600, train_loss: 0.002081, test_loss: 0.001686, time cost: 10.075235
+2017-05-17 01:55:23, step: 18700, train_loss: 0.001426, test_loss: 0.001685, time cost: 10.165324
+2017-05-17 01:55:34, step: 18800, train_loss: 0.001554, test_loss: 0.001685, time cost: 10.094218
+2017-05-17 01:55:44, step: 18900, train_loss: 0.001270, test_loss: 0.001685, time cost: 10.179471
+2017-05-17 01:55:54, step: 19000, train_loss: 0.001660, test_loss: 0.001685, time cost: 10.120081
+2017-05-17 01:56:04, step: 19100, train_loss: 0.002113, test_loss: 0.001685, time cost: 10.127321
+2017-05-17 01:56:15, step: 19200, train_loss: 0.001593, test_loss: 0.001685, time cost: 10.172551
+2017-05-17 01:56:25, step: 19300, train_loss: 0.001583, test_loss: 0.001685, time cost: 10.298427
+2017-05-17 01:56:36, step: 19400, train_loss: 0.001456, test_loss: 0.001685, time cost: 10.213945
+2017-05-17 01:56:46, step: 19500, train_loss: 0.001562, test_loss: 0.001686, time cost: 10.29523
+2017-05-17 01:56:56, step: 19600, train_loss: 0.001717, test_loss: 0.001685, time cost: 10.325171
+2017-05-17 01:57:07, step: 19700, train_loss: 0.001289, test_loss: 0.001685, time cost: 10.266782
+2017-05-17 01:57:17, step: 19800, train_loss: 0.001374, test_loss: 0.001685, time cost: 10.348847
+2017-05-17 01:57:28, step: 19900, train_loss: 0.001793, test_loss: 0.001685, time cost: 10.391039
+I tensorflow/stream_executor/dso_loader.cc:125] successfully opened CUDA library libcublas.so.8.0 locally
+I tensorflow/stream_executor/dso_loader.cc:125] successfully opened CUDA library libcudnn.so.5 locally
+I tensorflow/stream_executor/dso_loader.cc:125] successfully opened CUDA library libcufft.so.8.0 locally
+I tensorflow/stream_executor/dso_loader.cc:125] successfully opened CUDA library libcuda.so.1 locally
+I tensorflow/stream_executor/dso_loader.cc:125] successfully opened CUDA library libcurand.so.8.0 locally
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:885] Found device 0 with properties: 
+name: TITAN X (Pascal)
+major: 6 minor: 1 memoryClockRate (GHz) 1.531
+pciBusID 0000:83:00.0
+Total memory: 11.90GiB
+Free memory: 11.76GiB
+W tensorflow/stream_executor/cuda/cuda_driver.cc:590] creating context when one is currently active; existing: 0x475c8f0
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:885] Found device 1 with properties: 
+name: TITAN X (Pascal)
+major: 6 minor: 1 memoryClockRate (GHz) 1.531
+pciBusID 0000:84:00.0
+Total memory: 11.90GiB
+Free memory: 11.76GiB
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:906] DMA: 0 1 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:916] 0:   Y Y 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:916] 1:   Y Y 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: TITAN X (Pascal), pci bus id: 0000:83:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:1) -> (device: 1, name: TITAN X (Pascal), pci bus id: 0000:84:00.0)
+0.001
+56542
+train_samples: 2816
+train_samples: 320
+2017-05-17 02:53:31, step: 0, train_loss: 0.024914, test_loss: 0.021668, time cost: 4.026141
+2017-05-17 02:53:41, step: 100, train_loss: 0.006224, test_loss: 0.007073, time cost: 9.318954
+2017-05-17 02:53:51, step: 200, train_loss: 0.005477, test_loss: 0.004977, time cost: 9.874582
+2017-05-17 02:54:01, step: 300, train_loss: 0.003808, test_loss: 0.003691, time cost: 9.678051
+2017-05-17 02:54:10, step: 400, train_loss: 0.003298, test_loss: 0.003216, time cost: 9.703853
+2017-05-17 02:54:20, step: 500, train_loss: 0.002922, test_loss: 0.002715, time cost: 9.671788
+2017-05-17 02:54:30, step: 600, train_loss: 0.002382, test_loss: 0.002408, time cost: 9.64396
+2017-05-17 02:54:40, step: 700, train_loss: 0.002305, test_loss: 0.002323, time cost: 9.514108
+2017-05-17 02:54:49, step: 800, train_loss: 0.002146, test_loss: 0.002123, time cost: 9.497128
+2017-05-17 02:54:59, step: 900, train_loss: 0.002217, test_loss: 0.002252, time cost: 9.828338
+2017-05-17 02:55:09, step: 1000, train_loss: 0.002142, test_loss: 0.002030, time cost: 9.809625
+2017-05-17 02:55:19, step: 1100, train_loss: 0.001892, test_loss: 0.001965, time cost: 9.742975
+2017-05-17 02:55:29, step: 1200, train_loss: 0.002313, test_loss: 0.001909, time cost: 9.587297
+2017-05-17 02:55:39, step: 1300, train_loss: 0.001952, test_loss: 0.001935, time cost: 9.589475
+2017-05-17 02:55:49, step: 1400, train_loss: 0.002280, test_loss: 0.002021, time cost: 9.808146
+2017-05-17 02:55:59, step: 1500, train_loss: 0.001944, test_loss: 0.001854, time cost: 9.714954
+2017-05-17 02:56:09, step: 1600, train_loss: 0.001845, test_loss: 0.001835, time cost: 9.758962
+2017-05-17 02:56:18, step: 1700, train_loss: 0.001586, test_loss: 0.001927, time cost: 9.57939
+2017-05-17 02:56:28, step: 1800, train_loss: 0.001920, test_loss: 0.001783, time cost: 9.850783
+2017-05-17 02:56:38, step: 1900, train_loss: 0.002288, test_loss: 0.001898, time cost: 9.520228
+2017-05-17 02:56:48, step: 2000, train_loss: 0.001986, test_loss: 0.001852, time cost: 9.670173
+2017-05-17 02:56:58, step: 2100, train_loss: 0.002078, test_loss: 0.001903, time cost: 9.749306
+2017-05-17 02:57:08, step: 2200, train_loss: 0.001780, test_loss: 0.001787, time cost: 9.799972
+2017-05-17 02:57:17, step: 2300, train_loss: 0.001958, test_loss: 0.001977, time cost: 9.744396
+2017-05-17 02:57:28, step: 2400, train_loss: 0.001810, test_loss: 0.001753, time cost: 9.873505
+2017-05-17 02:57:38, step: 2500, train_loss: 0.001895, test_loss: 0.001754, time cost: 9.848997
+2017-05-17 02:57:47, step: 2600, train_loss: 0.001644, test_loss: 0.001732, time cost: 9.773702
+2017-05-17 02:57:57, step: 2700, train_loss: 0.001855, test_loss: 0.001778, time cost: 9.914379
+2017-05-17 02:58:07, step: 2800, train_loss: 0.001779, test_loss: 0.001746, time cost: 9.830914
+2017-05-17 02:58:17, step: 2900, train_loss: 0.001840, test_loss: 0.001707, time cost: 9.81226
+2017-05-17 02:58:27, step: 3000, train_loss: 0.001879, test_loss: 0.001725, time cost: 9.834084
+2017-05-17 02:58:37, step: 3100, train_loss: 0.001700, test_loss: 0.001772, time cost: 9.725029
+2017-05-17 02:58:47, step: 3200, train_loss: 0.001832, test_loss: 0.001674, time cost: 9.750137
+2017-05-17 02:58:57, step: 3300, train_loss: 0.001868, test_loss: 0.001830, time cost: 9.724255
+2017-05-17 02:59:07, step: 3400, train_loss: 0.001786, test_loss: 0.001700, time cost: 9.773662999999999
+2017-05-17 02:59:17, step: 3500, train_loss: 0.001732, test_loss: 0.001727, time cost: 9.671629
+2017-05-17 02:59:27, step: 3600, train_loss: 0.001934, test_loss: 0.001709, time cost: 9.847551
+2017-05-17 02:59:37, step: 3700, train_loss: 0.001897, test_loss: 0.001793, time cost: 9.84782
+2017-05-17 02:59:47, step: 3800, train_loss: 0.001744, test_loss: 0.001778, time cost: 9.801009
+2017-05-17 02:59:57, step: 3900, train_loss: 0.002140, test_loss: 0.001747, time cost: 9.723028
+2017-05-17 03:00:07, step: 4000, train_loss: 0.001950, test_loss: 0.001769, time cost: 9.820436
+2017-05-17 03:00:17, step: 4100, train_loss: 0.001733, test_loss: 0.001662, time cost: 9.803122
+2017-05-17 03:00:27, step: 4200, train_loss: 0.001613, test_loss: 0.001688, time cost: 9.753253
+2017-05-17 03:00:37, step: 4300, train_loss: 0.001579, test_loss: 0.001729, time cost: 9.731064
+2017-05-17 03:00:46, step: 4400, train_loss: 0.001576, test_loss: 0.001660, time cost: 9.671816
+2017-05-17 03:00:56, step: 4500, train_loss: 0.001904, test_loss: 0.001815, time cost: 9.933424
+2017-05-17 03:01:06, step: 4600, train_loss: 0.001545, test_loss: 0.001699, time cost: 9.695753
+2017-05-17 03:01:16, step: 4700, train_loss: 0.002016, test_loss: 0.001678, time cost: 9.830506
+2017-05-17 03:01:26, step: 4800, train_loss: 0.001984, test_loss: 0.001648, time cost: 9.918224
+2017-05-17 03:01:37, step: 4900, train_loss: 0.001663, test_loss: 0.001640, time cost: 10.061681
+2017-05-17 03:01:47, step: 5000, train_loss: 0.001520, test_loss: 0.001631, time cost: 9.878396
+2017-05-17 03:01:57, step: 5100, train_loss: 0.001569, test_loss: 0.001581, time cost: 9.853338
+2017-05-17 03:02:07, step: 5200, train_loss: 0.001490, test_loss: 0.001580, time cost: 9.807413
+2017-05-17 03:02:17, step: 5300, train_loss: 0.001377, test_loss: 0.001575, time cost: 9.831468
+2017-05-17 03:02:26, step: 5400, train_loss: 0.003878, test_loss: 0.001579, time cost: 9.736917
+2017-05-17 03:02:36, step: 5500, train_loss: 0.001463, test_loss: 0.001573, time cost: 9.675371
+2017-05-17 03:02:46, step: 5600, train_loss: 0.001529, test_loss: 0.001574, time cost: 9.750021
+2017-05-17 03:02:56, step: 5700, train_loss: 0.001337, test_loss: 0.001575, time cost: 9.803622
+2017-05-17 03:03:06, step: 5800, train_loss: 0.001710, test_loss: 0.001574, time cost: 9.912053
+2017-05-17 03:03:16, step: 5900, train_loss: 0.001677, test_loss: 0.001575, time cost: 9.842306
+2017-05-17 03:03:26, step: 6000, train_loss: 0.001791, test_loss: 0.001575, time cost: 9.887263
+2017-05-17 03:03:36, step: 6100, train_loss: 0.001588, test_loss: 0.001583, time cost: 9.890460000000001
+2017-05-17 03:03:46, step: 6200, train_loss: 0.001651, test_loss: 0.001570, time cost: 9.781993
+2017-05-17 03:03:56, step: 6300, train_loss: 0.003250, test_loss: 0.001568, time cost: 9.657914
+2017-05-17 03:04:06, step: 6400, train_loss: 0.001212, test_loss: 0.001569, time cost: 9.696997
+2017-05-17 03:04:15, step: 6500, train_loss: 0.001452, test_loss: 0.001569, time cost: 9.650934
+2017-05-17 03:04:25, step: 6600, train_loss: 0.001593, test_loss: 0.001569, time cost: 9.730805
+2017-05-17 03:04:35, step: 6700, train_loss: 0.001605, test_loss: 0.001571, time cost: 9.8355
+2017-05-17 03:04:45, step: 6800, train_loss: 0.001169, test_loss: 0.001578, time cost: 9.743683
+2017-05-17 03:04:55, step: 6900, train_loss: 0.001629, test_loss: 0.001570, time cost: 9.711322
+2017-05-17 03:05:05, step: 7000, train_loss: 0.001649, test_loss: 0.001573, time cost: 9.807093
+2017-05-17 03:05:15, step: 7100, train_loss: 0.001697, test_loss: 0.001576, time cost: 9.758622
+2017-05-17 03:05:25, step: 7200, train_loss: 0.001471, test_loss: 0.001570, time cost: 9.787541000000001
+2017-05-17 03:05:35, step: 7300, train_loss: 0.001400, test_loss: 0.001573, time cost: 9.759819
+2017-05-17 03:05:45, step: 7400, train_loss: 0.001775, test_loss: 0.001599, time cost: 9.763999
+2017-05-17 03:05:55, step: 7500, train_loss: 0.001632, test_loss: 0.001566, time cost: 9.796002
+2017-05-17 03:06:04, step: 7600, train_loss: 0.001523, test_loss: 0.001565, time cost: 9.715348
+2017-05-17 03:06:14, step: 7700, train_loss: 0.001676, test_loss: 0.001576, time cost: 9.676554
+2017-05-17 03:06:24, step: 7800, train_loss: 0.001811, test_loss: 0.001568, time cost: 9.677986
+2017-05-17 03:06:34, step: 7900, train_loss: 0.001411, test_loss: 0.001567, time cost: 9.765707
+2017-05-17 03:06:44, step: 8000, train_loss: 0.001503, test_loss: 0.001562, time cost: 9.815777
+2017-05-17 03:06:54, step: 8100, train_loss: 0.002172, test_loss: 0.001564, time cost: 9.746885
+2017-05-17 03:07:04, step: 8200, train_loss: 0.001455, test_loss: 0.001563, time cost: 9.618128
+2017-05-17 03:07:13, step: 8300, train_loss: 0.001840, test_loss: 0.001564, time cost: 9.556951
+2017-05-17 03:07:23, step: 8400, train_loss: 0.001756, test_loss: 0.001563, time cost: 9.813311
+2017-05-17 03:07:33, step: 8500, train_loss: 0.001473, test_loss: 0.001566, time cost: 9.654809
+2017-05-17 03:07:43, step: 8600, train_loss: 0.001505, test_loss: 0.001604, time cost: 9.768725
+2017-05-17 03:07:53, step: 8700, train_loss: 0.001694, test_loss: 0.001561, time cost: 9.835280000000001
+2017-05-17 03:08:03, step: 8800, train_loss: 0.001648, test_loss: 0.001562, time cost: 9.877129
+2017-05-17 03:08:13, step: 8900, train_loss: 0.001703, test_loss: 0.001562, time cost: 9.709825
+2017-05-17 03:08:23, step: 9000, train_loss: 0.001716, test_loss: 0.001563, time cost: 9.80733
+2017-05-17 03:08:33, step: 9100, train_loss: 0.001792, test_loss: 0.001559, time cost: 9.766325
+2017-05-17 03:08:43, step: 9200, train_loss: 0.001501, test_loss: 0.001564, time cost: 9.691559
+2017-05-17 03:08:52, step: 9300, train_loss: 0.001610, test_loss: 0.001562, time cost: 9.648719
+2017-05-17 03:09:02, step: 9400, train_loss: 0.001694, test_loss: 0.001559, time cost: 9.744295
+2017-05-17 03:09:12, step: 9500, train_loss: 0.001895, test_loss: 0.001556, time cost: 9.703979
+2017-05-17 03:09:22, step: 9600, train_loss: 0.001470, test_loss: 0.001562, time cost: 9.705326
+2017-05-17 03:09:32, step: 9700, train_loss: 0.001554, test_loss: 0.001560, time cost: 9.687155
+2017-05-17 03:09:42, step: 9800, train_loss: 0.001536, test_loss: 0.001561, time cost: 9.721389
+2017-05-17 03:09:51, step: 9900, train_loss: 0.001589, test_loss: 0.001559, time cost: 9.619772
+2017-05-17 03:10:01, step: 10000, train_loss: 0.001501, test_loss: 0.001559, time cost: 9.694315
+2017-05-17 03:10:11, step: 10100, train_loss: 0.001431, test_loss: 0.001549, time cost: 9.724007
+2017-05-17 03:10:21, step: 10200, train_loss: 0.001373, test_loss: 0.001547, time cost: 9.693849
+2017-05-17 03:10:31, step: 10300, train_loss: 0.001443, test_loss: 0.001547, time cost: 9.686712
+2017-05-17 03:10:41, step: 10400, train_loss: 0.001284, test_loss: 0.001548, time cost: 9.666503
+2017-05-17 03:10:50, step: 10500, train_loss: 0.001597, test_loss: 0.001547, time cost: 9.646357
+2017-05-17 03:11:00, step: 10600, train_loss: 0.001548, test_loss: 0.001548, time cost: 9.688359
+2017-05-17 03:11:10, step: 10700, train_loss: 0.001479, test_loss: 0.001547, time cost: 9.713597
+2017-05-17 03:11:20, step: 10800, train_loss: 0.002161, test_loss: 0.001546, time cost: 9.705844
+2017-05-17 03:11:30, step: 10900, train_loss: 0.001460, test_loss: 0.001550, time cost: 9.636437
+2017-05-17 03:11:39, step: 11000, train_loss: 0.001886, test_loss: 0.001548, time cost: 9.686674
+2017-05-17 03:11:50, step: 11100, train_loss: 0.001787, test_loss: 0.001548, time cost: 9.897806
+2017-05-17 03:12:00, step: 11200, train_loss: 0.001399, test_loss: 0.001547, time cost: 9.884706
+2017-05-17 03:12:09, step: 11300, train_loss: 0.001721, test_loss: 0.001550, time cost: 9.734559
+2017-05-17 03:12:19, step: 11400, train_loss: 0.001729, test_loss: 0.001547, time cost: 9.726076
+2017-05-17 03:12:29, step: 11500, train_loss: 0.001401, test_loss: 0.001547, time cost: 9.878132
+2017-05-17 03:12:39, step: 11600, train_loss: 0.001522, test_loss: 0.001547, time cost: 9.67085
+2017-05-17 03:12:49, step: 11700, train_loss: 0.001398, test_loss: 0.001548, time cost: 9.665315
+2017-05-17 03:12:59, step: 11800, train_loss: 0.001478, test_loss: 0.001551, time cost: 9.693853
+2017-05-17 03:13:09, step: 11900, train_loss: 0.001381, test_loss: 0.001554, time cost: 9.675371
+2017-05-17 03:13:18, step: 12000, train_loss: 0.001331, test_loss: 0.001547, time cost: 9.702326
+2017-05-17 03:13:28, step: 12100, train_loss: 0.001558, test_loss: 0.001548, time cost: 9.656918
+2017-05-17 03:13:38, step: 12200, train_loss: 0.001673, test_loss: 0.001546, time cost: 9.532954
+2017-05-17 03:13:48, step: 12300, train_loss: 0.001556, test_loss: 0.001548, time cost: 9.754562
+2017-05-17 03:13:58, step: 12400, train_loss: 0.001527, test_loss: 0.001547, time cost: 9.604065
+2017-05-17 03:14:07, step: 12500, train_loss: 0.001128, test_loss: 0.001546, time cost: 9.612999
+2017-05-17 03:14:17, step: 12600, train_loss: 0.001675, test_loss: 0.001547, time cost: 9.576354
+2017-05-17 03:14:27, step: 12700, train_loss: 0.001976, test_loss: 0.001547, time cost: 9.631216
+2017-05-17 03:14:37, step: 12800, train_loss: 0.001597, test_loss: 0.001546, time cost: 9.738761
+2017-05-17 03:14:47, step: 12900, train_loss: 0.001522, test_loss: 0.001547, time cost: 9.721776
+2017-05-17 03:14:56, step: 13000, train_loss: 0.001919, test_loss: 0.001548, time cost: 9.785812
+2017-05-17 03:15:06, step: 13100, train_loss: 0.001621, test_loss: 0.001546, time cost: 9.701489
+2017-05-17 03:15:16, step: 13200, train_loss: 0.001514, test_loss: 0.001546, time cost: 9.675192
+2017-05-17 03:15:26, step: 13300, train_loss: 0.001622, test_loss: 0.001546, time cost: 9.568265
+2017-05-17 03:15:36, step: 13400, train_loss: 0.001972, test_loss: 0.001546, time cost: 9.727810999999999
+2017-05-17 03:15:46, step: 13500, train_loss: 0.001592, test_loss: 0.001548, time cost: 9.652481
+2017-05-17 03:15:55, step: 13600, train_loss: 0.001971, test_loss: 0.001547, time cost: 9.709512
+2017-05-17 03:16:05, step: 13700, train_loss: 0.001594, test_loss: 0.001546, time cost: 9.715726
+2017-05-17 03:16:15, step: 13800, train_loss: 0.001599, test_loss: 0.001546, time cost: 9.643417
+2017-05-17 03:16:25, step: 13900, train_loss: 0.001474, test_loss: 0.001546, time cost: 9.523874
+2017-05-17 03:16:34, step: 14000, train_loss: 0.001851, test_loss: 0.001546, time cost: 9.682111
+2017-05-17 03:16:44, step: 14100, train_loss: 0.001778, test_loss: 0.001547, time cost: 9.644209
+2017-05-17 03:16:54, step: 14200, train_loss: 0.001280, test_loss: 0.001549, time cost: 9.512786
+2017-05-17 03:17:04, step: 14300, train_loss: 0.001630, test_loss: 0.001548, time cost: 9.760895
+2017-05-17 03:17:14, step: 14400, train_loss: 0.001125, test_loss: 0.001546, time cost: 9.636185
+2017-05-17 03:17:24, step: 14500, train_loss: 0.001395, test_loss: 0.001548, time cost: 9.807095
+2017-05-17 03:17:33, step: 14600, train_loss: 0.001520, test_loss: 0.001545, time cost: 9.702678
+2017-05-17 03:17:43, step: 14700, train_loss: 0.001470, test_loss: 0.001547, time cost: 9.68688
+2017-05-17 03:17:53, step: 14800, train_loss: 0.001400, test_loss: 0.001546, time cost: 9.638824
+2017-05-17 03:18:03, step: 14900, train_loss: 0.001675, test_loss: 0.001545, time cost: 9.779696
+2017-05-17 03:18:13, step: 15000, train_loss: 0.001421, test_loss: 0.001547, time cost: 9.613742
+2017-05-17 03:18:23, step: 15100, train_loss: 0.001263, test_loss: 0.001545, time cost: 9.699009
+2017-05-17 03:18:32, step: 15200, train_loss: 0.001696, test_loss: 0.001545, time cost: 9.689837
+2017-05-17 03:18:42, step: 15300, train_loss: 0.001515, test_loss: 0.001545, time cost: 9.683726
+2017-05-17 03:18:52, step: 15400, train_loss: 0.001646, test_loss: 0.001545, time cost: 9.739304
+2017-05-17 03:19:02, step: 15500, train_loss: 0.001372, test_loss: 0.001545, time cost: 9.691137
+2017-05-17 03:19:12, step: 15600, train_loss: 0.001401, test_loss: 0.001544, time cost: 9.638507
+2017-05-17 03:19:22, step: 15700, train_loss: 0.001773, test_loss: 0.001544, time cost: 9.82681
+2017-05-17 03:19:31, step: 15800, train_loss: 0.001513, test_loss: 0.001545, time cost: 9.617818
+2017-05-17 03:19:41, step: 15900, train_loss: 0.001672, test_loss: 0.001545, time cost: 9.647972
+2017-05-17 03:19:51, step: 16000, train_loss: 0.001839, test_loss: 0.001545, time cost: 9.602701
+2017-05-17 03:20:01, step: 16100, train_loss: 0.001521, test_loss: 0.001545, time cost: 9.772652
+2017-05-17 03:20:11, step: 16200, train_loss: 0.003862, test_loss: 0.001546, time cost: 9.702417
+2017-05-17 03:20:21, step: 16300, train_loss: 0.001692, test_loss: 0.001545, time cost: 9.68184
+2017-05-17 03:20:30, step: 16400, train_loss: 0.001741, test_loss: 0.001545, time cost: 9.656646
+2017-05-17 03:20:40, step: 16500, train_loss: 0.001780, test_loss: 0.001545, time cost: 9.660934
+2017-05-17 03:20:50, step: 16600, train_loss: 0.001570, test_loss: 0.001545, time cost: 9.709456
+2017-05-17 03:21:00, step: 16700, train_loss: 0.001511, test_loss: 0.001546, time cost: 9.75265
+2017-05-17 03:21:10, step: 16800, train_loss: 0.001175, test_loss: 0.001544, time cost: 9.676719
+2017-05-17 03:21:20, step: 16900, train_loss: 0.001408, test_loss: 0.001546, time cost: 9.718031
+2017-05-17 03:21:29, step: 17000, train_loss: 0.001568, test_loss: 0.001544, time cost: 9.656831
+2017-05-17 03:21:39, step: 17100, train_loss: 0.001541, test_loss: 0.001545, time cost: 9.693008
+2017-05-17 03:21:49, step: 17200, train_loss: 0.001996, test_loss: 0.001544, time cost: 9.550907
+2017-05-17 03:21:59, step: 17300, train_loss: 0.001842, test_loss: 0.001544, time cost: 9.687619
+2017-05-17 03:22:09, step: 17400, train_loss: 0.001398, test_loss: 0.001545, time cost: 9.689468
+2017-05-17 03:22:19, step: 17500, train_loss: 0.001125, test_loss: 0.001544, time cost: 9.717565
+2017-05-17 03:22:28, step: 17600, train_loss: 0.001758, test_loss: 0.001544, time cost: 9.712679
+2017-05-17 03:22:38, step: 17700, train_loss: 0.001795, test_loss: 0.001545, time cost: 9.849413
+2017-05-17 03:22:48, step: 17800, train_loss: 0.001388, test_loss: 0.001546, time cost: 9.612263
+2017-05-17 03:22:58, step: 17900, train_loss: 0.001477, test_loss: 0.001544, time cost: 9.744109
+2017-05-17 03:23:08, step: 18000, train_loss: 0.001998, test_loss: 0.001544, time cost: 9.600009
+2017-05-17 03:23:18, step: 18100, train_loss: 0.001499, test_loss: 0.001544, time cost: 9.756899
+2017-05-17 03:23:28, step: 18200, train_loss: 0.001317, test_loss: 0.001544, time cost: 9.689376
+2017-05-17 03:23:38, step: 18300, train_loss: 0.001695, test_loss: 0.001545, time cost: 9.862057
+2017-05-17 03:23:47, step: 18400, train_loss: 0.001740, test_loss: 0.001544, time cost: 9.721931
+2017-05-17 03:23:57, step: 18500, train_loss: 0.001487, test_loss: 0.001544, time cost: 9.683104
+2017-05-17 03:24:07, step: 18600, train_loss: 0.003856, test_loss: 0.001544, time cost: 9.624576
+2017-05-17 03:24:17, step: 18700, train_loss: 0.001581, test_loss: 0.001545, time cost: 9.724298
+2017-05-17 03:24:27, step: 18800, train_loss: 0.001511, test_loss: 0.001544, time cost: 9.738824
+2017-05-17 03:24:37, step: 18900, train_loss: 0.001600, test_loss: 0.001544, time cost: 9.718616
+2017-05-17 03:24:46, step: 19000, train_loss: 0.001670, test_loss: 0.001545, time cost: 9.657499
+2017-05-17 03:24:56, step: 19100, train_loss: 0.001541, test_loss: 0.001546, time cost: 9.608552
+2017-05-17 03:25:06, step: 19200, train_loss: 0.001472, test_loss: 0.001544, time cost: 9.739937
+2017-05-17 03:25:16, step: 19300, train_loss: 0.001838, test_loss: 0.001545, time cost: 9.62388
+2017-05-17 03:25:26, step: 19400, train_loss: 0.001628, test_loss: 0.001546, time cost: 9.74285
+2017-05-17 03:25:36, step: 19500, train_loss: 0.001522, test_loss: 0.001545, time cost: 9.700612
+2017-05-17 03:25:45, step: 19600, train_loss: 0.001719, test_loss: 0.001545, time cost: 9.631745
+2017-05-17 03:25:55, step: 19700, train_loss: 0.001419, test_loss: 0.001545, time cost: 9.618576000000001
+2017-05-17 03:26:05, step: 19800, train_loss: 0.002145, test_loss: 0.001545, time cost: 9.717309
+2017-05-17 03:26:15, step: 19900, train_loss: 0.001264, test_loss: 0.001544, time cost: 9.763579

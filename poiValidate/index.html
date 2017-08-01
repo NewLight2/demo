@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			body, html {width: 100%;height: 100%;margin:0;font-family:"微软雅黑";}
+			#container, #allmap{
+	        	width:100%;
+	    	}
+	    	#zoomSpan, #percent {
+	    		z-index:2;position:absolute;box-shadow: 2px 2px 5px #333333;
+	    	}
+
+			#progress {
+				z-index: 2;
+				background: #ffffff;
+				position: fixed;
+				top: 50%;
+				left: 50%;
+				padding: 5px;
+				display: none;
+				box-shadow: 2px 2px 5px #333333;
+				-webkit-transform: translate(-50%, -50%);
+				transform: translate(-50%, -50%);
+			}
+		</style>
+	</head>
+	<body>
+		
+		<div id="zoomSpan" style="background:rgba(255,255,255,0.8);top:5px;left:5px;width:110px;padding:5px;">
+	    	缩放级别：<span id="mapZoom"></span>
+	    </div>
+
+	
+		<input type="file" id="file6" style="display:none"/>
+		<div id="percent" style="background:rgba(255,255,255,0.8);top:5px;left:150px;width:40px;padding:5px;display: inline-block;">
+			<button id="import" style="border: none;background: #ffffff;cursor: pointer;">导入</button>
+		</div>
+		<div id="progress" ></div>
+
+
+	    <div id="result" style="font-size:12px;z-index:999;position:absolute;top:40px;left:10px;max-width:96%;word-break: break-all;word-wrap: break-word;background:rgba(255,255,255,0.8);padding:5px; box-shadow: 2px 2px 5px #333333;"></div>
+		<div id="allmap"></div>
+		
+		<script type="text/javascript" src="http://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+		<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=ZUONbpqGBsYGXNIYHicvbAbM"></script>
+		<script type="text/javascript" src="js/coordtransform.js" ></script>
+		<script type="text/javascript" src="js/Mapv.js"></script>
+		<script type="text/javascript" src="js/file.js"></script>
+		<script type="text/javascript">
+			var lng_col = 71;
+			var lat_col = 72;
+
+			var data = [];
+			var points = [];
+			var options = {
+	            size: BMAP_POINT_SIZE_TINY,
+	            shape: BMAP_POINT_SHAPE_CIRCLE,
+	            color: '#d340c3'
+	        }
+		
+			$('#allmap').height($('body').height());
+	
+			// 百度地图API功能
+			var bmap = new BMap.Map("allmap",{enableMapClick:false});    // 创建Map实例
+			bmap.centerAndZoom("江苏省");     // 初始化地图,设置中心点坐标和地图级别
+		    bmap.enableScrollWheelZoom();                        //启用滚轮放大缩小
+			bmap.setDefaultCursor("pointer");
+		    $('#mapZoom').text(bmap.getZoom());
+
+			// 第一步创建mapv示例
+			var mapv = new Mapv({
+				map: bmap  // 百度地图的map实例
+			});
+
+
+		    function showInfo(){
+				var table = '<table border=0>';
+				for(var i=0; i<data.length; i++) {
+					table += '<tr>';
+					for(var j=0; j<data[i].length; j++) {
+						table += '<td>'+data[i][j]+'</td>';
+					}
+					table += '</tr>';
+				}
+				table += '</table>';
+				$('#result').html(table);
+			}	
+			
+			var arrEvent = ['zoomend'];
+	        for(var i=0; i<arrEvent.length; i++) {
+	            bmap.addEventListener(arrEvent[i], function () {
+	            	level = bmap.getZoom();
+	                $('#mapZoom').text(level);
+	            });
+	        }
+
+			bmap.addEventListener("click",function(e){
+				data = [];
+				if (!file) {
+					alert('请先导入文件！');
+					return false;
+				}
+				var point = new BMap.Point(e.point.lng, e.point.lat);
+				reader = new FileReader();
+				reader.onload = function(e){
+					var res = this.result;
+					getPoi(e, res, point);
+				};
+				fileLoaded = 0;
+				// 开始读取
+				readBlob();
+			});
+
+	        function toBD09(lng, lat) {
+	        	var wgs84togcj02 = coordtransform.wgs84togcj02(lng, lat);
+	        	return coordtransform.gcj02tobd09(wgs84togcj02[0], wgs84togcj02[1]);
+	        }
+		</script>
+	</body>
+</html>

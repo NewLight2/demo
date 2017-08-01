@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bmap</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="plugins/leaflet/leaflet.css" rel="stylesheet"/>
+    <link href="css/bootstrap-slider.css" rel="stylesheet">
+    <link href="plugins/bootSideMenu/css/BootSideMenu.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+    <style>
+        body, html{
+            height: 100%;
+            margin: 0px;
+        }
+        .mapInfo {
+            padding: 6px 8px;
+            font: 14px/16px Arial, Helvetica, sans-serif;
+            background: rgba(255,255,255,0.8);
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            border-radius: 5px;
+        }
+        .mapLegend {
+            text-align: left;
+            line-height: 19px;
+            color: #555;
+            margin-bottom: 60px !important;
+        }
+        .mapLegend i {
+            width: 18px;
+            height: 18px;
+            float: left;
+            margin-right: 8px;
+            opacity: 0.7;
+        }
+        .legendSwitchClose{
+            background: url("img/arrow_down.png") no-repeat 0;
+        }
+        .legendSwitchOpen{
+            background: url("img/arrow_up.png") no-repeat 0;
+        }
+        .dashBoardItem.active{
+            background-color:rgb(84, 84, 84);
+        }
+        .dashBoardItem{
+            position: relative;
+            float: left;
+            height: 40px;
+            width: 60px;
+            border-right: 1px solid #f7f7f7;
+            background-color:rgb(255, 255, 255);
+        }
+        .dashBoardItem>div{
+            padding-top: 6px;
+            width: 28px;
+            height: 100%;
+            margin: 0 auto;
+            cursor: pointer;
+        }
+        .dashBoardItem img {
+            width: 28px;
+            height: 28px;
+        }
+        .timePlayer{
+            position: absolute;
+            bottom: 0;
+            height: 48px;
+            width: 100%;
+            background: rgba(220,220,220,0.8);
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            border-radius: 5px;
+            padding: 4px 10px;
+            z-index: 1000;
+        }
+        .timePlayer .in-selection{
+            background-image: linear-gradient(to bottom, #dfdfdf 0%, #bebebe 100%);
+            cursor:pointer;
+        }
+        .timePlayer .slider-selection{
+            background-image: linear-gradient(to bottom,#ccc 0,#cfcfcf 100%);
+            cursor:pointer;
+        }
+        .timePlayer .slider-handle{
+            background-image:linear-gradient(to bottom, #cfcfcf 0%, #777 100%);
+            cursor:pointer;
+        }
+        .timePlayer .slider.slider-horizontal{
+            margin-left: 20px;
+            margin-right: 5px;
+            float: left;
+        }
+        .timePlayer .slider-tick{
+            cursor:pointer;
+        }
+        .dropdownBtn{
+            cursor: pointer;
+            color: #333;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .dropdownBtn:hover{
+            text-decoration:none;
+        }
+        .dropdownMyMenu{
+            min-width: auto;
+            padding: 5px;
+            margin-top: 7px;
+            border-radius: 0px;
+        }
+        .dropdownMyMenu>li{
+            cursor: pointer;
+        }
+        .dropdownMyMenu>li:hover{
+            text-decoration: underline;
+        }
+        .sidebar-right > .toggler {
+            border: 0;
+        }
+        .toggler {
+            background-clip: padding-box;
+            background-color: #e9e9e9;
+            width: 20px;
+            height: 48px;
+            position: absolute;
+            top: 45%;
+            margin: 0;
+            padding:0;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div id="header">
+    <div id="logo">
+        <div id="logoTitle">
+            <span style="color:#ffffff;font-size: 22px;">江苏欣网视讯</span>
+            <span style="color:#ffffff;margin-left:20px;margin-right:20px;font-size: 22px;">|</span>
+            <span style="color:#ffffff;font-size: 26px;">网格人流预测</span>
+        </div>
+    </div>
+    <div id="clock" style="position:absolute; right:10px; top:10px;font-size: 20px;color:#ffffff;height: 45px; line-height: 45px;">2017-05-03 12:00:00</div>
+</div>
+<div id="main" style="height:100%; width:100%; position: relative;" class="leaflet-container leaflet-touch leaflet-fade-anim" tabindex="0">
+    <div class="leaflet-control-container">
+    </div>
+</div>
+
+<div id="showGridBorderDiv" style="position:absolute; width:155px;padding:10px 10px; top:65px; left:200px;z-index:500;background-color: #fff;height: 40px;box-shadow: 2px 2px 5px #333333;font-size: 16px;">
+    <div class="pull-left">
+        <input id="showGridBorderSwitch" checked="checked" style="cursor: pointer; margin-right:2px;" type="radio" name="switch" value="grid">
+    </div>
+    <div class="pull-left">
+        <label for="showGridBorderSwitch" style="cursor: pointer; font-weight: normal;">网格</label>
+    </div>
+    <div class="pull-left">
+        <input id="showHeatmapSwitch" style="cursor: pointer; margin-left: 10px; margin-right:2px;" type="radio" name="switch" value="heatmap">
+    </div>
+    <div class="pull-left">
+        <label for="showHeatmapSwitch" style="cursor: pointer; font-weight: normal;">热力图</label>
+    </div>
+    <div class="clearfix"></div>
+</div>
+
+<div id="dashBoard" style="position:absolute; top:65px; left: 60px; z-index: 1000;">
+    <div id="dashBoardHand" class="dashBoardItem active" title="Clear All">
+        <div>
+            <img src="img/hand_2.png">
+        </div>
+    </div>
+    <div id="dashBoardPredict" class="dashBoardItem" title="Predict">
+        <div>
+            <img src="img/predict_1.png" style="height:40px;width:59px;top:0px;left:0px;position:absolute">
+        </div>
+    </div>
+    <div class="clearfix"></div>
+</div>
+
+<div id="PredictPlayer" class="timePlayer" style="display:none">
+    <img src="img/play.png" class="pull-left timePlayerBtn Play" style="width:38px; height:38px; cursor:pointer;">
+    <input class="pull-left" type="text">
+    <div class="clearfix"></div>
+</div>
+
+<div id="inOutFlowDropDown" class="dropDownItem" style="position: absolute; left: 365px; top: 65px; z-index: 500; background-color: #ffffff; height:40px;padding: 5px;box-shadow: 2px 2px 5px #333333;font-size: 20px;" data-value="In">
+    <a class="dropdownBtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="dropdownDisplay">InFlow&nbsp;</span>
+        <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu dropdownMyMenu" aria-labelledby="dLabel">
+        <li data-value="In">InFlow&nbsp;</li>
+        <li data-value="Out">OutFlow</li>
+        <li data-value="All">AllFlow</li>
+    </ul>
+</div>
+
+<div id="legendSwitch" class="legendSwitchClose" style="position:absolute; bottom: 60px; left: 90px; z-index: 1000; width: 24px; height: 24px; cursor: pointer;"></div>
+
+<div id="right-menu" style="width:420px;top:65px; height:855px;background: #e9e9e9;">
+    <div id="title" style="font-weight: normal;height: 40px; font-size: 18px; text-align: center; background: #e9e9e9;line-height: 40px;"></div>
+    <div id="inflowDetailsCharts" style="min-width: 310px; width:100%; height: 270px; border: 10px solid #e9e9e9;"></div>
+    <div id="outflowDetailsCharts" style="min-width: 310px; width:100%; height: 270px; border: 10px solid #e9e9e9;"></div>
+    <div id="allflowDetailsCharts" style="min-width: 310px; width:100%; height: 270px; border: 10px solid #e9e9e9;"></div>
+</div>
+
+<!-- Modal -->
+<!--<div class="modal ui-draggable" id="PredictFlowModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">-->
+    <!--<div class="modal-dialog modal-lg" role="document">-->
+        <!--<div class="modal-content">-->
+            <!--<div class="modal-header ui-draggable-handle" style="cursor:all-scroll;">-->
+                <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>-->
+                <!--<h4 class="modal-title">Flow Details</h4>-->
+            <!--</div>-->
+            <!--<div class="modal-body">-->
+                <!--<div id="flowDetailsCharts" style="min-width: 310px; height: 400px; margin: 0 auto"></div>-->
+            <!--</div>-->
+            <!--<div class="modal-footer">-->
+                <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=7kbxYZeqswVDpYGqPMWrhMve"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<!--<script src="https://cdn.bootcss.com/jqueryui/1.12.1/jquery-ui.js"></script>-->
+<script src="js/jquery-ui.js"></script>
+<script src="js/moment.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/bootstrap-slider.js"></script>
+<script src="plugins/leaflet/leaflet.js"></script>
+<script type="text/javascript" src="js/proj4-compressed.js"></script>
+<script type="text/javascript" src="js/proj4leaflet.js"></script>
+<script type="text/javascript" src="js/leafletBmap.js"></script>
+<script type="text/javascript" src="js/heatmap.js"></script>
+<script type="text/javascript" src="plugins/leaflet-heatmap/leaflet-heatmap.js"></script>
+<script type="text/javascript" src="plugins/bootSideMenu/js/BootSideMenu.js"></script>
+<script type="text/javascript" src="plugins/echarts.js"></script>
+
+<script type="text/javascript">
+    $(function () {
+        XwsoftFlow.MapControl.Initial();
+        XwsoftFlow.Inter.Initial();
+        XwsoftFlow.DropDown.Initial();
+        XwsoftFlow.DashBoard.Initial();
+        XwsoftFlow.PredictTimePlayer.Initial();
+        XwsoftFlow.Chart.Initial();
+        XwsoftFlow.Default.Initial();
+    });
+</script>
+</body>
+</html>
