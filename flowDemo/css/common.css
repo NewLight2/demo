@@ -1,0 +1,28 @@
+﻿body, html{
+    font-family: 'Microsoft YaHei', Arial, Helvetica, sans-serif;
+}
+
+#header{
+    height: 55px;
+    border-bottom: #000 solid 1px;
+    border-bottom-color: gray;
+    position: relative;
+    font-size: 14px;
+    background: #0171c7;
+}
+
+#logo{
+    margin: 10px 0 8px 20px;
+    float: left;
+    width: 500px;
+}
+
+.loadIcon{
+    position: fixed; 
+    width: 60px; 
+    height: 14px; 
+    left: 50%; 
+    top: 300px; 
+    z-index: 9999; 
+    background: url(../img/loading2.gif) 100% -25px;
+}
